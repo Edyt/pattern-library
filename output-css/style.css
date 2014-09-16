@@ -1,0 +1,862 @@
+@import url(../output-css/reset.css);
+/* line 53, ../input-css/style.scss */
+body {
+  font: 100% "Source Sans Pro", sans-serif;
+  color: #3a3a3a;
+  background: #e9e9e9;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 61, ../input-css/style.scss */
+a:link, a:visited, a:hover, a:active {
+  color: #057dbc;
+}
+
+/* line 65, ../input-css/style.scss */
+section {
+  background: white;
+  padding: 25px;
+  margin-left: 65px;
+}
+
+/* line 71, ../input-css/style.scss */
+.placeholder {
+  margin: 0 auto;
+  width: 85%;
+}
+
+/* line 76, ../input-css/style.scss */
+.single-panel {
+  width: 70%;
+  padding: 0;
+  overflow: auto;
+  margin-left: 6%;
+}
+/* line 82, ../input-css/style.scss */
+.single-panel .toolbar {
+  width: 70%;
+}
+
+/* line 87, ../input-css/style.scss */
+.panel-content {
+  margin-top: 83px;
+  position: relative;
+}
+
+/* line 93, ../input-css/style.scss */
+.button {
+  border-radius: 5px;
+  font-size: 18px;
+  background: white;
+  border: 1px solid #dfdfdf;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #636363;
+  font-weight: normal;
+}
+/* line 103, ../input-css/style.scss */
+.button .dijitIcon {
+  margin-right: 4px;
+}
+
+/* line 108, ../input-css/style.scss */
+.button.primary {
+  background: #057dbc;
+  color: white;
+  border: none;
+}
+
+/* line 114, ../input-css/style.scss */
+.button:hover, .button:active {
+  background: #e8e8e8;
+  color: #3a3a3a;
+}
+
+/* line 119, ../input-css/style.scss */
+.button.primary:hover, .button.primary:active {
+  background: #046497;
+  color: white;
+  border: none;
+}
+
+/* line 125, ../input-css/style.scss */
+.button:active {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+/* line 129, ../input-css/style.scss */
+h1 {
+  color: #4f5152;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+/* line 136, ../input-css/style.scss */
+h2 {
+  color: #5e5e5e;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+/* line 144, ../input-css/style.scss */
+h3 {
+  color: #414344;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+}
+
+/* line 151, ../input-css/style.scss */
+h4 {
+  color: #5d5d5d;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 0;
+}
+
+/* line 159, ../input-css/style.scss */
+p, li {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+/* line 165, ../input-css/style.scss */
+aside.dark-box, aside.callout-box {
+  background-color: #f4f4f4;
+  padding: 16px 20px 18px;
+  margin-bottom: 20px;
+}
+/* line 170, ../input-css/style.scss */
+aside.dark-box h1, aside.dark-box h2, aside.dark-box h3, aside.dark-box h4, aside.dark-box p, aside.dark-box ul, aside.dark-box ol, aside.callout-box h1, aside.callout-box h2, aside.callout-box h3, aside.callout-box h4, aside.callout-box p, aside.callout-box ul, aside.callout-box ol {
+  margin-top: 0;
+}
+/* line 172, ../input-css/style.scss */
+aside.dark-box .dijitIcon, aside.callout-box .dijitIcon {
+  float: left;
+  font-size: 48px;
+  color: #636363;
+  margin: 0 30px 30px 0;
+}
+/* line 179, ../input-css/style.scss */
+aside.dark-box h4, aside.callout-box h4 {
+  color: #636363;
+  font-weight: normal;
+  font-size: 16px;
+}
+/* line 185, ../input-css/style.scss */
+aside.dark-box p, aside.callout-box p {
+  margin-bottom: 15px;
+}
+/* line 189, ../input-css/style.scss */
+aside.dark-box .button, aside.callout-box .button {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  float: right;
+  margin: 0 0 30px 30px;
+  border: none;
+}
+/* line 197, ../input-css/style.scss */
+aside.dark-box .button:hover, aside.dark-box .button.active, aside.callout-box .button:hover, aside.callout-box .button.active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 203, ../input-css/style.scss */
+aside.callout-box {
+  background-color: white;
+  border: 1px solid #dfdfdf;
+}
+
+/* line 208, ../input-css/style.scss */
+aside.callout-box.success, aside.callout-box.warning {
+  background-color: #2d715c;
+  border: none;
+  color: white;
+}
+/* line 213, ../input-css/style.scss */
+aside.callout-box.success .dijitIcon, aside.callout-box.warning .dijitIcon {
+  color: white;
+}
+/* line 217, ../input-css/style.scss */
+aside.callout-box.success p, aside.callout-box.warning p {
+  color: white;
+}
+
+/* line 222, ../input-css/style.scss */
+aside.callout-box.warning {
+  background-color: #c75302;
+}
+
+/* line 229, ../input-css/style.scss */
+.primary-nav {
+  background: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  border: 1px solid #b0b0b0;
+  width: 60px;
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 242, ../input-css/style.scss */
+.primary-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 247, ../input-css/style.scss */
+.primary-nav ul li {
+  margin: 0;
+}
+/* line 250, ../input-css/style.scss */
+.primary-nav ul li a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #636363;
+  font-size: 24px;
+  display: block;
+  text-align: center;
+  padding: 18px 10px;
+}
+/* line 261, ../input-css/style.scss */
+.primary-nav ul li.nav-label {
+  background: #dfdfdf;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 0;
+  color: #5d5d5d;
+}
+/* line 270, ../input-css/style.scss */
+.primary-nav ul label {
+  background: none repeat scroll 0 0 #057dbc;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  font-size: 15px;
+  z-index: 500;
+  left: 72px;
+  margin-top: -51px;
+  padding: 5px 9px;
+  position: absolute;
+  width: auto;
+}
+/* line 286, ../input-css/style.scss */
+.primary-nav ul li:hover label {
+  display: block;
+}
+/* line 290, ../input-css/style.scss */
+.primary-nav ul li:hover a {
+  background: #dfdfdf;
+}
+/* line 297, ../input-css/style.scss */
+.primary-nav ul li:active a {
+  background: #f4f4f4;
+}
+/* line 303, ../input-css/style.scss */
+.primary-nav ul li.active a {
+  background: white;
+  color: #057dbc;
+}
+
+/* line 312, ../input-css/style.scss */
+.helper-nav {
+  background: #636363;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+  position: fixed;
+  right: 0;
+  border: 1px solid #636363;
+  width: 70px;
+  border-right: 0;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 329, ../input-css/style.scss */
+.helper-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 334, ../input-css/style.scss */
+.helper-nav ul li {
+  margin: 0;
+}
+/* line 337, ../input-css/style.scss */
+.helper-nav ul li a {
+  text-decoration: none;
+  background: #636363;
+  font-weight: normal;
+  color: #e8e8e8;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  padding: 15px 15px 15px 10px;
+}
+/* line 349, ../input-css/style.scss */
+.helper-nav ul li:first-child a {
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+}
+/* line 355, ../input-css/style.scss */
+.helper-nav ul li:last-child a {
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 361, ../input-css/style.scss */
+.helper-nav ul li.nav-label {
+  background: #dfdfdf;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 0;
+  color: #5d5d5d;
+}
+/* line 370, ../input-css/style.scss */
+.helper-nav ul label {
+  background: none repeat scroll 0 0 #057dbc;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  font-size: 15px;
+  z-index: 100;
+  right: 85px;
+  margin-top: -49px;
+  padding: 5px 9px;
+  position: absolute;
+  width: auto;
+}
+/* line 386, ../input-css/style.scss */
+.helper-nav ul li:hover label {
+  display: block;
+}
+/* line 390, ../input-css/style.scss */
+.helper-nav ul li:hover a {
+  background: #585757;
+}
+/* line 397, ../input-css/style.scss */
+.helper-nav ul li:active a {
+  background: #464646;
+}
+/* line 403, ../input-css/style.scss */
+.helper-nav ul li.active a {
+  background: white;
+  color: #057dbc;
+}
+
+/* line 414, ../input-css/style.scss */
+.swimlane-nav {
+  margin: 0;
+  padding: 0;
+  background: #e9e9e9;
+  top: 95px;
+  position: fixed;
+  right: 16%;
+  width: 40px;
+}
+/* line 423, ../input-css/style.scss */
+.swimlane-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 428, ../input-css/style.scss */
+.swimlane-nav ul li {
+  margin: 0 0 5px;
+}
+/* line 431, ../input-css/style.scss */
+.swimlane-nav ul li a {
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #636363;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  padding: 4px 8px;
+  border: 1px solid #e9e9e9;
+}
+/* line 444, ../input-css/style.scss */
+.swimlane-nav ul li:first-child a {
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+}
+/* line 450, ../input-css/style.scss */
+.swimlane-nav ul li:last-child a {
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 456, ../input-css/style.scss */
+.swimlane-nav ul li.nav-label {
+  background: #dfdfdf;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 0;
+  color: #5d5d5d;
+}
+/* line 465, ../input-css/style.scss */
+.swimlane-nav ul label {
+  background: none repeat scroll 0 0 #057dbc;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  font-size: 14px;
+  left: 50px;
+  margin-top: -33px;
+  padding: 1px 8px;
+  position: absolute;
+  width: auto;
+  z-index: 100;
+}
+/* line 481, ../input-css/style.scss */
+.swimlane-nav ul li:hover label {
+  display: block;
+}
+/* line 485, ../input-css/style.scss */
+.swimlane-nav ul li:hover a {
+  border: 1px solid #b0b0b0;
+}
+/* line 491, ../input-css/style.scss */
+.swimlane-nav ul li:active a, .swimlane-nav ul li.active a, .swimlane-nav ul li.active:hover a {
+  background: #636363;
+  color: #e8e8e8;
+  border: 1px solid #636363;
+}
+
+/* line 502, ../input-css/style.scss */
+.toolbar {
+  border-bottom: 1px solid #b0b0b0;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 511, ../input-css/style.scss */
+.toolbar h1 {
+  float: left;
+  padding-left: 25px;
+}
+/* line 516, ../input-css/style.scss */
+.toolbar ul {
+  list-style: none;
+  float: right;
+  right: 125px;
+  margin: 25px 15px 0 0;
+}
+/* line 522, ../input-css/style.scss */
+.toolbar ul li {
+  margin: 0;
+  float: left;
+  margin-right: 3px;
+}
+/* line 527, ../input-css/style.scss */
+.toolbar ul li a {
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #636363;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  padding: 4px 8px;
+  border: 1px solid white;
+}
+/* line 542, ../input-css/style.scss */
+.toolbar ul li:hover a {
+  border: 1px solid #dfdfdf;
+}
+/* line 549, ../input-css/style.scss */
+.toolbar ul li:active a {
+  background: #057dbc;
+  border-color: #057dbc;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 558, ../input-css/style.scss */
+.toolbar h4.toolbar-main-button {
+  float: right;
+  margin-top: 31px;
+  margin-right: 25px;
+}
+/* line 563, ../input-css/style.scss */
+.toolbar h4.toolbar-main-button .button {
+  padding: 8px 35px;
+}
+/* line 567, ../input-css/style.scss */
+.toolbar h4.toolbar-main-button .dijitIcon {
+  margin-right: 0;
+}
+
+/* line 575, ../input-css/style.scss */
+.dialog {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 250;
+  margin: 0;
+  padding: 0;
+}
+/* line 585, ../input-css/style.scss */
+.dialog .inside-dialog {
+  width: 80%;
+  border: 3px solid #b0b0b0;
+  max-height: 500px;
+  overflow: auto;
+  max-width: 1200px;
+  margin: 5% auto 0;
+  border-radius: 5px;
+  padding: 35px;
+  background: white;
+}
+
+/* line 601, ../input-css/style.scss */
+.highlights-content, .annotations-content {
+  padding: 10px 5px 0;
+  float: left;
+  height: 1600px;
+  width: 100px;
+  background: #f4f4f4;
+}
+/* line 609, ../input-css/style.scss */
+.highlights-content h5, .annotations-content h5 {
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+/* line 617, ../input-css/style.scss */
+.highlights-content ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 619, ../input-css/style.scss */
+.highlights-content li {
+  float: left;
+  background: #c75302;
+  margin: 0 6px 0 0;
+}
+/* line 625, ../input-css/style.scss */
+.highlights-content li:last-child {
+  margin-right: 0;
+}
+/* line 627, ../input-css/style.scss */
+.highlights-content a, .highlights-content .random-highlight {
+  color: white;
+  width: 25px;
+  height: 20px;
+  display: block;
+  text-align: center;
+}
+/* line 634, ../input-css/style.scss */
+.highlights-content a span, .highlights-content .random-highlight span {
+  font-size: 15px;
+  position: relative;
+  bottom: 3px;
+}
+/* line 641, ../input-css/style.scss */
+.highlights-content .random-highlight {
+  position: absolute;
+  top: 200px;
+  background: #c75302;
+  height: 300px;
+}
+
+/* line 649, ../input-css/style.scss */
+.annotations-content {
+  border-left: 1px solid #b0b0b0;
+}
+
+/* line 653, ../input-css/style.scss */
+.main-content {
+  margin: 0 25px 0 225px;
+}
+/* line 656, ../input-css/style.scss */
+.main-content .tpIconEllipses {
+  font-size: 24px;
+  color: #5d5d5d;
+  position: relative;
+  top: 5px;
+}
+
+/* line 667, ../input-css/style.scss */
+.prior-art {
+  width: 85%;
+}
+/* line 670, ../input-css/style.scss */
+.prior-art .toolbar {
+  width: 85%;
+}
+/* line 674, ../input-css/style.scss */
+.prior-art .main-content {
+  margin-left: 25px;
+  width: 68%;
+  float: left;
+  padding-top: 25px;
+}
+/* line 680, ../input-css/style.scss */
+.prior-art .main-content img {
+  float: left;
+  width: 225px;
+  margin: 0 25px 25px 0;
+  border: 1px solid #e9e9e9;
+}
+/* line 687, ../input-css/style.scss */
+.prior-art .main-content .pa-snippet {
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 25px;
+  overflow: auto;
+}
+/* line 692, ../input-css/style.scss */
+.prior-art .main-content .pa-snippet .tpIconSuccessCircle {
+  color: #2d715c;
+}
+/* line 698, ../input-css/style.scss */
+.prior-art .main-content h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 703, ../input-css/style.scss */
+.prior-art .main-content p {
+  margin-top: 5px;
+}
+/* line 708, ../input-css/style.scss */
+.prior-art h2 {
+  padding: 0;
+  margin: 0 0 12px;
+}
+/* line 712, ../input-css/style.scss */
+.prior-art h2 .dijitIcon {
+  color: #2d715c;
+}
+/* line 717, ../input-css/style.scss */
+.prior-art .highlights-content {
+  float: left;
+  width: 8%;
+}
+/* line 723, ../input-css/style.scss */
+.prior-art .annotations-content {
+  float: left;
+  width: 18%;
+}
+/* line 727, ../input-css/style.scss */
+.prior-art .annotations-content .random-icon {
+  padding: 0 10px 10px;
+}
+/* line 730, ../input-css/style.scss */
+.prior-art .annotations-content .random-icon p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+/* line 742, ../input-css/style.scss */
+form {
+  position: relative;
+}
+/* line 745, ../input-css/style.scss */
+form p {
+  overflow: auto;
+}
+/* line 749, ../input-css/style.scss */
+form label {
+  float: left;
+  margin-right: 10px;
+  color: #5e5e5e;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 3px;
+  width: 120px;
+}
+/* line 759, ../input-css/style.scss */
+form input[type="text"], form textarea, form select {
+  border-radius: 5px;
+  font: 100% "Source Sans Pro", sans-serif;
+  color: #3a3a3a;
+  font-size: 15px;
+  padding: 8px;
+  border: 1px solid #b0b0b0;
+  width: 353px;
+}
+/* line 769, ../input-css/style.scss */
+form select {
+  padding: 0;
+}
+/* line 773, ../input-css/style.scss */
+form input:focus, form textarea:focus {
+  background: #fffcf4;
+}
+/* line 777, ../input-css/style.scss */
+form .dijitIcon {
+  font-size: 18px;
+  margin-left: 8px;
+  color: #2d715c;
+}
+/* line 783, ../input-css/style.scss */
+form .error-label, form input[type="checkbox"] + label, form input[type="radio"] + label {
+  float: none;
+  margin: 0 0 0 130px;
+  display: block;
+  width: auto;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* line 793, ../input-css/style.scss */
+form .error input, form .error .dijitIcon, form .error .error-label {
+  color: #d93d33;
+}
+/* line 797, ../input-css/style.scss */
+form .error input {
+  border: 2px solid #d93d33;
+}
+/* line 802, ../input-css/style.scss */
+form input[type="checkbox"], form input[type="radio"] {
+  margin-left: 130px;
+  display: inline;
+}
+/* line 806, ../input-css/style.scss */
+form input[type="checkbox"] + label, form input[type="radio"] + label {
+  width: auto;
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: normal;
+  font-size: 16px;
+}
+/* line 814, ../input-css/style.scss */
+form input[type="checkbox"] + label + .dijitIcon, form input[type="radio"] + label + .dijitIcon {
+  position: absolute;
+  left: 486px;
+}
+/* line 819, ../input-css/style.scss */
+form .button {
+  margin-left: 130px;
+}
+/* line 822, ../input-css/style.scss */
+form .button .dijitIcon {
+  color: white;
+  margin-left: 0;
+}
+
+/* line 831, ../input-css/style.scss */
+.wm-primary-nav {
+  background: white;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  border: 1px solid #b0b0b0;
+  width: 225px;
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 844, ../input-css/style.scss */
+.wm-primary-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 849, ../input-css/style.scss */
+.wm-primary-nav ul li {
+  margin: 0;
+}
+/* line 852, ../input-css/style.scss */
+.wm-primary-nav ul li a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #3a3a3a;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 16px;
+  display: block;
+  text-align: left;
+  padding: 8px 14px;
+  position: relative;
+}
+/* line 863, ../input-css/style.scss */
+.wm-primary-nav ul li a em {
+  font-style: normal;
+  display: inline-block;
+  background: #2d715c;
+  padding: 0px 10px;
+  color: white;
+  margin-left: 6px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+/* line 874, ../input-css/style.scss */
+.wm-primary-nav ul li a strong {
+  font-weight: normal;
+  position: absolute;
+  text-align: right;
+  right: 10px;
+}
+/* line 885, ../input-css/style.scss */
+.wm-primary-nav ul li.empty-row a, .wm-primary-nav ul li.empty-row:hover a, .wm-primary-nav ul li.empty-row:active a {
+  background: white;
+  cursor: default;
+  height: 40px;
+}
+/* line 893, ../input-css/style.scss */
+.wm-primary-nav ul li.nav-label {
+  background: #dfdfdf;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px 0;
+  color: #5d5d5d;
+}
+/* line 902, ../input-css/style.scss */
+.wm-primary-nav ul label {
+  background: none repeat scroll 0 0 #057dbc;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  font-size: 15px;
+  z-index: 100;
+  left: 72px;
+  margin-top: -51px;
+  padding: 5px 9px;
+  position: absolute;
+  width: auto;
+}
+/* line 918, ../input-css/style.scss */
+.wm-primary-nav ul li:hover label {
+  display: block;
+}
+/* line 922, ../input-css/style.scss */
+.wm-primary-nav ul li:hover a {
+  background: #dfdfdf;
+}
+/* line 929, ../input-css/style.scss */
+.wm-primary-nav ul li:active a {
+  background: #f4f4f4;
+}
+/* line 935, ../input-css/style.scss */
+.wm-primary-nav ul li.active a {
+  font-weight: bold;
+}
+/* line 938, ../input-css/style.scss */
+.wm-primary-nav ul li.active a em {
+  font-weight: normal;
+}
