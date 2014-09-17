@@ -5,5 +5,4 @@ If you need to reach me please email me at demory@edyt.com
 
 ~
 
-Darren
-Visual Designer
+Darren / Visual Designer / Edyt.com
