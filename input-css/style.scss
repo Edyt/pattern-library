@@ -53,7 +53,7 @@ $big-rad-borders: 20px;
 
 // type-patterns
 
-html, body, .panel-container {
+html, body, .panel-container, .single-panel {
 	height: 100%; // makes panels independently scrollable
 }
 
@@ -63,6 +63,7 @@ body {
   background: $background-shade;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -82,11 +83,9 @@ section {
 	
 	.single-panel {
 		width: 40%;
-		padding: 0;
-		overflow: scroll;
+		padding: 60px 0 0;
 		float: left;
 		margin-left: 10px;
-		height: 100%;
 		
 		.toolbar {
 			width: 40%;
@@ -99,8 +98,10 @@ section {
 	}
 	
 	.panel-content {
-		margin-top: 60px;
 		position: relative;
+		overflow: scroll;
+		height: 100%;
+		width: 100%;
 	}
 	
 
@@ -328,6 +329,15 @@ aside.callout-box.warning {
 				color: $primary-accent;
 			}
 		}
+		
+		li.disabled, li.disabled:hover, li.disabled:active {
+			
+			a {
+				color: $column-line-shade;
+				cursor: not-allowed;
+				background: $column-shade;
+			}
+		}
 	}
 }
 
@@ -395,6 +405,7 @@ aside.callout-box.warning {
 			color: $white-shade;
 		    display: none;
 		    font-size: 15px;
+			line-height: 19px;
 			z-index: 100;
 		    right: 85px;
 		    margin-top: -49px;
@@ -421,11 +432,20 @@ aside.callout-box.warning {
 				color: $white-shade;
 			}
 		}
+		
+		li.disabled, li.disabled:hover, li.disabled:active {
+			
+			a {
+				color: $column-line-shade;
+				cursor: not-allowed;
+				background: $white-shade;
+			}
+		}
 	}
 }
 
 
-// swimlane toggle nav 
+// swimlane/secondary content toggle nav 
 
 .swimlane-nav {
 	margin: 0;
@@ -485,18 +505,19 @@ aside.callout-box.warning {
 			color: $white-shade;
 		    display: none;
 		    font-size: 14px;
+			line-height: 16px;
 		    left: 50px;
 		    margin-top: -33px;
-		    padding: 1px 8px;
+		    padding: 4px 8px;
 		    position: absolute;
-		    width: auto;
+			width: auto;
 		    z-index: 100;
 		}
 		
 		li:hover {
 			
 			label {
-				display: block;
+				display: inline-block;
 			}
 			
 			a {
@@ -509,6 +530,16 @@ aside.callout-box.warning {
 				background: $dark-shade;
 				color: $column-shade;
 				border: 1px solid $dark-shade;
+			}
+		}
+		
+		li.disabled, li.disabled:hover, li.disabled:active {
+			
+			a {
+				color: $column-line-shade;
+				cursor: not-allowed;
+				border: none;
+				background: $background-shade;
 			}
 		}
 	}
@@ -542,6 +573,7 @@ aside.callout-box.warning {
 			margin: 0;
 			float: left;
 			margin-right: 3px;
+			position: relative;
 			
 			a {
 				border-radius: $rad-borders;
@@ -554,22 +586,53 @@ aside.callout-box.warning {
 				padding: 4px 8px;
 				border: 1px solid $white-shade;
 			}
-		}
+			
+			label {
+			    background: none repeat scroll 0 0 #057dbc;
+			    border-radius: 5px;
+			    color: white;
+			    display: none;
+			    font-size: 15px;
+			    left: -32%;
+			    line-height: 19px;
+			    margin: 0 auto;
+			    padding: 5px 9px;
+			    position: absolute;
+			    text-align: center;
+			    top: 44px;
+			    z-index: 100;
+			}
 		
+		}
+
 		li:hover {
+		
+			label {
+				display: block;
+			}
 			
 			a {
 				border: 1px solid $darker-column-shade;
 			}
 		}
 		
-		li:active {
+		li:active, li.active, li.active:hover {
 			
 			a {
 				background: $primary-accent;
 				border-color: $primary-accent;
 				color: $white-shade;
 				border-top: 1px solid rgba(0,0,0,0.3);
+			}
+		}
+		
+		li.disabled, li.disabled:hover, li.disabled:active {
+			
+			a {
+				color: $column-line-shade;
+				cursor: not-allowed;
+				border: none;
+				background: $white-shade;
 			}
 		}
 	}

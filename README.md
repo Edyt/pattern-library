@@ -9,6 +9,15 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### September 29th 2014
+Mostly worked in file: *nav.patterns.html*
+
+- Fixed bug for scrolling panels where the panel scrollbar went into toolbar background
+- Enabled disabled states for primary nav, toolbar buttons, secondary content toggles, and helper nav
+- support for tooltip multi-line support
+- added tooltips for top toolbar icons
+
+
 ### September 26th, 2014
 Mostly worked in file: *nav.patterns.html*
 
