@@ -9,6 +9,18 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 1st, 2014
+Mostly worked in file: *nav.patterns.html*
+
+- Created animation for dialog display (using jQuery + animate.css)
+- Created animation for tooltip fade (using jQuery + animate.css)
+- Restyled primary accent to a nicer blue
+- Restyled all border shades to be lighter
+- Restyled toolbar buttons for more elegant off, hover, and active states
+- Restyled swim lane and helper navigation for more elegant off, hover, and active states
+- Removed shadow from panel toolbar
+- Adjusted adjacent panel widths
+
 ### September 29th 2014
 Mostly worked in file: *nav.patterns.html*
 
