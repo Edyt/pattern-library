@@ -88,6 +88,7 @@ section {
 		width: 40%;
 		padding: 60px 0 0;
 		float: left;
+		position: relative;
 		margin-left: 1px;
 		
 		.toolbar {
@@ -97,7 +98,10 @@ section {
 	}
 	
 	.first-panel {
-		margin-left: 59px;
+		margin-left: 60px;
+	}
+	
+	.second-panel {
 	}
 	
 	.panel-content {
@@ -269,6 +273,7 @@ aside.callout-box.warning {
 	width: 60px;
 	border-top: 0;
 	border-bottom: 0;
+	border-right: 1px solid $column-line-shade;
 	
 	ul {
 		list-style: none;
@@ -320,11 +325,8 @@ aside.callout-box.warning {
 			}
 		}
 		
-		li:active, li.active:active {
-			
-			a {
-				background: $primary-accent-hover;
-			}
+		li:active + a , li.active:active + a {
+			background: $primary-accent-hover;
 		}
 		
 		li.active {
@@ -347,27 +349,74 @@ aside.callout-box.warning {
 
 
 // primary-nav on-hover flyout nav
-
-	.primary-nav ul li:hover .flyout-nav {
+	
+	.primary-nav ul li div.flyout-nav {
 	    background: $primary-accent;
-	    display: block;
+	    display: none;
 	    height: 100%;
 	    left: 58px;
 	    position: absolute;
 	    top: 0;
 	    width: 300px;
 	    z-index: 450;
-	}
-	
-	.flyout-nav {
-		display: none;
+		padding: 15px;
 		
-		h3 {}
+		h3 {
+			color: $white-shade;
+			border-bottom: 1px solid $white-shade;
+			padding-bottom: 12px;
+		}
 		
-		li {
-			a {}
+		li, li:active, li.active, li.active:active, li.active:hover {
+			margin-bottom: 0px;
+			position: relative;
+			
+			a {
+				text-align: left;
+				padding: 5px 15px;
+				margin: 0 -15px;
+				font-size: 16px;
+				background: $primary-accent;
+				color: $white-shade;
+			}
+			
+			em {
+			    display: block;
+			    left: auto;
+				color: $white-shade;
+				font-style: normal;
+				font-size: 14px;
+			    margin: 0;
+			    padding: 0;
+			    position: absolute;
+			    right: 0;
+			    top: 5px;
+			}
+		}
+		
+		li:hover a {
+			background: $primary-accent-hover;
+			
+		}
+		
+		
+		li.disabled, li.disabled:hover, li.disabled:active {
+			
+			a {
+				color: $disabled-icon-shade;
+				cursor: not-allowed;
+				background: $column-shade;
+			}
 		}
 	}
+	
+
+	.primary-nav ul li:hover .flyout-nav {
+	    display: block;
+	}
+	
+	
+
 
 .helper-nav {
 	margin: 0;
@@ -379,6 +428,7 @@ aside.callout-box.warning {
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
 	border-bottom-left-radius: 5px;
+	z-index: 25;
 	
 	ul {
 		list-style: none;
@@ -466,6 +516,18 @@ aside.callout-box.warning {
 	}
 }
 
+// helper-nav hide/show + transition
+ 
+.helper-nav {
+	transition: right 0.15s ease-out;
+	right: -60px;
+}
+
+.helper-nav:hover {
+	right: 0;
+};
+
+
 
 // swimlane/secondary content toggle nav 
 
@@ -478,7 +540,7 @@ aside.callout-box.warning {
 	margin-left: 10px;
 	position: relative;
 	width: 40px;
-	z-index: 50;
+	z-index: 25;
 	
 	ul {
 		list-style: none;
@@ -589,11 +651,13 @@ aside.callout-box.warning {
 			border: 0;
 			padding: 0;
 			position: relative;
+			margin-left: 1px;
 			
 			a {
 				text-decoration: none;
 				font-weight: normal;
 				color: $icon-shade;
+				background: $lighter-column-shade;
 				font-size: 20px;
 				display: block;
 				text-align: center;
@@ -618,15 +682,19 @@ aside.callout-box.warning {
 			}
 		}
 		
-		li:first-child a {
-			-webkit-border-bottom-left-radius: 5px;
-			-moz-border-radius-bottomleft: 5px;
-			border-bottom-left-radius: 5px;
-			-webkit-border-top-left-radius: 5px;
-			-moz-border-radius-topleft: 5px;
-			border-top-left-radius: 5px;
+		li:first-child {
+			margin-left: 0;
+				
+			a {
+				-webkit-border-bottom-left-radius: 5px;
+				-moz-border-radius-bottomleft: 5px;
+				border-bottom-left-radius: 5px;
+				-webkit-border-top-left-radius: 5px;
+				-moz-border-radius-topleft: 5px;
+				border-top-left-radius: 5px;
 
-		}
+			}
+		} 
 	
 		li:last-child a {
 			-webkit-border-bottom-right-radius: 5px;
@@ -644,7 +712,7 @@ aside.callout-box.warning {
 			}
 			
 			a {
-				background: $lighter-column-shade;
+				background: $white-shade;
 			}
 		}
 		
@@ -656,6 +724,8 @@ aside.callout-box.warning {
 				color: $primary-accent;
 			}
 		}
+		
+		
 		
 		li.disabled, li.disabled:hover, li.disabled:active {
 			
@@ -822,7 +892,6 @@ aside.callout-box.warning {
 		}
 		
 		.pa-snippet {
-			border-bottom: 1px solid $darker-column-shade;
 			margin-bottom: 25px;
 			overflow: auto;
 			
@@ -967,7 +1036,7 @@ form {
 
 .wm-primary-nav {
 	background: $white-shade;
-	margin: 0;
+	margin: 0 0 0 60px;
 	padding: 0;
 	top: 0;
 	position: fixed;
@@ -1057,7 +1126,7 @@ form {
 			}
 			
 			a {
-				background: $darker-column-shade;
+				background: $lighter-column-shade;
 			}
 		}
 		

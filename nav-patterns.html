@@ -11,13 +11,16 @@
 		<!-- Custom CSS animations -->
 		<link rel="stylesheet" href="output-css/animate.css" type="text/css">
 		
+		<!-- jquery UI -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		
 		<script type="text/javascript">
 			$(function() {
 				
 				$('.show-dialog').click(function(){
+					setTimeout( "jQuery('.dialog').fadeToggle();",100 );
 					$('.inside-dialog').removeClass('fadeOutUp').addClass('fadeInDown');
-					$('.dialog').toggle();
 					
 				});
 				
@@ -26,12 +29,26 @@
 					setTimeout( "jQuery('.dialog').fadeToggle();",100 );
 				});
 				
-				
+				// tooltip fades
 				$('ul li a').hover(function() {
 					$(this).next('label').removeClass('fadeOut').addClass('animated fadeIn');
 				}, function() {
 					$(this).next('label').removeClass('fadeIn').addClass('animated fadeOut');
 				});
+				
+				// nav list active clicks
+				$('ul li').click(function(){
+					$(this).toggleClass('active');
+				});
+				
+				// early look at showing/hiding secondary content
+				$('.swimlane-nav ul li').click(function() {
+						$('.second-panel .toolbar').toggle();
+				        $('.second-panel').toggle({
+				        	effect: 'fade'
+				        });
+						
+				});		
 			});
 		</script>
 		
@@ -70,24 +87,47 @@
 					<li class="nav-label">EP12345..</li>
 					<li><a href="#"><span class="dijitIcon tpIconAnalyze"></span></a>
 						<div class="flyout-nav">
-							<h3>Dossier</h3>
+							<h3>Analyze</h3>
 							
 							<ul>
-								<li><a href="#">Syncronize</a><label>Ctrl + S</label></li>
+								<li><a href="#">Syncronize</a><em>Ctrl + S</em></li>
 								<li><a href="#">Revisions</a></li>
 								<li><a href="#">Track Changes</a></li>
 								<li><a href="#">Import...</a></li>
 								<li><a href="#">Export...</a></li>
 								<li><a href="#">Share...</a></li>
-								<li><a href="#">Print...</a><label>Ctrl + P</label></li>
+								<li><a href="#">Print...</a><em>Ctrl + P</em></li>
 							</ul>
 						</div>
 					</li>
 					<li><a href="#"><span class="dijitIcon tpIconSearch"></span></a></li>
-					<li class="active"><a href="#"><span class="dijitIcon tpIconDocumentsStacked"></span></a></li>
+					<li class="active"><a href="#"><span class="dijitIcon tpIconDocumentsStacked"></span></a>
+						<div class="flyout-nav">
+							<h3>Dossiers</h3>
+							
+							<ul>
+								<li><a href="#">Syncronize</a><em>Ctrl + S</em></li>
+								<li><a href="#">Revisions</a></li>
+								<li><a href="#">Track Changes</a></li>
+								<li><a href="#">Import...</a></li>
+								<li><a href="#">Export...</a></li>
+								<li><a href="#">Share...</a></li>
+								<li><a href="#">Print...</a><em>Ctrl + P</em></li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="#"><span class="dijitIcon tpIconDocumentsFolder"></span></a></li>
 					<li class="disabled"><a href="#"><span class="dijitIcon tpIconCommunication"></span></a></li>
-					<li><a href="#"><span class="dijitIcon tpIconGear"></span></a></li>
+					<li><a href="#"><span class="dijitIcon tpIconGear"></span></a>
+						<div class="flyout-nav">
+							<h3>Settings</h3>
+							
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</section>
 		
@@ -205,7 +245,7 @@
 				</div>
 			</section>
 		
-			<section class="single-panel">
+			<section class="single-panel second-panel animated">
 				<div class="toolbar">
 					<h1>Communication</h1>
 				
