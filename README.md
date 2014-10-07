@@ -9,6 +9,12 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 7th, 2014
+Initial build of Work manager *work-manager-nav.html*
+
+- Early look at colored trays concept (work in progress)
+- Styled active state and fade transition for previewing dossiers
+
 ### October 1st, 2014
 Mostly worked in file: *nav.patterns.html*
 

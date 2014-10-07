@@ -7,28 +7,255 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="font-style.css">
 		<link rel="stylesheet" href="output-css/style.css" type="text/css">
+		
+		<!-- jquery UI -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+				// nav list active clicks
+				$('ul li').click(function(){
+					$(this).toggleClass('active');
+				});
+				
+				// intray active clicks
+				$('.intray-nav ul li a').click(function(){
+					$(this).toggleClass('active');
+					$('.intray-nav ul li').removeClass('active');
+				});
+				
+				// active clicks
+				$('.workspace-item').click(function(){
+					$('.workspace-item.active').toggleClass('active');
+					$(this).toggleClass('active');
+					
+					$('.workspace-preview').fadeToggle().fadeToggle();
+				});
+			});
+		</script>
 	</head>
-	<body>
+	<body class="work-manager">
 		<div class="panel-container">
 			<section class="primary-nav">
 				<ul>
 					<li><a href="#"><span class="dijitIcon tpIconHome"></span></a><label>Home</label></li>
-					<li><a href="#"><span class="dijitIcon tpIconGear"></span></a><label>Settings</label></li>
+					<li><a href="#"><span class="dijitIcon tpIconGear"></span></a><label>Settings</label>
+						<div class="flyout-nav">
+							<h3>Settings</h3>
+							
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</section>
 			
-			<section class="wm-primary-nav">
+			<section class="intray-nav">
 				<ul>
-					<li class="active"><a href="#">Intray <em>4</em> <strong>45</strong></a></li>
-					<li><a href="#">All Stock <strong>45</strong></a></li>
-					<li><a href="#">Search <strong>45</strong></a></li>
-					<li><a href="#">Examine <strong>45</strong></a></li>
-					<li><a href="#">Opposition <em>18</em> <strong>45</strong></a></li>
-					<li><a href="#">Limitation <strong>45</strong></a></li>
+					<li class="active"><a href="#">Intray <em>4</em> <strong>21</strong></a></li>
+					<li><a href="#"><span class="blue"></span>All Stock <strong>45</strong></a></li>
+					<li><a href="#"><span class="yellow"></span>Search <strong>3</strong></a></li>
+					<li><a href="#"><span class="dark-blue"></span>Examine <strong>18</strong></a></li>
+					<li><a href="#"><span class="purple"></span>Opposition <em>2</em> <strong>4</strong></a></li>
+					<li><a href="#"><span class="orange"></span>Limitation <strong>8</strong></a></li>
 					<li class="empty-row"><a href="#"></a></li>
-					<li><a href="#">2nd <strong>45</strong></a></li>
-					<li><a href="#">Chair <strong>45</strong></a></li>
+					<li><a href="#"><span class="teal"></span>2nd <strong>31</strong></a></li>
+					<li><a href="#"><span class="dark-purple"></span>Chair <strong>9</strong></a></li>
 				</ul>
+			</section>
+			
+			<section class="single-panel first-panel workspace-nav">
+				<div class="toolbar">
+					<form>
+						<input type="text" value="Filter by" />
+					</form>
+					
+					<ul>
+						<li class="text-button"><a href="#">Sort By <span class="dijitIcon tpIconDropdownArrow"></span></a></li>
+						<li><a href="#"><span class="dijitIcon tpIconFolder"></span></a><label>Folder</label></li>
+						<li><a href="#"><span class="dijitIcon tpIconPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
+						<li><a href="#"><span class="dijitIcon tpIconPhoto"></span></a><label>Figure</label></li>
+						<li><a href="#"><span class="dijitIcon tpIconRefresh"></span></a><label>Refresh</label></li>
+					</ul>
+				</div>
+			
+				<div class="panel-content">
+					<div class="browse-items">
+						
+						<div class="workspace-item">
+							<div class="highlight teal"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>
+						
+						<div class="workspace-item active">
+							<div class="highlight green"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>
+						
+						<div class="workspace-item">
+							<div class="highlight yellow"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>
+						<div class="workspace-item">
+							<div class="highlight green"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>
+					
+						<div class="workspace-item">
+							<div class="highlight teal"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>
+					
+						<div class="workspace-item">
+							<div class="highlight blue"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>
+					
+						<div class="workspace-item">
+							<div class="highlight purple"></div>
+						
+							<img src="images/patent-figure.gif" alt="Patent Figure" />
+						
+							<h3>Weather-tight Video Projector with Una...</h3>
+							<h4>Weyland Industries, Inc</h4>
+							<p>Limit. date: 29.06.2014</p>
+						
+							<ul>
+								<li class="rating"><a href="#">1</a></li>
+								<li class="limit"><a href="#">4</a></li>
+								<li><a class="blue" href="#">Accel</a></li>
+								<li><a class="teal" href="#">Abex</a></li>
+								<li><a class="blue" href="#">Divisional</a></li>
+							</ul>
+						</div>					
+					</div>
+				</div>
+			</section>
+		
+			<section class="single-panel second-panel animated fadein workspace-preview">
+				<div class="toolbar">
+					<h1>Weather-tight Video Projector with Unattached antenna</h1>		
+					
+					<h3><strong>EP 1234567890</strong> Limit. date: 29.06.2014</h3>
+					
+					<h4 class="toolbar-main-button"><a href="#" class="button primary">Examine</a></h4>
+								
+					<ul class="tabs">
+						<li><a href="#">View</a></li>
+						<li class="active"><a href="#">Info</a></li>
+						<li><a href="#">Notes</a></li>
+						<li><a href="#">Comments</a></li>
+					</ul>
+				</div>
+			
+				<div class="panel-content">
+					<div class="main-content">
+						<aside class="dark-box">
+							<span class="dijitIcon tpIconPhoto"></span>
+							<h4>1.1 Art54Detail</h4>
+							<p>These chunks of dirt engage the tubers thereby causing damage to them. Also the chunks of dirt with the harvested tubers store moisture which causes rotting of the tubers during storage.</p>
+						</aside>
+						
+						<h1>h1. Specification</h1>
+						<p>p. The present invention relates generally to potato harvest-ing devices and more specifically it relates to a vine cutter for cutting entangled vines of potato plants in front of a potato harvester so that the vines do not become entangled and accumulated upon a front portion of the potato harvester.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<h4>h4. Section 1.1</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
 			</section>
 		</div>
 	</body>
