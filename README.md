@@ -9,6 +9,14 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 8th, 2014
+Working in *work-manager-nav.html*
+
+- Adjusted padding on workmanager tray cards for better readability
+- Finalized focus style for keyboard hover
+- Adjusted green color after viewing it on alternate monitor (a little too neon)
+- Adjusted workmanager toolbar for headline readability
+
 ### October 7th, 2014
 Initial build of Work manager *work-manager-nav.html*
 

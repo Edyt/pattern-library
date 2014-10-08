@@ -19,20 +19,30 @@ a:link, a:visited, a:hover, a:active {
   color: #0e9bdd;
 }
 
-/* line 77, ../input-css/style.scss */
+/* line 78, ../input-css/style.scss */
+:focus {
+  outline: thin dotted #165f81;
+}
+
+/* line 83, ../input-css/style.scss */
+a:active {
+  outline: none;
+}
+
+/* line 90, ../input-css/style.scss */
 section {
   background: white;
   padding: 25px;
   margin-left: 65px;
 }
 
-/* line 83, ../input-css/style.scss */
+/* line 96, ../input-css/style.scss */
 .placeholder {
   margin: 0 auto;
   width: 85%;
 }
 
-/* line 88, ../input-css/style.scss */
+/* line 101, ../input-css/style.scss */
 .single-panel {
   width: 40%;
   padding: 60px 0 0;
@@ -40,17 +50,17 @@ section {
   position: relative;
   margin-left: 1px;
 }
-/* line 95, ../input-css/style.scss */
+/* line 108, ../input-css/style.scss */
 .single-panel .toolbar {
   width: 40%;
 }
 
-/* line 101, ../input-css/style.scss */
+/* line 114, ../input-css/style.scss */
 .first-panel {
   margin-left: 65px;
 }
 
-/* line 108, ../input-css/style.scss */
+/* line 121, ../input-css/style.scss */
 .panel-content {
   position: relative;
   overflow: scroll;
@@ -58,7 +68,7 @@ section {
   width: 100%;
 }
 
-/* line 116, ../input-css/style.scss */
+/* line 129, ../input-css/style.scss */
 .button {
   border-radius: 5px;
   font-size: 18px;
@@ -69,37 +79,37 @@ section {
   color: #7b7b7b;
   font-weight: normal;
 }
-/* line 126, ../input-css/style.scss */
+/* line 139, ../input-css/style.scss */
 .button .dijitIcon {
   margin-right: 4px;
 }
 
-/* line 131, ../input-css/style.scss */
+/* line 144, ../input-css/style.scss */
 .button.primary {
   background: #0e9bdd;
   color: white;
   border: none;
 }
 
-/* line 137, ../input-css/style.scss */
+/* line 150, ../input-css/style.scss */
 .button:hover, .button:active {
   background: #e8e8e8;
   color: #3a3a3a;
 }
 
-/* line 142, ../input-css/style.scss */
+/* line 155, ../input-css/style.scss */
 .button.primary:hover, .button.primary:active {
   background: #2292c7;
   color: white;
   border: none;
 }
 
-/* line 148, ../input-css/style.scss */
+/* line 161, ../input-css/style.scss */
 .button:active {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset;
 }
 
-/* line 152, ../input-css/style.scss */
+/* line 165, ../input-css/style.scss */
 h1 {
   color: #4f5152;
   font-size: 28px;
@@ -108,7 +118,7 @@ h1 {
   margin: 0 0 15px;
 }
 
-/* line 160, ../input-css/style.scss */
+/* line 173, ../input-css/style.scss */
 h2 {
   color: #5e5e5e;
   font-size: 24px;
@@ -117,7 +127,7 @@ h2 {
   margin: 0 0 30px;
 }
 
-/* line 168, ../input-css/style.scss */
+/* line 181, ../input-css/style.scss */
 h3 {
   color: #414344;
   font-size: 20px;
@@ -126,7 +136,7 @@ h3 {
   margin: 0 0 15px;
 }
 
-/* line 176, ../input-css/style.scss */
+/* line 189, ../input-css/style.scss */
 h4, h5, h6 {
   color: #5d5d5d;
   font-size: 18px;
@@ -135,22 +145,22 @@ h4, h5, h6 {
   margin: 0;
 }
 
-/* line 184, ../input-css/style.scss */
+/* line 197, ../input-css/style.scss */
 p, li {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 30px;
 }
 
-/* line 192, ../input-css/style.scss */
+/* line 205, ../input-css/style.scss */
 form {
   position: relative;
 }
-/* line 195, ../input-css/style.scss */
+/* line 208, ../input-css/style.scss */
 form p {
   overflow: auto;
 }
-/* line 199, ../input-css/style.scss */
+/* line 212, ../input-css/style.scss */
 form label {
   float: left;
   margin-right: 10px;
@@ -160,7 +170,7 @@ form label {
   margin-top: 3px;
   width: 120px;
 }
-/* line 209, ../input-css/style.scss */
+/* line 222, ../input-css/style.scss */
 form input[type="text"], form textarea, form select {
   border-radius: 5px;
   font: 100% "Source Sans Pro", sans-serif;
@@ -170,21 +180,21 @@ form input[type="text"], form textarea, form select {
   border: 1px solid #c2c2c2;
   width: 53%;
 }
-/* line 219, ../input-css/style.scss */
+/* line 232, ../input-css/style.scss */
 form select {
   padding: 0;
 }
-/* line 223, ../input-css/style.scss */
+/* line 236, ../input-css/style.scss */
 form input:focus, form textarea:focus {
   background: #fffcf4;
 }
-/* line 227, ../input-css/style.scss */
+/* line 240, ../input-css/style.scss */
 form .dijitIcon {
   font-size: 18px;
   margin-left: 8px;
-  color: #8ddb41;
+  color: #97d659;
 }
-/* line 233, ../input-css/style.scss */
+/* line 246, ../input-css/style.scss */
 form .error-label, form input[type="checkbox"] + label, form input[type="radio"] + label {
   float: none;
   margin: 0 0 0 130px;
@@ -193,20 +203,20 @@ form .error-label, form input[type="checkbox"] + label, form input[type="radio"]
   font-weight: bold;
   font-size: 15px;
 }
-/* line 243, ../input-css/style.scss */
+/* line 256, ../input-css/style.scss */
 form .error input, form .error .dijitIcon, form .error .error-label {
   color: #d93d33;
 }
-/* line 247, ../input-css/style.scss */
+/* line 260, ../input-css/style.scss */
 form .error input {
   border: 2px solid #d93d33;
 }
-/* line 252, ../input-css/style.scss */
+/* line 265, ../input-css/style.scss */
 form input[type="checkbox"], form input[type="radio"] {
   margin-left: 130px;
   display: inline;
 }
-/* line 256, ../input-css/style.scss */
+/* line 269, ../input-css/style.scss */
 form input[type="checkbox"] + label, form input[type="radio"] + label {
   width: auto;
   display: inline-block;
@@ -214,138 +224,142 @@ form input[type="checkbox"] + label, form input[type="radio"] + label {
   font-weight: normal;
   font-size: 16px;
 }
-/* line 264, ../input-css/style.scss */
+/* line 277, ../input-css/style.scss */
 form input[type="checkbox"] + label + .dijitIcon, form input[type="radio"] + label + .dijitIcon {
   position: absolute;
   left: 486px;
 }
-/* line 269, ../input-css/style.scss */
+/* line 282, ../input-css/style.scss */
 form .button {
   margin-left: 130px;
 }
-/* line 272, ../input-css/style.scss */
+/* line 285, ../input-css/style.scss */
 form .button .dijitIcon {
   color: white;
   margin-left: 0;
 }
 
-/* line 281, ../input-css/style.scss */
+/* line 294, ../input-css/style.scss */
 aside.dark-box, aside.callout-box {
   background-color: #f4f4f4;
   padding: 16px 20px 18px;
   margin-bottom: 20px;
 }
-/* line 286, ../input-css/style.scss */
+/* line 299, ../input-css/style.scss */
 aside.dark-box h1, aside.dark-box h2, aside.dark-box h3, aside.dark-box h4, aside.dark-box p, aside.dark-box ul, aside.dark-box ol, aside.callout-box h1, aside.callout-box h2, aside.callout-box h3, aside.callout-box h4, aside.callout-box p, aside.callout-box ul, aside.callout-box ol {
   margin-top: 0;
 }
-/* line 288, ../input-css/style.scss */
+/* line 301, ../input-css/style.scss */
 aside.dark-box .dijitIcon, aside.callout-box .dijitIcon {
   float: left;
   font-size: 48px;
   color: #7b7b7b;
   margin: 0 30px 30px 0;
 }
-/* line 295, ../input-css/style.scss */
+/* line 308, ../input-css/style.scss */
 aside.dark-box h4, aside.callout-box h4 {
   color: #737373;
   font-weight: normal;
   font-size: 16px;
 }
-/* line 301, ../input-css/style.scss */
+/* line 314, ../input-css/style.scss */
 aside.dark-box p, aside.callout-box p {
   margin-bottom: 15px;
 }
-/* line 305, ../input-css/style.scss */
+/* line 318, ../input-css/style.scss */
 aside.dark-box .button, aside.callout-box .button {
   color: white;
-  background: #8ddb41;
+  background: #97d659;
   float: right;
   margin: 0 0 30px 30px;
   border: none;
 }
 
-/* line 315, ../input-css/style.scss */
+/* line 328, ../input-css/style.scss */
 aside.callout-box {
   background-color: white;
   border: 1px solid #c2c2c2;
 }
 
-/* line 321, ../input-css/style.scss */
+/* line 334, ../input-css/style.scss */
 aside.callout-box.success {
   background-color: #d8f7b9;
   border: none;
   color: white;
 }
-/* line 326, ../input-css/style.scss */
+/* line 339, ../input-css/style.scss */
 aside.callout-box.success .dijitIcon {
-  color: #8ddb41;
+  color: #97d659;
 }
-/* line 330, ../input-css/style.scss */
+/* line 343, ../input-css/style.scss */
 aside.callout-box.success p {
   color: #3a3a3a;
 }
+/* line 347, ../input-css/style.scss */
+aside.callout-box.success .button {
+  color: #3a3a3a;
+}
 
-/* line 335, ../input-css/style.scss */
+/* line 352, ../input-css/style.scss */
 aside.callout-box.warning {
   background-color: #fae3d3;
   border: none;
   color: white;
 }
-/* line 340, ../input-css/style.scss */
+/* line 357, ../input-css/style.scss */
 aside.callout-box.warning .dijitIcon {
   color: #c75302;
 }
-/* line 344, ../input-css/style.scss */
+/* line 361, ../input-css/style.scss */
 aside.callout-box.warning p {
   color: #3a3a3a;
 }
-/* line 348, ../input-css/style.scss */
+/* line 365, ../input-css/style.scss */
 aside.callout-box.warning .button {
   background: #c75302;
 }
 
-/* line 356, ../input-css/style.scss */
+/* line 373, ../input-css/style.scss */
 .teal {
   background-color: #56d4c7;
 }
 
-/* line 360, ../input-css/style.scss */
+/* line 377, ../input-css/style.scss */
 .blue {
   background-color: #77cbeb;
 }
 
-/* line 364, ../input-css/style.scss */
+/* line 381, ../input-css/style.scss */
 .green {
-  background-color: #8ddb41;
+  background-color: #97d659;
 }
 
-/* line 368, ../input-css/style.scss */
+/* line 385, ../input-css/style.scss */
 .yellow {
   background-color: #ead232;
 }
 
-/* line 372, ../input-css/style.scss */
+/* line 389, ../input-css/style.scss */
 .dark-blue {
   background-color: #2481b6;
 }
 
-/* line 376, ../input-css/style.scss */
+/* line 393, ../input-css/style.scss */
 .purple {
   background-color: #a0c6ff;
 }
 
-/* line 380, ../input-css/style.scss */
+/* line 397, ../input-css/style.scss */
 .orange {
   background-color: #f18d5d;
 }
 
-/* line 384, ../input-css/style.scss */
+/* line 401, ../input-css/style.scss */
 .dark-purple {
   background-color: #a069df;
 }
 
-/* line 391, ../input-css/style.scss */
+/* line 408, ../input-css/style.scss */
 .primary-nav {
   background: #e8e8e8;
   margin: 0;
@@ -360,17 +374,17 @@ aside.callout-box.warning .button {
   border-bottom: 0;
   border-right: 1px solid #c2c2c2;
 }
-/* line 405, ../input-css/style.scss */
+/* line 422, ../input-css/style.scss */
 .primary-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 410, ../input-css/style.scss */
+/* line 427, ../input-css/style.scss */
 .primary-nav ul li {
   margin: 0;
 }
-/* line 413, ../input-css/style.scss */
+/* line 430, ../input-css/style.scss */
 .primary-nav ul li a {
   text-decoration: none;
   font-weight: normal;
@@ -380,7 +394,7 @@ aside.callout-box.warning .button {
   text-align: center;
   padding: 16px 10px;
 }
-/* line 424, ../input-css/style.scss */
+/* line 441, ../input-css/style.scss */
 .primary-nav ul li.nav-label {
   background: #c2c2c2;
   font-weight: bold;
@@ -389,7 +403,7 @@ aside.callout-box.warning .button {
   padding: 5px 0;
   color: #5d5d5d;
 }
-/* line 433, ../input-css/style.scss */
+/* line 450, ../input-css/style.scss */
 .primary-nav ul label {
   background: none repeat scroll 0 0 #0e9bdd;
   border-radius: 5px;
@@ -403,28 +417,28 @@ aside.callout-box.warning .button {
   position: absolute;
   width: auto;
 }
-/* line 449, ../input-css/style.scss */
+/* line 466, ../input-css/style.scss */
 .primary-nav ul li:hover a {
   background: #0e9bdd;
   color: white;
 }
-/* line 455, ../input-css/style.scss */
+/* line 472, ../input-css/style.scss */
 .primary-nav ul li:active + a, .primary-nav ul li.active:active + a {
   background: #2292c7;
 }
-/* line 460, ../input-css/style.scss */
+/* line 477, ../input-css/style.scss */
 .primary-nav ul li.active a {
   background: white;
   color: #0e9bdd;
 }
-/* line 468, ../input-css/style.scss */
+/* line 485, ../input-css/style.scss */
 .primary-nav ul li.disabled a, .primary-nav ul li.disabled:hover a, .primary-nav ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
   background: #e8e8e8;
 }
 
-/* line 480, ../input-css/style.scss */
+/* line 497, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav {
   background: #0e9bdd;
   display: none;
@@ -436,18 +450,18 @@ aside.callout-box.warning .button {
   z-index: 450;
   padding: 15px;
 }
-/* line 491, ../input-css/style.scss */
+/* line 508, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav h3 {
   color: white;
   border-bottom: 1px solid white;
   padding-bottom: 12px;
 }
-/* line 497, ../input-css/style.scss */
+/* line 514, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav li, .primary-nav ul li div.flyout-nav li:active, .primary-nav ul li div.flyout-nav li.active, .primary-nav ul li div.flyout-nav li.active:active, .primary-nav ul li div.flyout-nav li.active:hover {
   margin-bottom: 0px;
   position: relative;
 }
-/* line 501, ../input-css/style.scss */
+/* line 518, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav li a, .primary-nav ul li div.flyout-nav li:active a, .primary-nav ul li div.flyout-nav li.active a, .primary-nav ul li div.flyout-nav li.active:active a, .primary-nav ul li div.flyout-nav li.active:hover a {
   text-align: left;
   padding: 5px 15px;
@@ -456,7 +470,7 @@ aside.callout-box.warning .button {
   background: #0e9bdd;
   color: white;
 }
-/* line 510, ../input-css/style.scss */
+/* line 527, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav li em, .primary-nav ul li div.flyout-nav li:active em, .primary-nav ul li div.flyout-nav li.active em, .primary-nav ul li div.flyout-nav li.active:active em, .primary-nav ul li div.flyout-nav li.active:hover em {
   display: block;
   left: auto;
@@ -469,23 +483,23 @@ aside.callout-box.warning .button {
   right: 0;
   top: 5px;
 }
-/* line 524, ../input-css/style.scss */
+/* line 541, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav li:hover a {
   background: #2292c7;
 }
-/* line 532, ../input-css/style.scss */
+/* line 549, ../input-css/style.scss */
 .primary-nav ul li div.flyout-nav li.disabled a, .primary-nav ul li div.flyout-nav li.disabled:hover a, .primary-nav ul li div.flyout-nav li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
   background: #e8e8e8;
 }
 
-/* line 541, ../input-css/style.scss */
+/* line 558, ../input-css/style.scss */
 .primary-nav ul li:hover .flyout-nav {
   display: block;
 }
 
-/* line 548, ../input-css/style.scss */
+/* line 565, ../input-css/style.scss */
 .helper-nav {
   margin: 0;
   padding: 0;
@@ -498,17 +512,17 @@ aside.callout-box.warning .button {
   border-bottom-left-radius: 5px;
   z-index: 25;
 }
-/* line 560, ../input-css/style.scss */
+/* line 577, ../input-css/style.scss */
 .helper-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 565, ../input-css/style.scss */
+/* line 582, ../input-css/style.scss */
 .helper-nav ul li {
   margin: 0;
 }
-/* line 568, ../input-css/style.scss */
+/* line 585, ../input-css/style.scss */
 .helper-nav ul li a {
   text-decoration: none;
   background: white;
@@ -520,18 +534,18 @@ aside.callout-box.warning .button {
   padding: 16px 10px;
   width: 60px;
 }
-/* line 581, ../input-css/style.scss */
+/* line 598, ../input-css/style.scss */
 .helper-nav ul li:first-child a {
   padding-top: 18px;
 }
-/* line 585, ../input-css/style.scss */
+/* line 602, ../input-css/style.scss */
 .helper-nav ul li:last-child a {
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-bottom-left-radius: 5px;
   padding-bottom: 18px;
 }
-/* line 592, ../input-css/style.scss */
+/* line 609, ../input-css/style.scss */
 .helper-nav ul li.nav-label {
   background: #c2c2c2;
   font-weight: bold;
@@ -540,7 +554,7 @@ aside.callout-box.warning .button {
   padding: 5px 0;
   color: #5d5d5d;
 }
-/* line 601, ../input-css/style.scss */
+/* line 618, ../input-css/style.scss */
 .helper-nav ul label {
   background: none repeat scroll 0 0 #fff7c0;
   border-radius: 5px;
@@ -555,27 +569,27 @@ aside.callout-box.warning .button {
   position: absolute;
   width: auto;
 }
-/* line 618, ../input-css/style.scss */
+/* line 635, ../input-css/style.scss */
 .helper-nav ul li:hover label {
   display: none;
 }
-/* line 622, ../input-css/style.scss */
+/* line 639, ../input-css/style.scss */
 .helper-nav ul li:hover a {
   background: #f4f4f4;
 }
-/* line 629, ../input-css/style.scss */
+/* line 646, ../input-css/style.scss */
 .helper-nav ul li:active a, .helper-nav ul li.active a {
   background: #0e9bdd;
   color: white;
 }
-/* line 637, ../input-css/style.scss */
+/* line 654, ../input-css/style.scss */
 .helper-nav ul li.disabled a, .helper-nav ul li.disabled:hover a, .helper-nav ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
   background: white;
 }
 
-/* line 650, ../input-css/style.scss */
+/* line 667, ../input-css/style.scss */
 .swimlane-nav {
   margin: 0;
   padding: 0;
@@ -587,17 +601,17 @@ aside.callout-box.warning .button {
   right: 85px;
   z-index: 25;
 }
-/* line 661, ../input-css/style.scss */
+/* line 678, ../input-css/style.scss */
 .swimlane-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 666, ../input-css/style.scss */
+/* line 683, ../input-css/style.scss */
 .swimlane-nav ul li {
   margin: 0 0 5px;
 }
-/* line 669, ../input-css/style.scss */
+/* line 686, ../input-css/style.scss */
 .swimlane-nav ul li a {
   border-radius: 5px;
   text-decoration: none;
@@ -610,7 +624,7 @@ aside.callout-box.warning .button {
   width: 40px;
   border: 1px solid #e9e9e9;
 }
-/* line 683, ../input-css/style.scss */
+/* line 700, ../input-css/style.scss */
 .swimlane-nav ul li.nav-label {
   background: #c2c2c2;
   font-weight: bold;
@@ -619,7 +633,7 @@ aside.callout-box.warning .button {
   padding: 5px 0;
   color: #5d5d5d;
 }
-/* line 692, ../input-css/style.scss */
+/* line 709, ../input-css/style.scss */
 .swimlane-nav ul label {
   background: none repeat scroll 0 0 #fff7c0;
   border-radius: 5px;
@@ -634,20 +648,20 @@ aside.callout-box.warning .button {
   width: auto;
   z-index: 100;
 }
-/* line 709, ../input-css/style.scss */
+/* line 726, ../input-css/style.scss */
 .swimlane-nav ul li:hover label {
   display: inline-block;
 }
-/* line 713, ../input-css/style.scss */
+/* line 730, ../input-css/style.scss */
 .swimlane-nav ul li:hover a {
   background: #f4f4f4;
 }
-/* line 719, ../input-css/style.scss */
+/* line 736, ../input-css/style.scss */
 .swimlane-nav ul li:active a, .swimlane-nav ul li.active a, .swimlane-nav ul li.active:hover a {
   background: white;
   color: #0e9bdd;
 }
-/* line 727, ../input-css/style.scss */
+/* line 744, ../input-css/style.scss */
 .swimlane-nav ul li.disabled a, .swimlane-nav ul li.disabled:hover a, .swimlane-nav ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
@@ -655,7 +669,7 @@ aside.callout-box.warning .button {
   background: #e9e9e9;
 }
 
-/* line 739, ../input-css/style.scss */
+/* line 756, ../input-css/style.scss */
 .toolbar {
   border-bottom: 1px solid #e0e0e0;
   background: white;
@@ -665,13 +679,13 @@ aside.callout-box.warning .button {
   z-index: 10;
   height: 60px;
 }
-/* line 748, ../input-css/style.scss */
+/* line 765, ../input-css/style.scss */
 .toolbar h1 {
   float: left;
   padding: 10px 10px 10px 25px;
   margin: 0;
 }
-/* line 754, ../input-css/style.scss */
+/* line 771, ../input-css/style.scss */
 .toolbar ul {
   float: right;
   list-style: none outside none;
@@ -682,7 +696,7 @@ aside.callout-box.warning .button {
   background: #e9e9e9;
   border: 1px solid #e0e0e0;
 }
-/* line 764, ../input-css/style.scss */
+/* line 781, ../input-css/style.scss */
 .toolbar ul li {
   margin: 0;
   float: left;
@@ -691,7 +705,7 @@ aside.callout-box.warning .button {
   position: relative;
   margin-left: 1px;
 }
-/* line 772, ../input-css/style.scss */
+/* line 789, ../input-css/style.scss */
 .toolbar ul li a {
   text-decoration: none;
   font-weight: normal;
@@ -703,7 +717,7 @@ aside.callout-box.warning .button {
   width: 37px;
   padding: 6px 4px 4px;
 }
-/* line 784, ../input-css/style.scss */
+/* line 801, ../input-css/style.scss */
 .toolbar ul li label {
   background: none repeat scroll 0 0 #fff7c0;
   border-radius: 5px;
@@ -719,11 +733,11 @@ aside.callout-box.warning .button {
   top: 44px;
   z-index: 100;
 }
-/* line 801, ../input-css/style.scss */
+/* line 818, ../input-css/style.scss */
 .toolbar ul li:first-child {
   margin-left: 0;
 }
-/* line 804, ../input-css/style.scss */
+/* line 821, ../input-css/style.scss */
 .toolbar ul li:first-child a {
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
@@ -732,7 +746,7 @@ aside.callout-box.warning .button {
   -moz-border-radius-topleft: 5px;
   border-top-left-radius: 5px;
 }
-/* line 815, ../input-css/style.scss */
+/* line 832, ../input-css/style.scss */
 .toolbar ul li:last-child a {
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-radius-bottomright: 5px;
@@ -741,58 +755,58 @@ aside.callout-box.warning .button {
   -moz-border-radius-topright: 5px;
   border-top-right-radius: 5px;
 }
-/* line 826, ../input-css/style.scss */
+/* line 843, ../input-css/style.scss */
 .toolbar ul li:hover label {
   display: block;
 }
-/* line 830, ../input-css/style.scss */
+/* line 847, ../input-css/style.scss */
 .toolbar ul li:hover a {
   background: white;
 }
-/* line 837, ../input-css/style.scss */
+/* line 854, ../input-css/style.scss */
 .toolbar ul li:active a, .toolbar ul li.active a, .toolbar ul li.active:hover a {
   background: white;
   border-color: #0e9bdd;
   color: #0e9bdd;
 }
-/* line 848, ../input-css/style.scss */
+/* line 865, ../input-css/style.scss */
 .toolbar ul li.disabled a, .toolbar ul li.disabled:hover a, .toolbar ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
   border: none;
 }
-/* line 856, ../input-css/style.scss */
+/* line 873, ../input-css/style.scss */
 .toolbar ul li.text-button a {
   font-size: 16px;
   padding: 6px 8px 4px;
   width: auto;
 }
-/* line 864, ../input-css/style.scss */
+/* line 881, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button {
   float: right;
   margin-top: 16px;
   margin-right: 25px;
 }
-/* line 869, ../input-css/style.scss */
+/* line 886, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button .button {
   padding: 8px 35px;
 }
-/* line 873, ../input-css/style.scss */
+/* line 890, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button .dijitIcon {
   margin-right: 0;
 }
-/* line 878, ../input-css/style.scss */
+/* line 895, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button + ul, .toolbar form + ul {
   margin-right: 10px;
 }
-/* line 882, ../input-css/style.scss */
+/* line 899, ../input-css/style.scss */
 .toolbar form input[type="text"] {
   float: right;
   width: 175px;
   margin: 12px 25px 0 0;
 }
 
-/* line 891, ../input-css/style.scss */
+/* line 908, ../input-css/style.scss */
 .dialog {
   display: none;
   background: rgba(0, 0, 0, 0.7);
@@ -803,7 +817,7 @@ aside.callout-box.warning .button {
   margin: 0;
   padding: 0;
 }
-/* line 901, ../input-css/style.scss */
+/* line 918, ../input-css/style.scss */
 .dialog .inside-dialog {
   width: 80%;
   border: 3px solid #e0e0e0;
@@ -816,7 +830,7 @@ aside.callout-box.warning .button {
   background: white;
 }
 
-/* line 917, ../input-css/style.scss */
+/* line 934, ../input-css/style.scss */
 .highlights-content, .annotations-content {
   padding: 10px 5px 0;
   float: left;
@@ -824,33 +838,33 @@ aside.callout-box.warning .button {
   width: 100px;
   background: #f4f4f4;
 }
-/* line 924, ../input-css/style.scss */
+/* line 941, ../input-css/style.scss */
 .highlights-content h5, .annotations-content h5 {
   margin: 0 0 12px;
   text-align: center;
   font-size: 16px;
 }
-/* line 929, ../input-css/style.scss */
+/* line 946, ../input-css/style.scss */
 .highlights-content h5 a, .annotations-content h5 a {
   color: #5d5d5d;
 }
 
-/* line 937, ../input-css/style.scss */
+/* line 954, ../input-css/style.scss */
 .highlights-content ul {
   margin: 0;
   padding: 0;
 }
-/* line 939, ../input-css/style.scss */
+/* line 956, ../input-css/style.scss */
 .highlights-content li {
   float: left;
   margin: 0 6px 0 0;
   border-radius: 5px;
 }
-/* line 945, ../input-css/style.scss */
+/* line 962, ../input-css/style.scss */
 .highlights-content li:last-child {
   margin-right: 0;
 }
-/* line 947, ../input-css/style.scss */
+/* line 964, ../input-css/style.scss */
 .highlights-content a, .highlights-content .highlight {
   color: white;
   width: 25px;
@@ -859,34 +873,34 @@ aside.callout-box.warning .button {
   border-radius: 5px;
   text-align: center;
 }
-/* line 955, ../input-css/style.scss */
+/* line 972, ../input-css/style.scss */
 .highlights-content a span, .highlights-content .highlight span {
   font-size: 15px;
   position: relative;
   bottom: 3px;
 }
-/* line 962, ../input-css/style.scss */
+/* line 979, ../input-css/style.scss */
 .highlights-content .highlight {
   position: absolute;
   top: 200px;
   height: 300px;
 }
 
-/* line 969, ../input-css/style.scss */
+/* line 986, ../input-css/style.scss */
 .annotations-content {
   border-left: 1px solid #e0e0e0;
 }
-/* line 972, ../input-css/style.scss */
+/* line 989, ../input-css/style.scss */
 .annotations-content .annotation {
   color: #7b7b7b;
 }
 
-/* line 977, ../input-css/style.scss */
+/* line 994, ../input-css/style.scss */
 .main-content {
   margin: 25px 25px 0 225px;
   padding-top: 1px;
 }
-/* line 981, ../input-css/style.scss */
+/* line 998, ../input-css/style.scss */
 .main-content .tpIconEllipses {
   font-size: 24px;
   color: #5d5d5d;
@@ -894,77 +908,77 @@ aside.callout-box.warning .button {
   top: 5px;
 }
 
-/* line 992, ../input-css/style.scss */
+/* line 1009, ../input-css/style.scss */
 .prior-art {
   width: 85%;
 }
-/* line 995, ../input-css/style.scss */
+/* line 1012, ../input-css/style.scss */
 .prior-art .toolbar {
   width: 85%;
 }
-/* line 999, ../input-css/style.scss */
+/* line 1016, ../input-css/style.scss */
 .prior-art .main-content {
   margin-left: 25px;
   width: 68%;
   float: left;
   padding-top: 25px;
 }
-/* line 1005, ../input-css/style.scss */
+/* line 1022, ../input-css/style.scss */
 .prior-art .main-content img {
   float: left;
   width: 225px;
   margin: 0 25px 25px 0;
   border: 1px solid #e9e9e9;
 }
-/* line 1012, ../input-css/style.scss */
+/* line 1029, ../input-css/style.scss */
 .prior-art .main-content .pa-snippet {
   margin-bottom: 25px;
   overflow: auto;
 }
-/* line 1016, ../input-css/style.scss */
+/* line 1033, ../input-css/style.scss */
 .prior-art .main-content .pa-snippet .tpIconSuccessCircle {
-  color: #8ddb41;
+  color: #97d659;
 }
-/* line 1022, ../input-css/style.scss */
+/* line 1039, ../input-css/style.scss */
 .prior-art .main-content h4 {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 1027, ../input-css/style.scss */
+/* line 1044, ../input-css/style.scss */
 .prior-art .main-content p {
   margin-top: 5px;
 }
-/* line 1032, ../input-css/style.scss */
+/* line 1049, ../input-css/style.scss */
 .prior-art h2 {
   padding: 0;
   margin: 0 0 12px;
 }
-/* line 1036, ../input-css/style.scss */
+/* line 1053, ../input-css/style.scss */
 .prior-art h2 .dijitIcon {
-  color: #8ddb41;
+  color: #97d659;
 }
-/* line 1041, ../input-css/style.scss */
+/* line 1058, ../input-css/style.scss */
 .prior-art .highlights-content {
   float: left;
   width: 8%;
 }
-/* line 1047, ../input-css/style.scss */
+/* line 1064, ../input-css/style.scss */
 .prior-art .annotations-content {
   float: left;
   width: 18%;
 }
-/* line 1051, ../input-css/style.scss */
+/* line 1068, ../input-css/style.scss */
 .prior-art .annotations-content .random-icon {
   padding: 0 10px 10px;
 }
-/* line 1054, ../input-css/style.scss */
+/* line 1071, ../input-css/style.scss */
 .prior-art .annotations-content .random-icon p {
   font-size: 16px;
   line-height: 24px;
   margin-top: 0;
 }
 
-/* line 1071, ../input-css/style.scss */
+/* line 1088, ../input-css/style.scss */
 .work-manager .intray-nav {
   background: white;
   margin: 0 0 0 65px;
@@ -978,17 +992,17 @@ aside.callout-box.warning .button {
   border-top: 0;
   border-bottom: 0;
 }
-/* line 1084, ../input-css/style.scss */
+/* line 1101, ../input-css/style.scss */
 .work-manager .intray-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 1089, ../input-css/style.scss */
+/* line 1106, ../input-css/style.scss */
 .work-manager .intray-nav ul li {
   margin: 0;
 }
-/* line 1092, ../input-css/style.scss */
+/* line 1109, ../input-css/style.scss */
 .work-manager .intray-nav ul li a {
   text-decoration: none;
   font-weight: normal;
@@ -1000,23 +1014,23 @@ aside.callout-box.warning .button {
   padding: 8px 14px;
   position: relative;
 }
-/* line 1103, ../input-css/style.scss */
+/* line 1120, ../input-css/style.scss */
 .work-manager .intray-nav ul li a em {
   font-style: normal;
   display: inline-block;
-  background: #8ddb41;
+  background: #97d659;
   padding: 0px 10px;
   margin-left: 6px;
   border-radius: 20px;
 }
-/* line 1112, ../input-css/style.scss */
+/* line 1129, ../input-css/style.scss */
 .work-manager .intray-nav ul li a strong {
   font-weight: normal;
   position: absolute;
   text-align: right;
   right: 10px;
 }
-/* line 1120, ../input-css/style.scss */
+/* line 1137, ../input-css/style.scss */
 .work-manager .intray-nav ul li a span {
   display: block;
   float: left;
@@ -1024,13 +1038,13 @@ aside.callout-box.warning .button {
   margin-right: 9px;
   width: 9px;
 }
-/* line 1131, ../input-css/style.scss */
+/* line 1148, ../input-css/style.scss */
 .work-manager .intray-nav ul li.empty-row a, .work-manager .intray-nav ul li.empty-row:hover a, .work-manager .intray-nav ul li.empty-row:active a {
   background: white;
   cursor: default;
   height: 40px;
 }
-/* line 1139, ../input-css/style.scss */
+/* line 1156, ../input-css/style.scss */
 .work-manager .intray-nav ul li.nav-label {
   background: #c2c2c2;
   font-weight: bold;
@@ -1039,7 +1053,7 @@ aside.callout-box.warning .button {
   padding: 5px 0;
   color: #5d5d5d;
 }
-/* line 1148, ../input-css/style.scss */
+/* line 1165, ../input-css/style.scss */
 .work-manager .intray-nav ul label {
   background: none repeat scroll 0 0 #0e9bdd;
   border-radius: 5px;
@@ -1053,51 +1067,51 @@ aside.callout-box.warning .button {
   position: absolute;
   width: auto;
 }
-/* line 1164, ../input-css/style.scss */
+/* line 1181, ../input-css/style.scss */
 .work-manager .intray-nav ul li:hover label {
   display: block;
 }
-/* line 1168, ../input-css/style.scss */
+/* line 1185, ../input-css/style.scss */
 .work-manager .intray-nav ul li:hover a {
   background: #f4f4f4;
 }
-/* line 1175, ../input-css/style.scss */
+/* line 1192, ../input-css/style.scss */
 .work-manager .intray-nav ul li:active a {
   background: #f4f4f4;
 }
-/* line 1181, ../input-css/style.scss */
+/* line 1198, ../input-css/style.scss */
 .work-manager .intray-nav ul li.active a {
   font-weight: bold;
 }
-/* line 1184, ../input-css/style.scss */
+/* line 1201, ../input-css/style.scss */
 .work-manager .intray-nav ul li.active a em {
   font-weight: normal;
 }
-/* line 1192, ../input-css/style.scss */
+/* line 1209, ../input-css/style.scss */
 .work-manager .first-panel {
   margin-left: 290px;
 }
-/* line 1196, ../input-css/style.scss */
+/* line 1213, ../input-css/style.scss */
 .work-manager .first-panel, .work-manager .second-panel, .work-manager .toolbar {
   width: 35%;
 }
-/* line 1199, ../input-css/style.scss */
+/* line 1216, ../input-css/style.scss */
 .work-manager .browse-items {
   background: #f4f4f4;
-  padding: 5px;
+  padding: 25px;
 }
-/* line 1203, ../input-css/style.scss */
+/* line 1220, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px 10px 10px 20px;
   background: white;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-/* line 1213, ../input-css/style.scss */
+/* line 1230, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item .highlight {
   width: 10px;
   position: absolute;
@@ -1106,79 +1120,82 @@ aside.callout-box.warning .button {
   height: 100%;
   display: block;
 }
-/* line 1222, ../input-css/style.scss */
+/* line 1239, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item img {
   float: right;
   width: 25%;
 }
-/* line 1227, ../input-css/style.scss */
+/* line 1244, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul {
   overflow: auto;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 1233, ../input-css/style.scss */
+/* line 1250, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul li {
   float: left;
   margin: 0 0 0 5px;
   height: 30px;
 }
-/* line 1238, ../input-css/style.scss */
+/* line 1255, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul li a {
   border-radius: 20px;
   padding: 3px 8px;
   color: #3a3a3a;
   font-size: 16px;
 }
-/* line 1246, ../input-css/style.scss */
+/* line 1263, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul li:first-child {
   margin-left: 0;
 }
-/* line 1250, ../input-css/style.scss */
+/* line 1267, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul li.rating a {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   background: #e0e0e0;
 }
-/* line 1256, ../input-css/style.scss */
+/* line 1273, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul li.limit {
   margin-left: 0;
   margin-right: 10px;
 }
-/* line 1260, ../input-css/style.scss */
+/* line 1277, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item ul li.limit a {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  background: #8ddb41;
+  background: #97d659;
 }
-/* line 1269, ../input-css/style.scss */
+/* line 1286, ../input-css/style.scss */
 .work-manager .browse-items .workspace-item.active {
   border-color: #0e9bdd;
   background: #daf0fa;
 }
-/* line 1277, ../input-css/style.scss */
+/* line 1294, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar {
-  height: auto;
+  height: 207px;
 }
-/* line 1281, ../input-css/style.scss */
+/* line 1297, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar h3 {
   padding: 10px 10px 10px 25px;
   clear: both;
 }
-/* line 1286, ../input-css/style.scss */
+/* line 1302, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar ul.tabs {
   float: left;
-  margin-left: 25px;
+  left: 25px;
+  bottom: 0;
+  position: absolute;
+  right: auto;
   background: white;
   border-radius: none;
   border: none;
 }
-/* line 1293, ../input-css/style.scss */
+/* line 1312, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar ul.tabs li {
   margin-left: 5px;
 }
-/* line 1296, ../input-css/style.scss */
+/* line 1315, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar ul.tabs li a {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -1190,27 +1207,29 @@ aside.callout-box.warning .button {
   font-size: 18px;
   padding: 6px 10px;
 }
-/* line 1310, ../input-css/style.scss */
+/* line 1329, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar ul.tabs li.active a {
   height: 39px;
   padding-bottom: 7px;
   position: relative;
   top: 1px;
 }
-/* line 1318, ../input-css/style.scss */
+/* line 1337, ../input-css/style.scss */
 .work-manager .workspace-preview .toolbar ul.tabs li:first-child {
   margin-left: 0;
 }
-/* line 1323, ../input-css/style.scss */
-.work-manager .workspace-preview .toolbar h4.toolbar-main-button .button {
-  position: relative;
-  bottom: 5px;
+/* line 1342, ../input-css/style.scss */
+.work-manager .workspace-preview .toolbar h4.toolbar-main-button {
+  margin: 0;
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
 }
-/* line 1329, ../input-css/style.scss */
+/* line 1350, ../input-css/style.scss */
 .work-manager .workspace-preview .main-content {
   margin: 25px;
 }
-/* line 1333, ../input-css/style.scss */
+/* line 1354, ../input-css/style.scss */
 .work-manager .workspace-preview .panel-content {
   position: relative;
   top: 145px;

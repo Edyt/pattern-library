@@ -36,8 +36,8 @@ $primary-accent: #0E9BDD;
 $primary-accent-hover: #2292c7;
 $primary-accent-pastel: #daf0fa;
 
-$success: #8ddb41;
-$success-hover: #1f5041;
+$success: #97d659;
+$success-hover: #82b94b;
 $success-pastel: #d8f7b9;
 
 $error: #D93D33;
@@ -73,6 +73,19 @@ body {
 a:link, a:visited, a:hover, a:active {
 	color: $primary-accent;
 }
+
+// shows focus on keyboard tab
+:focus {
+   outline: thin dotted #165f81;
+}
+
+// hides focus on mouse click
+a:active {
+	outline: none;
+}
+
+
+
 
 section {
 	background: $white-shade;
@@ -330,6 +343,10 @@ aside.callout-box.success {
 	p {
 		color: $body-shade;
 	}
+	
+	.button {
+		color: $body-shade;
+	}
 }
 
 aside.callout-box.warning {
@@ -362,7 +379,7 @@ aside.callout-box.warning {
 	}
 
 	.green {
-		background-color: #8ddb41;
+		background-color: #97d659;
 	}
 	
 	.yellow {
@@ -1198,12 +1215,12 @@ aside.callout-box.warning {
 	
 	.browse-items {
 		background: $lighter-column-shade;
-		padding: 5px;
+		padding: 25px;
 		
 		.workspace-item {
 			border: 1px solid $column-line-shade;
 			border-radius: $rad-borders;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			padding: 10px 10px 10px 20px;
 			background: $white-shade;
 			cursor: pointer;
@@ -1275,8 +1292,7 @@ aside.callout-box.warning {
 	.workspace-preview {
 		
 		.toolbar {
-			
-			height: auto;
+			height: 207px;
 			
 			h3 {
 				padding: 10px 10px 10px 25px;
@@ -1285,7 +1301,10 @@ aside.callout-box.warning {
 			
 			ul.tabs {
 				float: left;
-				margin-left: 25px;
+				left: 25px;
+				bottom: 0;
+				position: absolute;
+				right: auto;
 				background: $white-shade;
 				border-radius: none;
 				border: none;
@@ -1320,9 +1339,11 @@ aside.callout-box.warning {
 				}
 			}
 			
-			h4.toolbar-main-button .button {
-				position: relative;
-				bottom: 5px;
+			h4.toolbar-main-button {
+				margin: 0;
+				position: absolute;
+				right: 25px;
+				bottom: 15px;
 			}
 		}
 		
