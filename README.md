@@ -9,6 +9,11 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 13, 2014
+Initial commit of Communications Screen
+
+- Includes various Work Manager tweaks
+
 ### October 8th, 2014
 Working in *work-manager-nav.html*
 

@@ -105,7 +105,7 @@ section {
 		position: relative;
 		margin-left: 1px;
 		
-		.toolbar {
+		.toolbar, .actions-toolbar {
 			width: 40%;
 			
 		}
@@ -138,6 +138,7 @@ section {
 	
 		.dijitIcon {
 			margin-right: 4px;
+			color: $icon-shade;
 		}
 	}
 
@@ -145,6 +146,10 @@ section {
 		background: $primary-accent;
 		color: $white-shade;
 		border: none;
+		
+		.dijitIcon {
+			color: $white-shade;
+		}
 	}
 	
 	.button:hover, .button:active {
@@ -283,7 +288,6 @@ form {
 		margin-left: 130px;
 		
 		.dijitIcon {
-			color: $white-shade;
 			margin-left: 0;
 		}
 	}
@@ -753,7 +757,7 @@ aside.callout-box.warning {
 
 // panel toolbars
 
-.toolbar {
+.toolbar, .content-toolbar, .actions-toolbar {
 	border-bottom: 1px solid $column-line-shade;
 	background: $white-shade;
 	position: fixed;
@@ -900,6 +904,62 @@ aside.callout-box.warning {
 		float: right;
 		width: 175px;
 		margin: 12px 25px 0 0;
+	}
+	
+	ul.tabs {
+		float: left;
+		left: 25px;
+		bottom: 0;
+		position: absolute;
+		right: auto;
+		background: $white-shade;
+		border-radius: none;
+		border: none;
+		
+		li {
+			margin-left: 5px;
+			
+			a {
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
+				border-top-left-radius: $rad-borders;
+				border-top-right-radius: $rad-borders;
+				border: 1px solid $column-line-shade;
+				border-bottom: 0;
+				width: auto;
+				font-size: 18px;
+				padding: 6px 10px;
+			}
+		}
+		
+		li.active {
+			a {
+			    height: 39px;
+			    padding-bottom: 7px;
+			    position: relative;
+			    top: 1px;
+			}
+		}
+		
+		li:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+
+// toolbar for in-page content editing: communications, etc
+
+.content-toolbar  {
+	position: static;
+	
+	ul {
+		float: left;
+		margin-left: 25px;
+		
+		li a {
+			font-size: 24px;
+		}
 	}
 }
 
@@ -1221,7 +1281,7 @@ aside.callout-box.warning {
 			border: 1px solid $column-line-shade;
 			border-radius: $rad-borders;
 			margin-bottom: 15px;
-			padding: 10px 10px 10px 20px;
+			padding: 15px 15px 15px 25px;
 			background: $white-shade;
 			cursor: pointer;
 			position: relative;
@@ -1290,6 +1350,7 @@ aside.callout-box.warning {
 	}
 	
 	.workspace-preview {
+		padding-top: 207px;
 		
 		.toolbar {
 			height: 207px;
@@ -1297,46 +1358,6 @@ aside.callout-box.warning {
 			h3 {
 				padding: 10px 10px 10px 25px;
 				clear: both;
-			}
-			
-			ul.tabs {
-				float: left;
-				left: 25px;
-				bottom: 0;
-				position: absolute;
-				right: auto;
-				background: $white-shade;
-				border-radius: none;
-				border: none;
-				
-				li {
-					margin-left: 5px;
-					
-					a {
-						border-bottom-left-radius: 0px;
-						border-bottom-right-radius: 0px;
-						border-top-left-radius: $rad-borders;
-						border-top-right-radius: $rad-borders;
-						border: 1px solid $column-line-shade;
-						border-bottom: 0;
-						width: auto;
-						font-size: 18px;
-						padding: 6px 10px;
-					}
-				}
-				
-				li.active {
-					a {
-					    height: 39px;
-					    padding-bottom: 7px;
-					    position: relative;
-					    top: 1px;
-					}
-				}
-				
-				li:first-child {
-					margin-left: 0;
-				}
 			}
 			
 			h4.toolbar-main-button {
@@ -1352,8 +1373,241 @@ aside.callout-box.warning {
 		}
 		
 		.panel-content {
+		}
+	}
+}
+
+
+// Communications + Annotation Styles
+
+.actions-toolbar {
+	bottom: 0;
+	top: auto;
+	border-top: 1px solid $column-line-shade;
+	border-bottom: 0;
+	padding: 12px 25px;
+	
+	form {
+		p, label, input, button, .button {
+			margin: 0;
+		}
+		
+		label, input[type="text"] {
+			float: none;
+			margin-top: 0;
+			margin-right: 6px;
+		}
+	}
+	
+	div {
+		float: left;
+		margin-left: 15px;
+	}
+	
+	div:first-child, li { margin-left: 0 }
+	
+	div.buttons { 
+		float: right;
+		
+		ul {
+		float: none;
+		margin: 0;
+		border: 0;
+			
+			
+			li {
+				
+				margin-left: 5px;
+				
+				a {
+				width: auto;
+				padding: 6px 12px;
+				}
+			}
+		}
+	}
+	
+	.status {
+		position: absolute;
+		margin-left: 35px;
+		padding: 12px;
+		background: $warning;
+		bottom: 45px;
+		z-index: 150;
+		
+		h4 {
+			font-weight: normal;
+			color: $white-shade;
+		}
+	}
+}
+
+.communication {
+	padding-bottom: 60px; // pushes content up to make room for bottom actions-toolbar
+	
+	.toolbar {
+		
+		ul.tabs {
+			position: static;
+			float: right;
+			margin-top: 20px;
+		}
+	}
+	
+	.panel-content {
+		background: $darker-column-shade;
+		
+		.content-toolbar {
+			background: $white-shade;
+		}
+	
+		.main-content {
+			margin: 25px 15px;
+			background: $white-shade;
+			padding: 25px;
+			box-shadow: 0 3px 1px $dark-shade;
+		}
+		
+		.nested {
+			padding: 15px;
+			background: $lighter-column-shade;
+			
+			.nested {
+				background: $white-shade;
+				
+				.nested {
+					border: 1px solid $column-line-shade;
+				}
+			}
+		}
+	}
+}
+
+.annotations {
+	padding-bottom: 60px; // pushes content up to make room for bottom actions-toolbar
+	
+	.main-content {
+		margin: 0;
+		
+		h2 {
+			padding: 12px 20px;
+			margin: 15px 0 0 0;
+		}
+	}
+	
+	.annotations-row {
+		padding: 12px 20px;
+		border-bottom: 1px solid $column-line-shade;
+		overflow: auto;
+		position: relative;
+		cursor: pointer;
+		
+		.dijitIcon, h3, p, h4 {
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.dijitIcon {
 			position: relative;
-			top: 145px;
+			top: 6px;
+			font-size: 12px;
+			margin-right: 20px;
+			color: $white-shade;
+		}
+		
+		.tpIconSuccessCircle {
+			font-size: 20px;
+			top: 3px;
+		}
+
+		
+		p {
+			position: absolute;
+			top: 12px;
+			left: 190px;
+		}
+		
+		h3 {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		
+		ul {
+			float: right;
+			margin: 0;
+			list-style: none;
+			padding: 0;
+			
+			li {
+				margin: 0 0 0 12px;
+				float: left;
+				
+				a {
+					border: 0;
+					color: $icon-shade;
+					
+					.dijitIcon {
+						margin: 0;
+						top: 0;
+						font-size: 25px;
+						color: $column-shade;
+					}
+					
+					.tpIconCompletedTemplate {
+						color: $success;
+					}
+				}
+			}
+			
+			li:first-child { margin-left: 0 }
+		}
+	}
+	
+	.done {
+		.dijitIcon {
+			top: 4px;
+			color: $darker-column-shade;
+		}
+	}
+	
+	.annotations-row.unread {
+		.dijitIcon.tpIconCircleFilled {
+			color: $primary-accent;
+		}
+		
+		p {
+			font-weight: bold;
+		}
+	}
+	
+	.annotations-row.header {
+		border-top: 1px solid $column-line-shade;
+	}
+	
+	.annotations-row.header, .annotations-row.done {
+		background: $lighter-column-shade;
+	}
+	
+	.annotations-row:hover {
+		background: $primary-accent-pastel;
+		
+		.dijitIcon {
+			color: $primary-accent-pastel;
+		}
+		
+		.tpIconSuccessCircle {
+			color: $darker-column-shade;
+		}
+		
+		ul li a {
+			.dijitIcon {
+				color: $icon-shade;
+			}
+
+			.tpIconCompletedTemplate {
+				color: $success-hover;
+			}
 		}
 	}
 }

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Pattern Library</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-style.css">
+		<link rel="stylesheet" href="output-css/style.css" type="text/css">
+		
+		<!-- Custom CSS animations -->
+		<link rel="stylesheet" href="output-css/animate.css" type="text/css">
+		
+		<!-- jquery UI -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+				
+				$('.show-dialog').click(function(){
+					setTimeout( "jQuery('.dialog').fadeToggle();",100 );
+					$('.inside-dialog').removeClass('fadeOutUp').addClass('fadeInDown');
+					
+				});
+				
+				$('.hide-dialog').click(function(){
+					$('.inside-dialog').removeClass('fadeIn').addClass('fadeOutUp');
+					setTimeout( "jQuery('.dialog').fadeToggle();",100 );
+				});
+				
+				// tooltip fades
+				$('ul li a').hover(function() {
+					$(this).next('label').removeClass('fadeOut').addClass('animated fadeIn');
+				}, function() {
+					$(this).next('label').removeClass('fadeIn').addClass('animated fadeOut');
+				});
+				
+				// nav list active clicks
+				$('ul li').click(function(){
+					$(this).toggleClass('active');
+				});
+				
+				// early look at showing/hiding secondary content
+				$('.swimlane-nav ul li').click(function() {
+						$('.second-panel .toolbar').toggle();
+				        $('.second-panel').toggle({
+				        	effect: 'fade'
+				        });
+						
+				});		
+			});
+		</script>
+		
+	</head>
+	<body class="communication-annotation">
+		<section class="helper-nav">
+			<ul>
+				<li><a href="#"><span class="dijitIcon tpIconTag"></span></a><label>Tag</label></li>
+				<li><a href="#"><span class="dijitIcon tpIconNotesPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
+				<li class="active"><a href="#"><span class="dijitIcon tpIconResearch"></span></a><label>Communication</label></li>
+				<li><a href="#"><span class="dijitIcon tpIconFemaleMale"></span></a><label>Settings</label></li>
+				<li class="disabled"><a href="#"><span class="dijitIcon tpIconRefresh"></span></a><label>Stuff</label></li>
+			</ul>
+		</section>
+		
+		<div class="panel-container">
+			<section class="primary-nav">
+				<ul>
+					<li><a href="#"><span class="dijitIcon tpIconHome"></span></a></li>
+					<li class="nav-label">EP12345..</li>
+					<li><a href="#"><span class="dijitIcon tpIconAnalyze"></span></a>
+						<div class="flyout-nav">
+							<h3>Analyze</h3>
+							
+							<ul>
+								<li><a href="#">Syncronize</a><em>Ctrl + S</em></li>
+								<li><a href="#">Revisions</a></li>
+								<li><a href="#">Track Changes</a></li>
+								<li><a href="#">Import...</a></li>
+								<li><a href="#">Export...</a></li>
+								<li><a href="#">Share...</a></li>
+								<li><a href="#">Print...</a><em>Ctrl + P</em></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#"><span class="dijitIcon tpIconSearch"></span></a></li>
+					<li class="active"><a href="#"><span class="dijitIcon tpIconDocumentsStacked"></span></a>
+						<div class="flyout-nav">
+							<h3>Dossiers</h3>
+							
+							<ul>
+								<li><a href="#">Syncronize</a><em>Ctrl + S</em></li>
+								<li><a href="#">Revisions</a></li>
+								<li><a href="#">Track Changes</a></li>
+								<li><a href="#">Import...</a></li>
+								<li><a href="#">Export...</a></li>
+								<li><a href="#">Share...</a></li>
+								<li><a href="#">Print...</a><em>Ctrl + P</em></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#"><span class="dijitIcon tpIconDocumentsFolder"></span></a></li>
+					<li class="disabled"><a href="#"><span class="dijitIcon tpIconCommunication"></span></a></li>
+					<li><a href="#"><span class="dijitIcon tpIconGear"></span></a>
+						<div class="flyout-nav">
+							<h3>Settings</h3>
+							
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</section>
+		
+		
+			<section class="communication single-panel first-panel">
+				<div class="toolbar">
+					<h1>Communication</h1>
+					<ul>
+						<li><a href="#"><span class="dijitIcon tpIconAa"></span></a></li>
+					</ul>
+					
+					<ul class="tabs">
+						<li><a href="#"><span class="dijitIcon tpIconDocument"></span></a></li>
+						<li><a href="#"><span class="dijitIcon tpIconDocument"></span></a></li>
+						<li><a href="#"><span class="dijitIcon tpIconDocument"></span></a></li>
+						<li><a href="#">All (8)</a></li>
+						<li class="add-draft"><a href="#"><span class="dijitIcon tpIconPlus"></span></a></li>
+					</ul>
+				</div>
+			
+				<div class="panel-content">
+					<div class="content-toolbar">
+						<ul>
+							<li><a href="#"><span class="dijitIcon tpIconBold"></span></a></li>
+							<li><a href="#"><span class="dijitIcon tpIconItalic"></span></a></li>
+							<li><a href="#"><span class="dijitIcon tpIconInsertUnorderedList"></span></a></li>
+							<li><a href="#"><span class="dijitIcon tpIconInsertOrderedList"></span></a></li>
+							<li><a href="#"><span class="dijitIcon tpIconOutdent"></span></a></li>
+							<li><a href="#"><span class="dijitIcon tpIconIndent"></span></a></li>
+						</ul>
+					</div>
+				
+					<div class="main-content">
+						<h2>1. Art54</h2>
+						<p>At least one of the claims appears to lack novelty in the sense of Articles 54(1) and (2) EPC because all its features are known from the prior art:</p>
+						
+						<div class="nested">
+							<h2>1. Art 54</h2>
+							<p>D1 discloses A splice holder assembly for receiving optical fibers to be housed in units in protective tubes, the splice holder assembly comprising: a splice tray having a bottom and sides defining an open-topped enclosure: the splice tray having at least one splice organizing module mounted to the bottom, and the splice tray having retainers extending from the inner surfaces of the sides of the splice tray at a level above the bottom; a card to be fitted into the splice tray and to be held in position by the retainers; and at least one splice cassette to be fitted in the splice tray and supported by the card: the splice cassette uncluding a bottom portion in which is mounted at least one splice organizing module, and a cover adapted to fit over the bottom portion to enclose the splice cassette.</p>
+							
+							<div class="nested">
+								<h2>1. Art 54</h2>
+								<p>D1 discloses A splice holder assembly for receiving optical fibers to be housed in units in protective tubes, the splice holder assembly comprising: a splice tray having a bottom and sides defining an open-topped enclosure: the splice tray having at least one splice organizing module mounted to the bottom, and the splice tray having retainers extending from the inner surfaces of the sides of the splice tray at a level above the bottom; a card to be fitted into the splice tray and to be held in position by the retainers; and at least one splice cassette to be fitted in the splice tray and supported by the card: the splice cassette uncluding a bottom portion in which is mounted at least one splice organizing module, and a cover adapted to fit over the bottom portion to enclose the splice cassette.</p>
+								
+								<div class="nested">
+									<h2>1. Art 54</h2>
+									<p>D1 discloses A splice holder assembly for receiving optical fibers to be housed in units in protective tubes, the splice holder assembly comprising: a splice tray having a bottom and sides defining an open-topped.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="actions-toolbar">
+					<form>
+						<div class="">
+							<p>
+								<label>To</label>
+								<input type="text" />
+							</p>
+						</div>
+						
+						<div class="buttons">
+							<ul>
+								<li><a href="#" class="primary button disabled"><span class="dijitIcon tpIconCommunication"></span> Send Message</a></li>
+							</ul>
+						</div>
+					</form>
+					
+					<div class="status">
+						<h4>Sending communications directly via TeamPatent is coming soon.</h4>
+					</div>
+				</div>
+			</section>
+		
+			<section class="single-panel second-panel annotations animated">
+				<div class="toolbar">
+					<h1>Annotations</h1>
+				
+					<ul>
+						<li><a href="#"><span class="dijitIcon tpIconLightningBolt"></span></a><label>Claims</label></li>
+						<li><a href="#"><span class="dijitIcon tpIconChatBubble"></span></a><label>Comments</label></li>
+					</ul>
+				</div>
+			
+				<div class="panel-content">
+					<div class="main-content">
+						<div class="annotations-row header">
+							<h3>Citation</h3>
+							<p>US01093, Thomas Adams’ Gumball Patent (1871)</p>
+						</div>
+						
+						<div class="annotations-row unread">
+							<span class="dijitIcon tpIconCircleFilled"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconAddTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row unread">
+							<span class="dijitIcon tpIconCircleFilled"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconAddTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row">
+							<span class="dijitIcon tpIconCircleFilled"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row header">
+							<h3>Citation</h3>
+							<p>US01093, Thomas Adams’ Gumball Patent (1871)</p>
+						</div>
+						
+						<div class="annotations-row unread">
+							<span class="dijitIcon tpIconCircleFilled"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconAddTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row unread">
+							<span class="dijitIcon tpIconCircleFilled"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconAddTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row">
+							<span class="dijitIcon tpIconCircleFilled"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconAddTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<h2>Done</h2>
+						
+						<div class="annotations-row header">
+							<h3>Citation</h3>
+							<p>US01093, Thomas Adams’ Gumball Patent (1871)</p>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+						
+						<div class="annotations-row done">
+							<span class="dijitIcon tpIconSuccessCircle"></span>
+							
+							<h4>Page 1, Line 6</h4>
+							<p>"Gumballs and lollipops already exist"</p>
+							
+							<ul>
+								<li><a href="#"><span class="dijitIcon tpIconCompletedTemplate"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconView"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="actions-toolbar">
+					<form>
+						<div class="">
+							<p>
+								<label>Select All</label>
+								<input type="checkbox" />
+							</p>
+						</div>
+						
+						<div class="buttons">
+							<ul>
+								<li><a href="#" class="button"><span class="dijitIcon tpIconTrash"></span> Remove</a></li>
+								<li><a href="#" class="button"><span class="dijitIcon tpIconSuccessCircle"></span> Mark as Done</a></li>
+								<li><a href="#" class="primary button">Add to Message</a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</section>
+		
+			<section class="swimlane-nav">
+				<ul>
+					<li><a href="#"><span class="dijitIcon tpIconFolder"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
+					<li><a href="#"><span class="dijitIcon tpIconLightningBolt"></span></a><label>Document</label></li>
+					<li class="active"><a href="#"><span class="dijitIcon tpIconMapping"></span></a><label>Map Claims</label></li>
+					<li><a href="#"><span class="dijitIcon tpIconPhotoStacked"></span></a><label>Figures</label></li>
+					<li class="disabled"><a href="#"><span class="dijitIcon tpIconSearchFindInPlace"></span></a><label>Stuff</label></li>
+				</ul>
+			</section>
+		</div>
+	</body>
+</html>

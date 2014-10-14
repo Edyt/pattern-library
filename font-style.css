@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'edyt-icons';
-	src:url('fonts/edyt-icons.eot?-t0jmwx');
-	src:url('fonts/edyt-icons.eot?#iefix-t0jmwx') format('embedded-opentype'),
-		url('fonts/edyt-icons.woff?-t0jmwx') format('woff'),
-		url('fonts/edyt-icons.ttf?-t0jmwx') format('truetype'),
-		url('fonts/edyt-icons.svg?-t0jmwx#edyt-icons') format('svg');
+	src:url('fonts/edyt-icons.eot?5xgbxs');
+	src:url('fonts/edyt-icons.eot?#iefix5xgbxs') format('embedded-opentype'),
+		url('fonts/edyt-icons.woff?5xgbxs') format('woff'),
+		url('fonts/edyt-icons.ttf?5xgbxs') format('truetype'),
+		url('fonts/edyt-icons.svg?5xgbxs#edyt-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,53 +23,152 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.tpIconDocument:before {
+	content: "\55";
+}
+.tpIconCompletedTemplate:before {
+	content: "\ac";
+}
+.tpIconInactiveTemplate:before {
+	content: "\2c7";
+}
+.tpIconReplacePhoto:before {
+	content: "\2020";
+}
+.tpIconRenamePhoto:before {
+	content: "\b4";
+}
+.tpIconDeletePhoto:before {
+	content: "\4c";
+}
+.tpIconDownloadPhoto:before {
+	content: "\d3";
+}
+.tpIconAddPhoto:before {
+	content: "\2d9";
+}
+.tpIconZoomOut:before {
+	content: "\7a";
+}
+.tpIconZoomIn:before {
+	content: "\5a";
+}
+.tpIconPagePrevious:before {
+	content: "\220f";
+}
+.tpIconPageNext:before {
+	content: "\2dc";
+}
+.tpIconPageUp:before {
+	content: "\a8";
+}
+.tpIconPageBottom:before {
+	content: "\d8";
+}
+.tpIconFile:before {
+	content: "\192";
+}
+.tpIconAddObjection:before {
+	content: "\6f";
+}
+.tpIconMap:before {
+	content: "\c2";
+}
+.tpIconMarkEquivalent:before {
+	content: "\2260";
+}
+.tpIconStandardPhrase:before {
+	content: "\cd";
+}
+.tpIconSplitClaim:before {
+	content: "\df";
+}
+.tpIconMergeClaim:before {
+	content: "\b5";
+}
+.tpIconH0:before {
+	content: "\48";
+}
+.tpIconView:before {
+	content: "\221a";
+}
+.tpIconUpArrow:before {
+	content: "\75";
+}
+.tpIconRightArrow:before {
+	content: "\ae";
+}
+.tpIconLeftArrow:before {
+	content: "\6c";
+}
+.tpIconDuplicateTemplate:before {
+	content: "\ce";
+}
+.tpIconAddInput:before {
+	content: "\49";
+}
+.tpIconRemoveTemplate:before {
+	content: "\52";
+}
+.tpIconAddTemplate:before {
+	content: "\41";
+}
+.tpIconAddAnnotation:before {
+	content: "\c5";
+}
+.tpIconCreateLink:before {
+	content: "\c7";
+}
+.tpIconAa:before {
+	content: "\e5";
+}
+.tpIconMinus:before {
+	content: "\2d";
+}
 .tpIconDictionary:before {
-	content: "\e607";
+	content: "\2202";
 }
 .tpIconClaims:before {
-	content: "\e608";
+	content: "\e7";
 }
 .tpIconPhotoStacked:before {
-	content: "\e609";
-}
-.tpIconEllipses:before {
-	content: "\e606";
+	content: "\3c0";
 }
 .tpIconBold:before {
-	content: "\e600";
+	content: "\222b";
 }
-.tpIconBullets:before {
-	content: "\e601";
+.tpIconInsertUnorderedList:before {
+	content: "\131";
 }
 .tpIconIndent:before {
-	content: "\e602";
+	content: "\3e";
 }
 .tpIconItalic:before {
-	content: "\e603";
+	content: "\69";
 }
-.tpIconNumbering:before {
-	content: "\e604";
+.tpIconInsertOrderedList:before {
+	content: "\2013";
 }
 .tpIconOutdent:before {
-	content: "\e605";
+	content: "\3c";
 }
 .tpIconH1:before {
-	content: "\21";
+	content: "\31";
 }
 .tpIconH2:before {
-	content: "\40";
+	content: "\32";
 }
 .tpIconH3:before {
-	content: "\23";
+	content: "\33";
 }
 .tpIconH4:before {
-	content: "\24";
+	content: "\34";
 }
 .tpIconH5:before {
-	content: "\25";
+	content: "\35";
 }
 .tpIconH6:before {
-	content: "\5e";
+	content: "\36";
 }
 .tpIconTOC:before {
 	content: "\43";
@@ -163,4 +262,7 @@
 }
 .tpIconWarningTriangle:before {
 	content: "\77";
+}
+.tpIconEllipses:before {
+	content: "\45";
 }
