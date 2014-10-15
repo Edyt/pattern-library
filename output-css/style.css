@@ -48,7 +48,7 @@ section {
   padding: 60px 0 0;
   float: left;
   position: relative;
-  margin-left: 1px;
+  margin-left: 5px;
 }
 /* line 108, ../input-css/style.scss */
 .single-panel .toolbar, .single-panel .actions-toolbar {
@@ -509,10 +509,10 @@ aside.callout-box.warning .button {
   padding: 0;
   position: fixed;
   right: 0;
+  top: 8px;
   border-right: 0;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  background: #e9e9e9;
   border-bottom-left-radius: 5px;
   z-index: 25;
 }
@@ -524,7 +524,7 @@ aside.callout-box.warning .button {
 }
 /* line 586, ../input-css/style.scss */
 .helper-nav ul li {
-  margin: 0;
+  margin: 0 0 10px;
 }
 /* line 589, ../input-css/style.scss */
 .helper-nav ul li a {
@@ -532,24 +532,25 @@ aside.callout-box.warning .button {
   background: white;
   font-weight: normal;
   color: #7b7b7b;
-  font-size: 24px;
+  font-size: 20px;
   display: block;
   text-align: center;
-  padding: 16px 10px;
-  width: 60px;
+  padding: 14px 10px;
+  width: 48px;
 }
 /* line 602, ../input-css/style.scss */
 .helper-nav ul li:first-child a {
-  padding-top: 18px;
+  padding-top: 16px;
+  border-top-left-radius: 5px;
 }
-/* line 606, ../input-css/style.scss */
+/* line 607, ../input-css/style.scss */
 .helper-nav ul li:last-child a {
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-bottom-left-radius: 5px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
-/* line 613, ../input-css/style.scss */
+/* line 614, ../input-css/style.scss */
 .helper-nav ul li.nav-label {
   background: #c2c2c2;
   font-weight: bold;
@@ -558,7 +559,7 @@ aside.callout-box.warning .button {
   padding: 5px 0;
   color: #5d5d5d;
 }
-/* line 622, ../input-css/style.scss */
+/* line 623, ../input-css/style.scss */
 .helper-nav ul label {
   background: none repeat scroll 0 0 #fff7c0;
   border-radius: 5px;
@@ -568,56 +569,54 @@ aside.callout-box.warning .button {
   line-height: 19px;
   z-index: 150;
   right: 75px;
-  margin-top: -46px;
+  margin-top: -43px;
   padding: 5px 9px;
   position: absolute;
   width: auto;
 }
-/* line 639, ../input-css/style.scss */
+/* line 640, ../input-css/style.scss */
 .helper-nav ul li:hover label {
-  display: none;
+  display: inline-block;
 }
-/* line 643, ../input-css/style.scss */
+/* line 644, ../input-css/style.scss */
 .helper-nav ul li:hover a {
   background: #f4f4f4;
 }
-/* line 650, ../input-css/style.scss */
+/* line 651, ../input-css/style.scss */
 .helper-nav ul li:active a, .helper-nav ul li.active a {
   background: #0e9bdd;
   color: white;
 }
-/* line 658, ../input-css/style.scss */
+/* line 659, ../input-css/style.scss */
 .helper-nav ul li.disabled a, .helper-nav ul li.disabled:hover a, .helper-nav ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
   background: white;
 }
 
-/* line 671, ../input-css/style.scss */
+/* line 672, ../input-css/style.scss */
 .swimlane-nav {
-  margin: 0;
+  margin: 10px 0 0;
   padding: 0;
   background: #e9e9e9;
-  top: 10px;
-  margin-left: 10px;
-  position: fixed;
-  width: 40px;
-  right: 85px;
+  float: left;
   z-index: 25;
 }
-/* line 682, ../input-css/style.scss */
+/* line 679, ../input-css/style.scss */
 .swimlane-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 687, ../input-css/style.scss */
+/* line 684, ../input-css/style.scss */
 .swimlane-nav ul li {
   margin: 0 0 5px;
+  position: relative;
 }
-/* line 690, ../input-css/style.scss */
+/* line 688, ../input-css/style.scss */
 .swimlane-nav ul li a {
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   text-decoration: none;
   font-weight: normal;
   color: #7b7b7b;
@@ -628,7 +627,7 @@ aside.callout-box.warning .button {
   width: 40px;
   border: 1px solid #e9e9e9;
 }
-/* line 704, ../input-css/style.scss */
+/* line 703, ../input-css/style.scss */
 .swimlane-nav ul li.nav-label {
   background: #c2c2c2;
   font-weight: bold;
@@ -637,7 +636,7 @@ aside.callout-box.warning .button {
   padding: 5px 0;
   color: #5d5d5d;
 }
-/* line 713, ../input-css/style.scss */
+/* line 712, ../input-css/style.scss */
 .swimlane-nav ul label {
   background: none repeat scroll 0 0 #fff7c0;
   border-radius: 5px;
@@ -645,27 +644,27 @@ aside.callout-box.warning .button {
   display: none;
   font-size: 14px;
   line-height: 16px;
-  right: 50px;
-  margin-top: -33px;
+  left: 50px;
+  top: 8px;
   padding: 4px 8px;
   position: absolute;
   width: auto;
   z-index: 100;
 }
-/* line 730, ../input-css/style.scss */
+/* line 729, ../input-css/style.scss */
 .swimlane-nav ul li:hover label {
   display: inline-block;
 }
-/* line 734, ../input-css/style.scss */
+/* line 733, ../input-css/style.scss */
 .swimlane-nav ul li:hover a {
   background: #f4f4f4;
 }
-/* line 740, ../input-css/style.scss */
+/* line 739, ../input-css/style.scss */
 .swimlane-nav ul li:active a, .swimlane-nav ul li.active a, .swimlane-nav ul li.active:hover a {
   background: white;
   color: #0e9bdd;
 }
-/* line 748, ../input-css/style.scss */
+/* line 747, ../input-css/style.scss */
 .swimlane-nav ul li.disabled a, .swimlane-nav ul li.disabled:hover a, .swimlane-nav ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
@@ -673,7 +672,7 @@ aside.callout-box.warning .button {
   background: #e9e9e9;
 }
 
-/* line 760, ../input-css/style.scss */
+/* line 759, ../input-css/style.scss */
 .toolbar, .content-toolbar, .actions-toolbar {
   border-bottom: 1px solid #e0e0e0;
   background: white;
@@ -683,13 +682,13 @@ aside.callout-box.warning .button {
   z-index: 10;
   height: 60px;
 }
-/* line 769, ../input-css/style.scss */
+/* line 768, ../input-css/style.scss */
 .toolbar h1, .content-toolbar h1, .actions-toolbar h1 {
   float: left;
   padding: 10px 10px 10px 25px;
   margin: 0;
 }
-/* line 775, ../input-css/style.scss */
+/* line 774, ../input-css/style.scss */
 .toolbar ul, .content-toolbar ul, .actions-toolbar ul {
   float: right;
   list-style: none outside none;
@@ -700,7 +699,7 @@ aside.callout-box.warning .button {
   background: #e9e9e9;
   border: 1px solid #e0e0e0;
 }
-/* line 785, ../input-css/style.scss */
+/* line 784, ../input-css/style.scss */
 .toolbar ul li, .content-toolbar ul li, .actions-toolbar ul li {
   margin: 0;
   float: left;
@@ -709,7 +708,7 @@ aside.callout-box.warning .button {
   position: relative;
   margin-left: 1px;
 }
-/* line 793, ../input-css/style.scss */
+/* line 792, ../input-css/style.scss */
 .toolbar ul li a, .content-toolbar ul li a, .actions-toolbar ul li a {
   text-decoration: none;
   font-weight: normal;
@@ -721,7 +720,7 @@ aside.callout-box.warning .button {
   width: 37px;
   padding: 6px 4px 4px;
 }
-/* line 805, ../input-css/style.scss */
+/* line 804, ../input-css/style.scss */
 .toolbar ul li label, .content-toolbar ul li label, .actions-toolbar ul li label {
   background: none repeat scroll 0 0 #fff7c0;
   border-radius: 5px;
@@ -737,11 +736,11 @@ aside.callout-box.warning .button {
   top: 44px;
   z-index: 100;
 }
-/* line 822, ../input-css/style.scss */
+/* line 821, ../input-css/style.scss */
 .toolbar ul li:first-child, .content-toolbar ul li:first-child, .actions-toolbar ul li:first-child {
   margin-left: 0;
 }
-/* line 825, ../input-css/style.scss */
+/* line 824, ../input-css/style.scss */
 .toolbar ul li:first-child a, .content-toolbar ul li:first-child a, .actions-toolbar ul li:first-child a {
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomleft: 5px;
@@ -750,7 +749,7 @@ aside.callout-box.warning .button {
   -moz-border-radius-topleft: 5px;
   border-top-left-radius: 5px;
 }
-/* line 836, ../input-css/style.scss */
+/* line 835, ../input-css/style.scss */
 .toolbar ul li:last-child a, .content-toolbar ul li:last-child a, .actions-toolbar ul li:last-child a {
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-radius-bottomright: 5px;
@@ -759,57 +758,57 @@ aside.callout-box.warning .button {
   -moz-border-radius-topright: 5px;
   border-top-right-radius: 5px;
 }
-/* line 847, ../input-css/style.scss */
+/* line 846, ../input-css/style.scss */
 .toolbar ul li:hover label, .content-toolbar ul li:hover label, .actions-toolbar ul li:hover label {
   display: block;
 }
-/* line 851, ../input-css/style.scss */
+/* line 850, ../input-css/style.scss */
 .toolbar ul li:hover a, .content-toolbar ul li:hover a, .actions-toolbar ul li:hover a {
   background: white;
 }
-/* line 858, ../input-css/style.scss */
+/* line 857, ../input-css/style.scss */
 .toolbar ul li:active a, .toolbar ul li.active a, .toolbar ul li.active:hover a, .content-toolbar ul li:active a, .content-toolbar ul li.active a, .content-toolbar ul li.active:hover a, .actions-toolbar ul li:active a, .actions-toolbar ul li.active a, .actions-toolbar ul li.active:hover a {
   background: white;
   border-color: #0e9bdd;
   color: #0e9bdd;
 }
-/* line 869, ../input-css/style.scss */
+/* line 868, ../input-css/style.scss */
 .toolbar ul li.disabled a, .toolbar ul li.disabled:hover a, .toolbar ul li.disabled:active a, .content-toolbar ul li.disabled a, .content-toolbar ul li.disabled:hover a, .content-toolbar ul li.disabled:active a, .actions-toolbar ul li.disabled a, .actions-toolbar ul li.disabled:hover a, .actions-toolbar ul li.disabled:active a {
   color: #b0b0b0;
   cursor: not-allowed;
   border: none;
 }
-/* line 877, ../input-css/style.scss */
+/* line 876, ../input-css/style.scss */
 .toolbar ul li.text-button a, .content-toolbar ul li.text-button a, .actions-toolbar ul li.text-button a {
   font-size: 16px;
   padding: 6px 8px 4px;
   width: auto;
 }
-/* line 885, ../input-css/style.scss */
+/* line 884, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button, .content-toolbar h4.toolbar-main-button, .actions-toolbar h4.toolbar-main-button {
   float: right;
   margin-top: 16px;
   margin-right: 25px;
 }
-/* line 890, ../input-css/style.scss */
+/* line 889, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button .button, .content-toolbar h4.toolbar-main-button .button, .actions-toolbar h4.toolbar-main-button .button {
   padding: 8px 35px;
 }
-/* line 894, ../input-css/style.scss */
+/* line 893, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button .dijitIcon, .content-toolbar h4.toolbar-main-button .dijitIcon, .actions-toolbar h4.toolbar-main-button .dijitIcon {
   margin-right: 0;
 }
-/* line 899, ../input-css/style.scss */
+/* line 898, ../input-css/style.scss */
 .toolbar h4.toolbar-main-button + ul, .toolbar form + ul, .content-toolbar h4.toolbar-main-button + ul, .content-toolbar form + ul, .actions-toolbar h4.toolbar-main-button + ul, .actions-toolbar form + ul {
   margin-right: 10px;
 }
-/* line 903, ../input-css/style.scss */
+/* line 902, ../input-css/style.scss */
 .toolbar form input[type="text"], .content-toolbar form input[type="text"], .actions-toolbar form input[type="text"] {
   float: right;
   width: 175px;
   margin: 12px 25px 0 0;
 }
-/* line 909, ../input-css/style.scss */
+/* line 908, ../input-css/style.scss */
 .toolbar ul.tabs, .content-toolbar ul.tabs, .actions-toolbar ul.tabs {
   float: left;
   left: 25px;
@@ -820,11 +819,11 @@ aside.callout-box.warning .button {
   border-radius: none;
   border: none;
 }
-/* line 919, ../input-css/style.scss */
+/* line 918, ../input-css/style.scss */
 .toolbar ul.tabs li, .content-toolbar ul.tabs li, .actions-toolbar ul.tabs li {
   margin-left: 5px;
 }
-/* line 922, ../input-css/style.scss */
+/* line 921, ../input-css/style.scss */
 .toolbar ul.tabs li a, .content-toolbar ul.tabs li a, .actions-toolbar ul.tabs li a {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -836,33 +835,33 @@ aside.callout-box.warning .button {
   font-size: 18px;
   padding: 6px 10px;
 }
-/* line 936, ../input-css/style.scss */
+/* line 935, ../input-css/style.scss */
 .toolbar ul.tabs li.active a, .content-toolbar ul.tabs li.active a, .actions-toolbar ul.tabs li.active a {
   height: 39px;
   padding-bottom: 7px;
   position: relative;
   top: 1px;
 }
-/* line 944, ../input-css/style.scss */
+/* line 943, ../input-css/style.scss */
 .toolbar ul.tabs li:first-child, .content-toolbar ul.tabs li:first-child, .actions-toolbar ul.tabs li:first-child {
   margin-left: 0;
 }
 
-/* line 953, ../input-css/style.scss */
+/* line 952, ../input-css/style.scss */
 .content-toolbar {
   position: static;
 }
-/* line 956, ../input-css/style.scss */
+/* line 955, ../input-css/style.scss */
 .content-toolbar ul {
   float: left;
   margin-left: 25px;
 }
-/* line 960, ../input-css/style.scss */
+/* line 959, ../input-css/style.scss */
 .content-toolbar ul li a {
   font-size: 24px;
 }
 
-/* line 968, ../input-css/style.scss */
+/* line 967, ../input-css/style.scss */
 .dialog {
   display: none;
   background: rgba(0, 0, 0, 0.7);
@@ -873,7 +872,7 @@ aside.callout-box.warning .button {
   margin: 0;
   padding: 0;
 }
-/* line 978, ../input-css/style.scss */
+/* line 977, ../input-css/style.scss */
 .dialog .inside-dialog {
   width: 80%;
   border: 3px solid #e0e0e0;
@@ -886,7 +885,7 @@ aside.callout-box.warning .button {
   background: white;
 }
 
-/* line 994, ../input-css/style.scss */
+/* line 993, ../input-css/style.scss */
 .highlights-content, .annotations-content {
   padding: 10px 5px 0;
   float: left;
@@ -894,33 +893,33 @@ aside.callout-box.warning .button {
   width: 100px;
   background: #f4f4f4;
 }
-/* line 1001, ../input-css/style.scss */
+/* line 1000, ../input-css/style.scss */
 .highlights-content h5, .annotations-content h5 {
   margin: 0 0 12px;
   text-align: center;
   font-size: 16px;
 }
-/* line 1006, ../input-css/style.scss */
+/* line 1005, ../input-css/style.scss */
 .highlights-content h5 a, .annotations-content h5 a {
   color: #5d5d5d;
 }
 
-/* line 1014, ../input-css/style.scss */
+/* line 1013, ../input-css/style.scss */
 .highlights-content ul {
   margin: 0;
   padding: 0;
 }
-/* line 1016, ../input-css/style.scss */
+/* line 1015, ../input-css/style.scss */
 .highlights-content li {
   float: left;
   margin: 0 6px 0 0;
   border-radius: 5px;
 }
-/* line 1022, ../input-css/style.scss */
+/* line 1021, ../input-css/style.scss */
 .highlights-content li:last-child {
   margin-right: 0;
 }
-/* line 1024, ../input-css/style.scss */
+/* line 1023, ../input-css/style.scss */
 .highlights-content a, .highlights-content .highlight {
   color: white;
   width: 25px;
@@ -929,22 +928,23 @@ aside.callout-box.warning .button {
   border-radius: 5px;
   text-align: center;
 }
-/* line 1032, ../input-css/style.scss */
+/* line 1031, ../input-css/style.scss */
 .highlights-content a span, .highlights-content .highlight span {
   font-size: 15px;
   position: relative;
   bottom: 3px;
 }
-/* line 1039, ../input-css/style.scss */
+/* line 1038, ../input-css/style.scss */
 .highlights-content .highlight {
   position: absolute;
   top: 200px;
   height: 300px;
 }
 
-/* line 1046, ../input-css/style.scss */
+/* line 1045, ../input-css/style.scss */
 .annotations-content {
   border-left: 1px solid #e0e0e0;
+  width: 50px;
 }
 /* line 1049, ../input-css/style.scss */
 .annotations-content .annotation {
@@ -953,7 +953,7 @@ aside.callout-box.warning .button {
 
 /* line 1054, ../input-css/style.scss */
 .main-content {
-  margin: 25px 25px 0 225px;
+  margin: 25px 25px 0 175px;
   padding-top: 1px;
 }
 /* line 1058, ../input-css/style.scss */

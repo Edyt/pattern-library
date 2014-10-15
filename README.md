@@ -9,6 +9,15 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 15, 2014
+Iteration from EPO's visual feedback
+
+- Helper nav differentiation
+- Secondary content toggle more like a ‘tab’
+- Adding space between primary/secondary content
+
+Added /icon-archive which includes the source font files for each iteration
+
 ### October 13, 2014
 Initial commit of Communications Screen
 

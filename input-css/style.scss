@@ -103,7 +103,7 @@ section {
 		padding: 60px 0 0;
 		float: left;
 		position: relative;
-		margin-left: 1px;
+		margin-left: 5px;
 		
 		.toolbar, .actions-toolbar {
 			width: 40%;
@@ -571,10 +571,10 @@ aside.callout-box.warning {
 	padding: 0;
 	position: fixed;
 	right: 0;
+	top: 8px;
 	border-right: 0;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	background: $background-shade;
 	border-bottom-left-radius: 5px;
 	z-index: 25;
 	
@@ -584,30 +584,31 @@ aside.callout-box.warning {
 		padding: 0;
 		
 		li {
-			margin: 0;
+			margin: 0 0 10px;
 			
 			a {
 				text-decoration: none;
 				background: $white-shade;
 				font-weight: normal;
 				color: $icon-shade;
-				font-size: 24px;
+				font-size: 20px;
 				display: block;
 				text-align: center;
-				padding: 16px 10px;
-				width: 60px;
+				padding: 14px 10px;
+				width: 48px;
 			}
 		}
 		
 		li:first-child a {
-			padding-top: 18px;
+			padding-top: 16px;
+			border-top-left-radius: 5px;
 		}
 		
 		li:last-child a {
 			-webkit-border-bottom-left-radius: 5px;
 			-moz-border-radius-bottomleft: 5px;
 			border-bottom-left-radius: 5px;
-			padding-bottom: 18px;
+			padding-bottom: 16px;
 		}
 		
 		li.nav-label {
@@ -628,7 +629,7 @@ aside.callout-box.warning {
 			line-height: 19px;
 			z-index: 150;
 		    right: 75px;
-		    margin-top: -46px;
+		    margin-top: -43px;
 		    padding: 5px 9px;
 		    position: absolute;
 		    width: auto;
@@ -637,7 +638,7 @@ aside.callout-box.warning {
 		li:hover {
 			
 			label {
-				display: none;
+				display: inline-block;
 			}
 			
 			a {
@@ -669,14 +670,10 @@ aside.callout-box.warning {
 // swimlane/secondary content toggle nav 
 
 .swimlane-nav {
-	margin: 0;
+	margin: 10px 0 0;
 	padding: 0;
 	background: $background-shade;
-	top: 10px;
-	margin-left: 10px;
-	position: fixed;
-	width: 40px;
-	right: 85px;
+	float: left;
 	z-index: 25;
 	
 	ul {
@@ -686,9 +683,11 @@ aside.callout-box.warning {
 		
 		li {
 			margin: 0 0 5px;
+			position: relative;
 			
 			a {
-				border-radius: $rad-borders;
+				border-top-right-radius: $rad-borders;
+				border-bottom-right-radius: $rad-borders;
 				text-decoration: none;
 				font-weight: normal;
 				color: $icon-shade;
@@ -717,8 +716,8 @@ aside.callout-box.warning {
 		    display: none;
 		    font-size: 14px;
 			line-height: 16px;
-		    right: 50px;
-		    margin-top: -33px;
+		    left: 50px;
+			top: 8px;
 		    padding: 4px 8px;
 		    position: absolute;
 			width: auto;
@@ -1045,6 +1044,7 @@ aside.callout-box.warning {
 
 .annotations-content {
 	border-left: 1px solid $column-line-shade;
+	width: 50px;
 	
 	.annotation {
 		color: $icon-shade;
@@ -1052,7 +1052,7 @@ aside.callout-box.warning {
 }
 
 .main-content {
-	margin: 25px 25px 0 225px;
+	margin: 25px 25px 0 175px;
 	padding-top: 1px;
 	
 	.tpIconEllipses {
