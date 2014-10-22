@@ -99,14 +99,14 @@ section {
 	}
 	
 	.single-panel {
-		width: 40%;
+		width: 45%;
 		padding: 60px 0 0;
 		float: left;
 		position: relative;
 		margin-left: 5px;
 		
 		.toolbar, .actions-toolbar {
-			width: 40%;
+			width: 45%;
 			
 		}
 	}
@@ -123,6 +123,20 @@ section {
 		overflow: scroll;
 		height: 100%;
 		width: 100%;
+	}
+	
+	// styles for three panels
+	
+	.triple-panel {
+		.single-panel, .toolbar, .actions-toolbar {
+			width: 30%;
+		}
+		
+		
+		// first search panel 
+		.search-parameters, .search-parameters .toolbar { 
+			width: 20%;
+		}
 	}
 	
 
@@ -224,7 +238,7 @@ form {
 		width: 120px;
 	}
 	
-	input[type="text"], textarea, select {
+	input[type="text"], textarea, select, .large-search-field {
 		border-radius: $rad-borders;
 		font: 100% $primary-font-stack;
 		color: $body-shade;
@@ -238,7 +252,7 @@ form {
 		padding: 0;
 	}
 	
-	input:focus, textarea:focus {
+	input:focus, textarea:focus, .large-search-field {
 		background: #fffcf4;
 	}
 	
@@ -769,6 +783,10 @@ aside.callout-box.warning {
 		float: left;
 		padding: 10px 10px 10px 25px;
 		margin: 0;
+		
+		em {
+			font-size: 18px;
+		}
 	}
 	
 	ul {
@@ -874,9 +892,10 @@ aside.callout-box.warning {
 		
 		li.text-button {
 			a {
-				font-size: 16px;
+				font-size: 18px;
 				padding: 6px 8px 4px;
 				width: auto;
+				font-weight: bold;
 			}
 		}
 	}
@@ -1061,6 +1080,10 @@ aside.callout-box.warning {
 		position: relative;
 		top: 5px;
 	}
+}
+
+.main-content:first-child {
+	margin-left: 25px;
 }
 
 
@@ -1611,3 +1634,111 @@ aside.callout-box.warning {
 		}
 	}
 }
+
+
+// search results styles
+
+.search-results {
+	.search-result-snippet {
+		margin-bottom: 25px;
+		clear: both;
+		border-bottom: 1px solid $column-line-shade;
+		
+		img {
+			float: left;
+			margin: 0 15px 15px 0;
+			border: 1px solid $column-line-shade;
+			width: 20%;
+		}
+	}
+}
+
+.search-parameters {
+	.large-search-field {
+		width: 100%;
+		
+		p {
+			margin: 0;
+			padding: 0;
+			
+			a {
+				color: $body-shade;
+
+			}
+		}
+	}
+	
+	.panel-content {
+		height: auto;
+		width: 100%;
+		overflow: none;
+		border-bottom: 5px solid $background-shade;
+		
+		.main-content {
+			margin-bottom: 25px;
+		}
+	}
+	
+	.concepts {
+		height: 100%;
+		
+		.toolbar {
+			position: relative;
+			width: 100%;
+		}
+		
+		.panel-content {
+			height: 80%;
+			border-bottom: 0;
+			
+			.concept-row {
+				clear: both;
+				margin-bottom: 12px;
+				
+				span {
+				    display: block;
+					float: right;
+					margin: 4px 0 12px 12px;
+				    height: 20px;
+					border-radius: $big-rad-borders;
+				    width: 20px;
+					cursor: pointer;
+				}
+				
+				h4, input[type="checkbox"] {
+					float: left;
+					margin-left: 5px;
+					margin-top: 9px;
+					width: 20px;
+				}
+				
+				h4 {
+					margin-left: 8px;
+					font-size: 22px;
+				}
+				
+				h4:last-child {
+					margin-left: 5px;
+				}
+				
+				div.description {
+					margin-left: 60px;
+					padding: 0;
+					
+					p {
+						margin: 0;
+					}
+				}
+			}
+			
+			.concept-row.header {
+				overflow: auto;
+				margin-bottom: 8px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid $column-shade;
+				
+			}
+		}
+	}
+}
+
