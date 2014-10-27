@@ -9,6 +9,11 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 27, 2014
+- Updated search HTML
+- Added focus style animation
+- Updated icon library
+
 ### October 15, 2014
 Iteration from EPO's visual feedback
 
