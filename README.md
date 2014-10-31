@@ -9,6 +9,10 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### October 31, 2014
+- Added new helper view (click on first helper icon on nav-patterns.html)
+- Added collapsable search panel on search.html
+
 ### October 27, 2014
 - Updated search HTML
 - Added focus style animation

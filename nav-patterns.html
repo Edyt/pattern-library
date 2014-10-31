@@ -48,7 +48,11 @@
 				        	effect: 'fade'
 				        });
 						
-				});		
+				});
+				
+				$('.helper-find a').click(function() {
+						$('.helper-nav ul .flyout-helper').toggle();
+				});	
 			});
 		</script>
 		
@@ -72,9 +76,46 @@
 		
 		<section class="helper-nav">
 			<ul>
-				<li><a href="#"><span class="dijitIcon tpIconTag"></span></a><label>Tag</label></li>
+				<li class="helper-find"><a href="#"><span class="dijitIcon tpIconTag"></span></a>
+					<label>Tag</label>
+					
+					<div class="flyout-helper animated">
+						<div class="toolbar">
+							<h3>Find in: <a href="#">Entire Application <span class="dijitIcon tpIconDropdownArrow"></span></a></h3>
+						</div>
+						
+						<form>
+							<div class="find-options">
+								<p><input type="checkbox" /><label>Entire Application</label></p>
+								<p><input type="checkbox" /><label>Claims</label></p>
+								<p><input type="checkbox" /><label>Description</label></p>
+								<p><input type="checkbox" /><label>Drawings</label></p>
+								<p><input type="checkbox" /><label>Tagged Documents</label></p>
+							</div>
+							
+							<p class="search-term"><input type="text" value="ink boards" /></p>
+							
+							<h4><strong>27</strong> results in open document</h4>
+							
+							<ul class="pagination-control">
+								<li><a href="#"><span class="dijitIcon tpIconLeftArrow"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconRightArrow"></span></a></li>
+							</ul>
+						</form>
+						
+						<div class="panel-content">
+							<h4>1. Claim 24</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							
+							<h4>2. and 3. [104] Description</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						
+						<h4>12 results in other Dossier files. <a href="#">View files</a></h4>
+					</div>
+				</li>
 				<li><a href="#"><span class="dijitIcon tpIconNotesPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
-				<li class="active"><a href="#"><span class="dijitIcon tpIconResearch"></span></a><label>Communication</label></li>
+				<li><a href="#"><span class="dijitIcon tpIconResearch"></span></a><label>Communication</label></li>
 				<li><a href="#"><span class="dijitIcon tpIconFemaleMale"></span></a><label>Settings</label></li>
 				<li class="disabled"><a href="#"><span class="dijitIcon tpIconRefresh"></span></a><label>Stuff</label></li>
 			</ul>

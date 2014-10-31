@@ -49,6 +49,10 @@
 				        });
 						
 				});		
+				
+				$('.tpIconLeftArrow').click(function(){
+					$('.search-parameters').toggleClass('collapsed');
+				});
 			});
 		</script>
 		
@@ -134,6 +138,8 @@
 			<section class="single-panel first-panel search-parameters">
 				<div class="toolbar">
 					<h1>Search</h1>
+					
+					<h4 class="toolbar-main-button"><a href="#" class="button"><span class="dijitIcon tpIconLeftArrow"></span></a></h4>
 					
 					<ul>
 						<li class="text-button"><a href="#">FPO</a></li>
