@@ -28,7 +28,7 @@ a:link, a:visited, a:hover, a:active {
 /* line 83, ../input-css/style.scss */
 :focus {
   outline: none;
-  box-shadow: 0 0 3px rgba(61, 187, 225, 0.8);
+  box-shadow: 0 0 4px rgba(64, 87, 125, 0.9);
 }
 
 /* line 90, ../input-css/style.scss */
