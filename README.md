@@ -9,6 +9,9 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### November 6, 2014
+- Committed object menu on nav-patterns.html - right click inside the main content panels to view 
+
 ### October 31, 2014
 - Added new helper view (click on first helper icon on nav-patterns.html)
 - Added collapsable search panel on search.html
