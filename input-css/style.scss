@@ -937,7 +937,7 @@ aside.callout-box.warning {
 			font-size: 22px;
 		}
 		
-		h4:first-child, input[type="checkbox"]:first-child {
+		h4:first-child, input[type="checkbox"]:first-child, span + input[type="checkbox"] {
 			margin-left: 0;
 		}
 		

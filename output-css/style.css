@@ -854,7 +854,7 @@ aside.callout-box.warning .button {
   font-size: 22px;
 }
 /* line 940, ../input-css/style.scss */
-.helper-nav ul .flyout-helper .concept-row h4:first-child, .helper-nav ul .flyout-helper .concept-row input[type="checkbox"]:first-child {
+.helper-nav ul .flyout-helper .concept-row h4:first-child, .helper-nav ul .flyout-helper .concept-row input[type="checkbox"]:first-child, .helper-nav ul .flyout-helper .concept-row span + input[type="checkbox"] {
   margin-left: 0;
 }
 /* line 944, ../input-css/style.scss */
