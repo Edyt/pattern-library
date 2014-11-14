@@ -12,28 +12,16 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 		
-		<script type="text/javascript">
-			$(function() {
-				// nav list active clicks
-				$('ul li').click(function(){
-					$(this).toggleClass('active');
-				});
-				
-				// intray active clicks
-				$('.intray-nav ul li a').click(function(){
-					$(this).toggleClass('active');
-					$('.intray-nav ul li').removeClass('active');
-				});
-				
-				// active clicks
-				$('.workspace-item').click(function(){
-					$('.workspace-item.active').toggleClass('active');
-					$(this).toggleClass('active');
-					
-					$('.workspace-preview').fadeToggle().fadeToggle();
-				});
-			});
-		</script>
+		<!-- jQuery Custom Context Menu -->
+	    <script src="js/jquery.ui.position.js" type="text/javascript"></script>
+	    <script src="js/jquery.contextMenu.js" type="text/javascript"></script>
+		
+		<!-- Custom CSS animations -->
+		<link rel="stylesheet" href="output-css/animate.css" type="text/css">
+		
+		
+		<!-- JS Pattern Library Functions -->
+		<script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body class="work-manager">
 		<div class="panel-container">

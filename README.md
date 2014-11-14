@@ -9,6 +9,10 @@ Darren / Visual Designer / Edyt.com
 
 ## Changelog
 
+### November 13th, 2014
+- Integrated a search query helper into nav-patterns.html
+- Updated iconfont
+
 ### November 6, 2014
 - Committed object menu on nav-patterns.html - right click inside the main content panels to view 
 

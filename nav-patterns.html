@@ -11,7 +11,7 @@
 		<!-- Custom CSS animations -->
 		<link rel="stylesheet" href="output-css/animate.css" type="text/css">
 		
-		<!-- jquery UI -->
+		<!-- jQuery UI -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 		
@@ -20,97 +20,9 @@
 	    <script src="js/jquery.ui.position.js" type="text/javascript"></script>
 	    <script src="js/jquery.contextMenu.js" type="text/javascript"></script>
 		
-		<script type="text/javascript">
-			$(function() {
-				
-				$('.show-dialog').click(function(){
-					setTimeout( "jQuery('.dialog').fadeToggle();",100 );
-					$('.inside-dialog').removeClass('fadeOutUp').addClass('fadeInDown');
-					
-				});
-				
-				$('.hide-dialog').click(function(){
-					$('.inside-dialog').removeClass('fadeIn').addClass('fadeOutUp');
-					setTimeout( "jQuery('.dialog').fadeToggle();",100 );
-				});
-				
-				// tooltip fades
-				$('ul li a').hover(function() {
-					$(this).next('label').removeClass('fadeOut').addClass('animated fadeIn');
-				}, function() {
-					$(this).next('label').removeClass('fadeIn').addClass('animated fadeOut');
-				});
-				
-				// nav list active clicks
-				$('ul li').click(function(){
-					$(this).toggleClass('active');
-				});
-				
-				// early look at showing/hiding secondary content
-				$('.swimlane-nav ul li').click(function() {
-						$('.second-panel .toolbar').toggle();
-				        $('.second-panel').toggle({
-				        	effect: 'fade'
-				        });
-						
-				});
-				
-				$('.helper-find a').click(function() {
-						$('.helper-nav ul .flyout-helper').toggle();
-				});	
-				
-				
-				// context menu enable
-				$.contextMenu({
-			        selector: '.main-content', 
-					animation: { show: "show", hide: "fadeOut" },
-			        callback: function(key, options) {
-			            var m = "clicked: " + key + " on " + $(this).text();
-			            window.console && console.log(m) || alert(m); 
-			        },
-			        items: {
-			            "search": {name: "Search", icon: "edit"},
-			            "objection": {name: "Objection", icon: "cut"},
-			            "tag/comment": {name: "Tag/Comment", icon: "copy"},
-						"Find in...": {
-			                "name": "Find in...", 
-			                "items": {
-								entireapplication: {
-					                name: "Entire application", 
-					                type: 'checkbox', 
-					                selected: false
-					            },
-								claims: {
-					                name: "Claims", 
-					                type: 'checkbox', 
-					                selected: false
-					            },
-								description: {
-					                name: "Description", 
-					                type: 'checkbox', 
-					                selected: false
-					            },
-								drawings: {
-					                name: "Drawings", 
-					                type: 'checkbox', 
-					                selected: false
-					            },
-								tagged: {
-					                name: "Tagged", 
-					                type: 'checkbox', 
-					                selected: false
-					            },
-								find: {
-					                name: "Find..", 
-					                callback: $.noop,
-									className: "oom-button"
-					            }
-			                }
-			            },
-			        }
-			    });
-			});
-		</script>
+		
+		<!-- JS Pattern Library Functions -->
+		<script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
 		
 	</head>
 	<body>
@@ -170,7 +82,123 @@
 						<h4>12 results in other Dossier files. <a href="#">View files</a></h4>
 					</div>
 				</li>
-				<li><a href="#"><span class="dijitIcon tpIconNotesPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
+				<li class="helper-search"><a href="#"><span class="dijitIcon tpIconNotesPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+					
+					<div class="flyout-helper animated concepts">
+						<div class="toolbar">
+							<h4 class="toolbar-main-button"><a href="#" class="show-dialog button">Search</a></h4>
+							
+							<h3>Query + Highlights</h3>
+						</div>
+						
+						<form class="search-parameters">
+							<div class="large-search-field">
+								<p><a class="teal" href="#">&lt;liquid toner&gt;</a>, <a class="yellow" ref="#">&lt;spinal-wound reinforcement&gt;</a></p>
+							</div>
+							
+							<div class="concept-row header">
+								<h4>Q</h4>
+								<h4>H</h4>
+								<h4>Concept</h4>
+							</div>
+							
+							<ul class="pagination-control">
+								<li><a href="#"><span class="dijitIcon tpIconMinus"></span></a></li>
+								<li><a href="#"><span class="dijitIcon tpIconPlus"></span></a></li>
+							</ul>
+						</form>
+						
+						<div class="panel-content">
+							<div class="concept-row">
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<span class="blue"></span>
+								
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<span class="blue"></span>
+								
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<span class="blue"></span>
+								
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+							
+							<div class="concept-row">
+								<input type="checkbox" />
+								<input type="checkbox" />
+								<div class="description">
+									<h5>spiraling apparatus</h5>
+									<p>"spiraling tool" or "spiraling apparatus"</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</li>
 				<li><a href="#"><span class="dijitIcon tpIconResearch"></span></a><label>Communication</label></li>
 				<li><a href="#"><span class="dijitIcon tpIconFemaleMale"></span></a><label>Settings</label></li>
 				<li class="disabled"><a href="#"><span class="dijitIcon tpIconRefresh"></span></a><label>Stuff</label></li>
