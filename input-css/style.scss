@@ -40,9 +40,9 @@ $success: #97d659;
 $success-hover: #82b94b;
 $success-pastel: #d8f7b9;
 
-$error: #D93D33;
-$error-hover: #af3128;
-$error-pastel: #f6d8d7;
+$error: #de574d;
+$error-hover: #bb4d45;
+$error-pastel: #e4bebb;
 
 $warning: #C75302;
 $warning-hover: #953d00;
@@ -147,7 +147,7 @@ section {
 	}
 	
 
-	.button {
+	a.button {
 		border-radius: $rad-borders;
 		font-size: 18px;
 		background: $white-shade;
@@ -162,30 +162,73 @@ section {
 			color: $icon-shade;
 		}
 	}
-
-	.button.primary {
+	
+	a.button:hover, a.button:active {
+		background: $column-shade;
+		color: $body-shade;
+	}
+	
+	a.button:active {
+		box-shadow: 0 1px 0 rgba(0,0,0,0.3) inset;
+	}
+	
+	a.disabled {
+		color: $disabled-icon-shade;
+		cursor: not-allowed;
+	}
+	
+	// primary button styles
+	
+	a.button.primary {
 		background: $primary-accent;
 		color: $white-shade;
-		border: none;
+		border: 1px solid $primary-accent;
 		
 		.dijitIcon {
 			color: $white-shade;
 		}
 	}
 	
-	.button:hover, .button:active {
-		background: $column-shade;
-		color: $body-shade;
-	}
-	
-	.button.primary:hover, .button.primary:active {
+	a.button.primary:hover, a.button.primary:active {
 		background: $primary-accent-hover;
 		color: $white-shade;
-		border: none;
 	}
 	
-	.button:active {
-		box-shadow: 0 1px 0 rgba(0,0,0,0.3) inset;
+	a.primary.disabled, a.primary.disabled:hover, a.primary.disabled:active {
+		background: $white-shade;
+		border: 1px solid $primary-accent;
+	}
+	
+	a.primary.disabled, a.primary.disabled, a.primary.disabled:hover,
+	a.primary.disabled span, a.primary.disabled .dijitIcon {
+		color: $primary-accent;
+	}
+	
+	// error button styles
+	
+	a.button.error {
+		background: $error;
+		color: $white-shade;
+		border: 1px solid $error;
+		
+		.dijitIcon {
+			color: $white-shade;
+		}
+	}
+	
+	a.button.error:hover, a.button.error:active {
+		background: $error-hover;
+		color: $white-shade;
+	}
+	
+	a.error.disabled, a.error.disabled:hover, a.error.disabled:active {
+		background: $white-shade;
+		border: 1px solid $error;
+	}
+	
+	a.error.disabled, a.error.disabled, a.error.disabled:hover,
+	a.error.disabled span, a.error.disabled .dijitIcon {
+		color: $error;
 	}
 
 h1 {
@@ -254,7 +297,7 @@ form {
 		font: 100% $primary-font-stack;
 		color: $body-shade;
 		font-size: 15px;
-		padding: 8px;
+		padding: 9px;
 		border: 1px solid $darker-column-shade;
 		width: 53%;
 	}
@@ -296,6 +339,7 @@ form {
 		margin-left: 130px;
 		display: inline;
 	}
+	
 	input[type="checkbox"] + label, input[type="radio"] + label {
 		width: auto;
 		display: inline-block;
@@ -596,7 +640,7 @@ aside.callout-box.warning {
 	padding: 0;
 	position: fixed;
 	right: 0;
-	top: 8px;
+	top: 11px;
 	border-right: 0;
 	border-top-left-radius: 5px;
 	background: $background-shade;
@@ -609,7 +653,7 @@ aside.callout-box.warning {
 		padding: 0;
 		
 		li {
-			margin: 0 0 10px;
+			margin: 0 0 15px;
 			position: relative;
 			
 			> a {
@@ -625,18 +669,21 @@ aside.callout-box.warning {
 				border: 1px solid $column-line-shade;
 				border-right: 0;
 			}
-		}
-		
-		li:first-child a {
-			padding-top: 16px;
-			border-top-left-radius: 5px;
-		}
-		
-		li:last-child a {
-			-webkit-border-bottom-left-radius: 5px;
-			-moz-border-radius-bottomleft: 5px;
-			border-bottom-left-radius: 5px;
-			padding-bottom: 16px;
+			
+			em {
+				background: none repeat scroll 0 0 #a069df;
+			    border-radius: 20px;
+			    display: inline-block;
+				color: $white-shade;
+			    font-style: normal;
+				font-size: 16px;
+				border: 3px solid #864cc8;
+			    margin-left: 6px;
+			    padding: 0 10px 1px;
+			    position: absolute;
+			    right: 36px;
+			    top: -8px;
+			}
 		}
 		
 		li.nav-label {
@@ -1089,7 +1136,7 @@ aside.callout-box.warning {
 				display: block;
 				text-align: center;
 				width: 37px;
-				padding: 6px 4px 4px;
+				padding: 7px 4px 3px;
 			}
 			
 			label {
@@ -1174,16 +1221,17 @@ aside.callout-box.warning {
 	
 	h4.toolbar-main-button {
 		float: right;
-	    margin-top: 16px;
+	    margin-top: 17px;
 		margin-right: 18px;
 		
 		.button {
-			padding: 7px 12px 6px 10px;
+			padding: 8px 11px 6px;
 			border: 1px solid $column-line-shade;
 		}
 		
 		.primary.button {
-			padding: 8px 35px;
+			padding-left: 30px;
+			padding-right: 30px;
 			border: none;
 		}
 		
@@ -1521,7 +1569,7 @@ aside.callout-box.warning {
 						font-style: normal;
 						display: inline-block;
 						background: $success;
-						padding: 0px 10px;
+						padding: 0 8px;
 						margin-left: 6px;
 						border-radius: $big-rad-borders;
 					}
@@ -1728,7 +1776,7 @@ aside.callout-box.warning {
 	top: auto;
 	border-top: 1px solid $column-line-shade;
 	border-bottom: 0;
-	padding: 12px 25px;
+	padding: 12px 18px;
 	
 	form {
 		p, label, input, button, .button {
@@ -1742,37 +1790,38 @@ aside.callout-box.warning {
 		}
 	}
 	
-	div {
+	div.left, p, ul {
 		float: left;
-		margin-left: 15px;
+		margin-right: 8px;
 	}
 	
-	div:first-child, li { margin-left: 0 }
+	div.left, li { margin-left: 0 }
 	
-	div.buttons { 
+	div.right { 
 		float: right;
+	}
+	
+	
+	ul {
+	margin: 0;
+	border: 0;
+	background: none;
 		
-		ul {
-		float: none;
-		margin: 0;
-		border: 0;
+		
+		li {
+			margin-left: 5px;
 			
-			
-			li {
-				
-				margin-left: 5px;
-				
-				a {
+			a {
 				width: auto;
+				font-size: 18px;
 				padding: 6px 12px;
-				}
 			}
 		}
 	}
 	
 	.status {
 		position: absolute;
-		margin-left: 35px;
+		margin-left: 16%;
 		padding: 12px;
 		background: $warning;
 		bottom: 45px;
@@ -1807,7 +1856,7 @@ aside.callout-box.warning {
 		.main-content {
 			margin: 25px 15px;
 			background: $white-shade;
-			padding: 25px;
+			padding: 25px 18px;
 			box-shadow: 0 3px 1px $dark-shade;
 		}
 		
