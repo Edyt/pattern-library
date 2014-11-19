@@ -753,8 +753,8 @@ aside.callout-box.warning {
 	width: 500px;
 	height: 840px;
 	position: absolute;
-	right: -2px;
-	top: -3px;
+	right: -3px;
+	top: -4px;
 	z-index: -1;
 	border-radius: $rad-borders;
 	
@@ -1376,7 +1376,7 @@ aside.callout-box.warning {
 		span {
 			font-size: 15px;
 			position: relative;
-			bottom: 3px;
+			bottom: 2px;
 		}
 	}
 	
@@ -2314,6 +2314,36 @@ aside.callout-box.warning {
 
 .context-menu-accesskey {
     text-decoration: underline;
+}
+
+
+// styles for highlight squares 
+
+.oom-highlights, .oom-highlights.context-menu-item.hover {
+	background-color: $white-shade;
+    overflow: auto;
+    padding-right: 4px;
+	padding-top: 3px;
+	padding-left: 0;
+	margin: 0 5px;
+}
+
+.oom-highlights a {
+    display: block;
+	float: left;
+	margin: 5px;
+    height: 20px;
+    width: 25px;
+	border-radius: $rad-borders;
+	cursor: pointer;
+	text-align: center;
+	
+	span {
+	    bottom: 3px;
+	    font-size: 15px;
+	    position: relative;
+		color: $white-shade;
+	}
 }
 
 

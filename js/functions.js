@@ -66,6 +66,37 @@ $(function() {
 	});
 	
 	
+	
+	
+	// contet menu custom highlights
+	
+	$.contextMenu.types.label = function(item, opt, root) {
+	        // this === item.$node
+
+	        $(  '<a class="teal"><span class="dijitIcon tpIconCheck"></span></a>'
+	            + '<a class="blue"></a>'
+	            + '<a class="green"></a>'
+	            + '<a class="yellow"><span class="dijitIcon tpIconCheck"></span></a><br />'
+	            + '<a class="purple"></a>'
+	            + '<a class="orange"></a>'
+	            + '<a class="dark-blue"></a>')
+	            .appendTo(this)
+	            .on('click', 'li', function() {
+	                // do some funky stuff
+	                console.log('Clicked on ' + $(this).text());
+	                // hide the menu
+	                root.$menu.trigger('contextmenu:hide');
+	            });
+            
+	        this.addClass('oom-highlights').on('contextmenu:focus', function(e) {
+	            // setup some awesome stuff
+	        }).on('contextmenu:blur', function(e) {
+	            // tear down whatever you did
+	        }).on('keydown', function(e) {
+	            // some funky key handling, maybe?
+	        });
+	    };
+		
 	// context menu enable
 	$.contextMenu({
         selector: '.main-content', 
@@ -78,6 +109,12 @@ $(function() {
             "search": {name: "Search", icon: "edit"},
             "objection": {name: "Objection", icon: "cut"},
             "tag/comment": {name: "Tag/Comment", icon: "copy"},
+			"Highlights": {
+				"name" : "Highlights",
+				"items": {
+					label: {type: "label", customName: "Label"}
+				}
+			},
 			"Find in...": {
                 "name": "Find in...", 
                 "items": {
