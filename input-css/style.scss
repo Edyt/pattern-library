@@ -1299,11 +1299,17 @@ aside.callout-box.warning {
 	
 	ul {
 		float: left;
-		margin-left: 25px;
+		margin-left: 18px;
 		
 		li a {
 			font-size: 24px;
 		}
+	}
+	
+	h4 {
+		float: right;
+	    margin-top: 17px;
+		margin-right: 18px;
 	}
 }
 
@@ -1834,7 +1840,7 @@ aside.callout-box.warning {
 	}
 }
 
-.communication {
+.communication, .annotations {
 	padding-bottom: 60px; // pushes content up to make room for bottom actions-toolbar
 	
 	.toolbar {
@@ -1853,7 +1859,7 @@ aside.callout-box.warning {
 			background: $white-shade;
 		}
 	
-		.main-content {
+		.draft-content {
 			margin: 25px 15px;
 			background: $white-shade;
 			padding: 25px 18px;
@@ -1875,11 +1881,12 @@ aside.callout-box.warning {
 	}
 }
 
-.annotations {
+.annotations, .communication {
 	padding-bottom: 60px; // pushes content up to make room for bottom actions-toolbar
 	
 	.main-content {
 		margin: 0;
+		background: $white-shade;
 		
 		h2 {
 			padding: 12px 20px;
@@ -2003,6 +2010,62 @@ aside.callout-box.warning {
 		}
 	}
 }
+
+.communication .main-content {
+	margin: 18px 18px 0;
+	padding: 20px;
+	
+	h2 {
+		margin: 0 0 30px;
+		padding: 0;
+	}
+}
+
+// communication draft styles
+
+.communication.drafts {
+	.annotations-row {
+		padding: 12px 20px;
+		border-bottom: 1px solid $column-line-shade;
+		overflow: auto;
+		position: relative;
+		cursor: pointer;
+		
+		.dijitIcon, h3, p, h4 {
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: 35%;
+			font-weight: normal;
+			font-size: 18px;
+		}
+		
+		h4 {
+			font-weight: bold;
+		}
+
+		
+		p {
+			position: static;
+			width: 28%;
+		}
+	}
+	
+	.header {
+		h4 {
+			font-weight: normal;
+		}
+	}
+	
+	.main-content {
+		background: $white-shade;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+	
+	.all-drafts { display: none }
 
 
 // search results styles

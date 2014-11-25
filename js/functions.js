@@ -54,6 +54,22 @@ $(function() {
 		}
 	});	
 	
+	// showing all drafts content on communications-annotation.html
+	
+	$('.show-drafts').click(function() {
+		var parentPanel = $(this).closest('section');
+		
+		// hide draft content panel
+		$('.draft').toggle();
+		
+		// add class 'drafts' to parent container panel
+		$(parentPanel).toggleClass('drafts');
+		
+		// show all-drafts panel
+		$('.all-drafts').toggle();
+		
+	});
+	
 
 	
 	// early look at showing/hiding secondary content
