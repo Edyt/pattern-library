@@ -91,8 +91,13 @@ a:active {
 	outline: none;
 }
 
+::selection {
+	background: #ceeefa;
+}
 
-
+::-moz-selection {
+	background: #ceeefa;
+}
 
 section {
 	background: $white-shade;
@@ -677,12 +682,24 @@ aside.callout-box.warning {
 				color: $white-shade;
 			    font-style: normal;
 				font-size: 16px;
-				border: 3px solid #864cc8;
+				border: 4px solid #864cc8;
 			    margin-left: 6px;
-			    padding: 0 10px 1px;
+			    //  padding: 0 10px 1px; > save this value for when we use labels
 			    position: absolute;
-			    right: 36px;
-			    top: -8px;
+			    right: 37px;
+			    width: 18px;
+			    height: 18px;
+			    top: -6px;
+			}
+
+			em.orange {
+				background-color: #f18d5d;
+				border-color: #af6542;
+			}
+
+			em.green {
+				background-color: #97d659;
+				border-color: #719d45;
 			}
 		}
 		
@@ -1371,7 +1388,7 @@ aside.callout-box.warning {
 	
 	li:last-child { margin-right: 0 }
 	
-	a, .highlight {
+	li a, .highlight {
 		color: $white-shade;
 		width: 25px;
 		height: 20px;
@@ -1411,6 +1428,17 @@ aside.callout-box.warning {
 		color: $h4-shade;
 		position: relative;
 		top: 5px;
+	}
+	
+	.highlight {
+		border-radius: $rad-borders;
+		background: rgba(61,187,234,0.3);
+		padding: 0 4px;
+		
+		.highlight {
+			background: rgba(61,187,234,0.3);
+			margin-right: -4px;
+		}
 	}
 }
 
@@ -1458,78 +1486,6 @@ aside.callout-box.warning {
 
 
 
-// prior art changes
-
-.prior-art {
-	width: 85%;
-
-	.toolbar {
-		width: 85%;
-	}
-	
-	.main-content {
-		margin-left: 25px;
-		width: 68%;
-		float: left;
-		padding-top: 25px;
-		
-		img {
-			float: left;
-			width: 225px;
-			margin: 0 25px 25px 0;
-			border: 1px solid $background-shade;
-		}
-		
-		.pa-snippet {
-			margin-bottom: 25px;
-			overflow: auto;
-			
-			.tpIconSuccessCircle {
-				color: $success;
-			}
-		}
-		
-	
-		h4 {
-			font-size: 16px;
-			font-weight: normal;
-		}
-		
-		p {
-			margin-top: 5px;
-		}
-	}
-	
-	h2 {
-		padding: 0;
-		margin: 0 0 12px;
-		
-		.dijitIcon {
-			color: $success;
-		}
-	}
-	
-	.highlights-content {
-		float: left;
-		width: 8%;
-		
-	}
-	
-	.annotations-content {
-		float: left;
-		width: 18%;
-		
-		.random-icon {
-			padding: 0 10px 10px;
-			
-			p {
-				font-size: 16px;
-				line-height: 24px;
-				margin-top: 0;
-			}
-		}
-	}
-}
 
 
 
@@ -1589,7 +1545,8 @@ aside.callout-box.warning {
 					}
 					
 					span {
-					    display: block;
+					    // display: block;
+					    display: none;
 					    float: left;
 					    height: 26px;
 					    margin-right: 9px;
@@ -1667,84 +1624,7 @@ aside.callout-box.warning {
 	.first-panel, .second-panel, .toolbar { width: 35% }
 	
 	
-	.browse-items {
-		background: $lighter-column-shade;
-		padding: 25px;
-		
-		.workspace-item {
-			border: 1px solid $column-line-shade;
-			border-radius: $rad-borders;
-			margin-bottom: 15px;
-			padding: 15px 15px 15px 25px;
-			background: $white-shade;
-			cursor: pointer;
-			position: relative;
-			overflow: hidden;
-			
-			.highlight {
-				width: 10px;
-				position: absolute;
-				left: 0;
-				top: 0;
-				height: 100%;
-				display: block;
-			}
-			
-			img {
-				float: right;
-				width: 25%;
-			}
-			
-			ul 	{
-				overflow: auto;
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				
-				li {
-				float: left;
-				margin: 0 0 0 5px;
-				height: 30px;
-			
-					a {
-						border-radius: $big-rad-borders;
-						padding: 3px 8px;
-						color: $body-shade;
-						font-size: 16px;
-					}
-				}
-				
-				li:first-child {
-					margin-left: 0;
-				}
-				
-				li.rating a {
-					border-top-right-radius: 0px;
-					border-bottom-right-radius: 0px;
-					background: $column-line-shade;
-				}
-				
-				li.limit {
-					margin-left: 0;
-					margin-right: 10px;
-					
-					a {
-						border-top-left-radius: 0px;
-						border-bottom-left-radius: 0px;
-						background: $success;
-					}
-				}
-			}
-		}
-		
-		.workspace-item:hover {
-			border-color: $primary-accent;
-		}
-		
-		.workspace-item:active, .workspace-item.active {
-			background: $primary-accent-pastel;
-		}
-	}
+
 	
 	.workspace-preview {
 		padding-top: 207px;
@@ -1770,6 +1650,175 @@ aside.callout-box.warning {
 		}
 		
 		.panel-content {
+		}
+	}
+}
+
+// style for work manager snippets, tasks, priort art, etc
+.browse-items {
+	background: $lighter-column-shade;
+	padding: 25px;
+	
+	.workspace-item {
+		border: 1px solid $column-line-shade;
+		border-radius: $rad-borders;
+		margin-bottom: 15px;
+		padding: 15px 15px 15px 25px;
+		background: $white-shade;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		
+		.highlight {
+			width: 10px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			display: block;
+		}
+		
+		img {
+			float: left;
+			width: 115px;
+			margin: 0 25px 25px 0;
+		}
+		
+		ul 	{
+			overflow: auto;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			
+			li {
+			float: left;
+			margin: 0 0 0 5px;
+			height: 30px;
+		
+				a {
+					border-radius: $rad-borders;
+					padding: 2px 7px;
+					color: $body-shade;
+					font-size: 16px;
+				}
+			}
+			
+			li:first-child {
+				margin-left: 0;
+			}
+			
+			li.rating a {
+				border-top-right-radius: 0px;
+				border-bottom-right-radius: 0px;
+				background: $column-line-shade;
+			}
+			
+			li.limit {
+				margin-left: 0;
+				margin-right: 10px;
+				
+				a {
+					border-top-left-radius: 0px;
+					border-bottom-left-radius: 0px;
+					background: $success;
+				}
+			}
+
+			li.rank {
+				a {
+					font-size: 18px;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	
+	.workspace-item:hover {
+		border-color: $primary-accent;
+	}
+	
+	.workspace-item:active, .workspace-item.active {
+		background: $primary-accent-pastel;
+	}
+}
+
+
+.prior-art {
+	width: 70%;
+
+	.toolbar {
+		width: 70%;
+	}
+
+	.browse-items {
+		height: 100%;
+		background: $white-shade;
+		width: 71%;
+		float: left;
+
+		.dijitIcon {
+			font-size: 20px;
+			position: relative;
+			top: 2px;
+			color: $icon-shade;
+			left: 2px
+		}
+
+		.workspace-item {
+			padding: 25px;
+
+			img {
+				margin-bottom: 15px;
+				width: 225px;
+			}
+			
+		
+			h4 {
+				font-size: 16px;
+				font-weight: normal;
+			}
+			
+			p {
+				margin-bottom: 15px;
+				margin-left: 250px;
+			}
+		}
+		
+		h2 {
+			padding: 0;
+			margin: 0 0 12px;
+			
+			.dijitIcon {
+				color: $success;
+			}
+		}	
+	}
+
+	.highlights-content {
+		float: left;
+		width: 11%;
+
+		p {
+			text-align: center
+		}	
+	}
+	
+	.annotations-content {
+		float: left;
+		width: 18%;
+		
+		.random-icon {
+			padding: 0 10px 10px;
+			
+			p {
+				font-size: 16px;
+				line-height: 24px;
+				margin-top: 0;
+
+				span {
+					color: $icon-shade;
+				}
+			}
 		}
 	}
 }

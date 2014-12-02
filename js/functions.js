@@ -180,8 +180,13 @@ $(function() {
 	
 	// active clicks
 	$('.workspace-item').click(function(){
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');	
+		} else {
 		$('.workspace-item.active').toggleClass('active');
 		$(this).toggleClass('active');
+		}	
 		
 		$('.workspace-preview').fadeToggle().fadeToggle();
 	});
