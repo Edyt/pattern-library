@@ -673,6 +673,8 @@ aside.callout-box.warning {
 				width: 48px;
 				border: 1px solid $column-line-shade;
 				border-right: 0;
+				border-top-left-radius: $rad-borders;
+				border-bottom-left-radius: $rad-borders;
 			}
 			
 			em {
@@ -1726,8 +1728,10 @@ aside.callout-box.warning {
 
 			li.rank {
 				a {
-					font-size: 18px;
-					margin-right: 5px;
+					font-size: 22px;
+					color: $h4-shade;
+					font-weight: bold;
+					margin-right: 105px;
 				}
 			}
 		}
@@ -1739,6 +1743,20 @@ aside.callout-box.warning {
 	
 	.workspace-item:active, .workspace-item.active {
 		background: $primary-accent-pastel;
+	}
+}
+
+.work-manager {
+	.workspace-item {
+		h3 {
+			margin-bottom: 0;
+			color: $body-shade
+		}
+
+		p strong {
+			display: block;
+			color: $h4-shade;
+		}
 	}
 }
 
