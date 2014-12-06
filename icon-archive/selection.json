@@ -25,7 +25,7 @@
 			"properties": {
 				"order": 1,
 				"id": 117,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 42,
 				"name": "AllAssets"
 			},
@@ -62,7 +62,7 @@
 			"properties": {
 				"order": 2,
 				"id": 116,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 38,
 				"name": "DoubleArrow"
 			},
@@ -114,7 +114,7 @@
 			"properties": {
 				"order": 3,
 				"id": 115,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 36,
 				"name": "Flip90"
 			},
@@ -151,7 +151,7 @@
 			"properties": {
 				"order": 4,
 				"id": 114,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 64,
 				"name": "Lead"
 			},
@@ -238,7 +238,7 @@
 			"properties": {
 				"order": 5,
 				"id": 113,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 191,
 				"name": "Prefitted"
 			},
@@ -275,7 +275,7 @@
 			"properties": {
 				"order": 6,
 				"id": 112,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8249,
 				"name": "SingleArrow"
 			},
@@ -313,7 +313,7 @@
 			"properties": {
 				"order": 7,
 				"id": 111,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8250,
 				"name": "Underline"
 			},
@@ -350,7 +350,7 @@
 			"properties": {
 				"order": 92,
 				"id": 110,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 96,
 				"name": "PushPin"
 			},
@@ -408,7 +408,7 @@
 			"properties": {
 				"order": 91,
 				"id": 109,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 95,
 				"name": "MultiDocumentCheck"
 			},
@@ -459,7 +459,7 @@
 			"properties": {
 				"order": 90,
 				"id": 108,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 41,
 				"name": "DocumentCheck"
 			},
@@ -503,7 +503,7 @@
 			"properties": {
 				"order": 88,
 				"id": 107,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 169,
 				"name": "Highlight"
 			},
@@ -540,7 +540,7 @@
 			"properties": {
 				"order": 87,
 				"id": 106,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8212,
 				"name": "DecreaseFont"
 			},
@@ -596,7 +596,7 @@
 			"properties": {
 				"order": 86,
 				"id": 105,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 177,
 				"name": "IncreaseFont"
 			},
@@ -647,7 +647,7 @@
 			"properties": {
 				"order": 85,
 				"id": 104,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8240,
 				"name": "Print"
 			},
@@ -697,7 +697,7 @@
 			"properties": {
 				"order": 83,
 				"id": 101,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 207,
 				"name": "FocusMode",
 				"ligatures": ""
@@ -754,7 +754,7 @@
 			"properties": {
 				"order": 82,
 				"id": 100,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 710,
 				"name": "InsertSecondaryContent",
 				"ligatures": ""
@@ -812,7 +812,7 @@
 			"properties": {
 				"order": 84,
 				"id": 99,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 248,
 				"name": "InsertPrimaryContent",
 				"ligatures": ""
@@ -881,7 +881,7 @@
 			"properties": {
 				"order": 81,
 				"id": 98,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 85,
 				"name": "Document",
 				"ligatures": ""
@@ -926,7 +926,7 @@
 			"properties": {
 				"order": 80,
 				"id": 97,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 172,
 				"name": "CompletedTemplate",
 				"ligatures": ""
@@ -1153,7 +1153,7 @@
 			"properties": {
 				"order": 79,
 				"id": 96,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 711,
 				"name": "InactiveTemplate",
 				"ligatures": ""
@@ -1199,7 +1199,7 @@
 			"properties": {
 				"order": 74,
 				"id": 95,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8224,
 				"name": "ReplacePhoto",
 				"ligatures": ""
@@ -1238,7 +1238,7 @@
 			"properties": {
 				"order": 75,
 				"id": 94,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 180,
 				"name": "RenamePhoto",
 				"ligatures": ""
@@ -1274,7 +1274,7 @@
 			"properties": {
 				"order": 76,
 				"id": 93,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 76,
 				"name": "DeletePhoto",
 				"ligatures": ""
@@ -1310,7 +1310,7 @@
 			"properties": {
 				"order": 77,
 				"id": 92,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 211,
 				"name": "DownloadPhoto",
 				"ligatures": ""
@@ -1346,7 +1346,7 @@
 			"properties": {
 				"order": 78,
 				"id": 91,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 729,
 				"name": "AddPhoto",
 				"ligatures": ""
@@ -1384,7 +1384,7 @@
 			"properties": {
 				"order": 68,
 				"id": 90,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 122,
 				"name": "ZoomOut",
 				"ligatures": ""
@@ -1422,7 +1422,7 @@
 			"properties": {
 				"order": 69,
 				"id": 89,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 90,
 				"name": "ZoomIn",
 				"ligatures": ""
@@ -1464,7 +1464,7 @@
 			"properties": {
 				"order": 70,
 				"id": 88,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8719,
 				"name": "PagePrevious",
 				"ligatures": ""
@@ -1506,7 +1506,7 @@
 			"properties": {
 				"order": 71,
 				"id": 87,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 732,
 				"name": "PageNext",
 				"ligatures": ""
@@ -1545,7 +1545,7 @@
 			"properties": {
 				"order": 72,
 				"id": 86,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 168,
 				"name": "PageUp",
 				"ligatures": ""
@@ -1584,7 +1584,7 @@
 			"properties": {
 				"order": 73,
 				"id": 85,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 216,
 				"name": "PageBottom",
 				"ligatures": ""
@@ -1611,7 +1611,7 @@
 			"properties": {
 				"order": 67,
 				"id": 84,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 402,
 				"name": "File",
 				"ligatures": ""
@@ -1641,7 +1641,7 @@
 			"properties": {
 				"order": 66,
 				"id": 83,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 111,
 				"name": "AddObjection",
 				"ligatures": ""
@@ -1668,7 +1668,7 @@
 			"properties": {
 				"order": 61,
 				"id": 82,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 194,
 				"name": "Map",
 				"ligatures": ""
@@ -1698,7 +1698,7 @@
 			"properties": {
 				"order": 62,
 				"id": 80,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8800,
 				"name": "MarkEquivalent",
 				"ligatures": ""
@@ -1734,7 +1734,7 @@
 			"properties": {
 				"order": 63,
 				"id": 79,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 205,
 				"name": "StandardPhrase",
 				"ligatures": ""
@@ -1761,7 +1761,7 @@
 			"properties": {
 				"order": 64,
 				"id": 78,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 223,
 				"name": "SplitClaim",
 				"ligatures": ""
@@ -1788,7 +1788,7 @@
 			"properties": {
 				"order": 65,
 				"id": 77,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 181,
 				"name": "MergeClaim",
 				"ligatures": ""
@@ -1811,7 +1811,7 @@
 			"properties": {
 				"order": 1,
 				"id": 76,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 72,
 				"name": "H0",
 				"ligatures": ""
@@ -1836,7 +1836,7 @@
 			"properties": {
 				"order": 51,
 				"id": 75,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8730,
 				"name": "View",
 				"ligatures": ""
@@ -1859,7 +1859,7 @@
 			"properties": {
 				"order": 52,
 				"id": 74,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 117,
 				"name": "UpArrow",
 				"ligatures": ""
@@ -1882,7 +1882,7 @@
 			"properties": {
 				"order": 53,
 				"id": 73,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 174,
 				"name": "RightArrow",
 				"ligatures": ""
@@ -1905,7 +1905,7 @@
 			"properties": {
 				"order": 54,
 				"id": 72,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 108,
 				"name": "LeftArrow",
 				"ligatures": ""
@@ -1971,7 +1971,7 @@
 			"properties": {
 				"order": 55,
 				"id": 71,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 206,
 				"name": "DuplicateTemplate",
 				"ligatures": ""
@@ -1996,7 +1996,7 @@
 			"properties": {
 				"order": 56,
 				"id": 70,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 73,
 				"name": "AddInput",
 				"ligatures": ""
@@ -2043,7 +2043,7 @@
 			"properties": {
 				"order": 57,
 				"id": 69,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 82,
 				"name": "RemoveTemplate",
 				"ligatures": ""
@@ -2090,7 +2090,7 @@
 			"properties": {
 				"order": 58,
 				"id": 68,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 65,
 				"name": "AddTemplate",
 				"ligatures": ""
@@ -2114,7 +2114,7 @@
 			"properties": {
 				"order": 59,
 				"id": 67,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 197,
 				"name": "AddAnnotation",
 				"ligatures": ""
@@ -2138,7 +2138,7 @@
 			"properties": {
 				"order": 60,
 				"id": 66,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 199,
 				"name": "CreateLink",
 				"ligatures": ""
@@ -2162,7 +2162,7 @@
 			"properties": {
 				"order": 50,
 				"id": 65,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 229,
 				"name": "Aa",
 				"ligatures": ""
@@ -2185,7 +2185,7 @@
 			"properties": {
 				"order": 48,
 				"id": 64,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 45,
 				"name": "Minus",
 				"ligatures": ""
@@ -2210,7 +2210,7 @@
 			"properties": {
 				"order": 49,
 				"id": 63,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8706,
 				"name": "Dictionary",
 				"ligatures": ""
@@ -2241,7 +2241,7 @@
 			"properties": {
 				"order": 46,
 				"id": 62,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 231,
 				"name": "Claims",
 				"ligatures": ""
@@ -2267,7 +2267,7 @@
 			"properties": {
 				"order": 47,
 				"id": 61,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 960,
 				"name": "PhotoStacked",
 				"ligatures": ""
@@ -2290,7 +2290,7 @@
 			"properties": {
 				"order": 28,
 				"id": 60,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 69,
 				"name": "Ellipses",
 				"ligatures": ""
@@ -2313,7 +2313,7 @@
 			"properties": {
 				"order": 29,
 				"id": 59,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8747,
 				"name": "Bold",
 				"ligatures": ""
@@ -2341,7 +2341,7 @@
 			"properties": {
 				"order": 30,
 				"id": 58,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 305,
 				"name": "InsertUnorderedList",
 				"ligatures": ""
@@ -2368,7 +2368,7 @@
 			"properties": {
 				"order": 31,
 				"id": 57,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 62,
 				"name": "Indent",
 				"ligatures": ""
@@ -2391,7 +2391,7 @@
 			"properties": {
 				"order": 32,
 				"id": 56,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 105,
 				"name": "Italic",
 				"ligatures": ""
@@ -2419,7 +2419,7 @@
 			"properties": {
 				"order": 33,
 				"id": 55,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 8211,
 				"name": "InsertOrderedList",
 				"ligatures": ""
@@ -2446,7 +2446,7 @@
 			"properties": {
 				"order": 34,
 				"id": 54,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 60,
 				"name": "Outdent",
 				"ligatures": ""
@@ -2470,7 +2470,7 @@
 			"properties": {
 				"order": 35,
 				"id": 53,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 49,
 				"name": "H1",
 				"ligatures": ""
@@ -2494,7 +2494,7 @@
 			"properties": {
 				"order": 36,
 				"id": 52,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 50,
 				"name": "H2",
 				"ligatures": ""
@@ -2518,7 +2518,7 @@
 			"properties": {
 				"order": 37,
 				"id": 51,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 51,
 				"name": "H3",
 				"ligatures": ""
@@ -2542,7 +2542,7 @@
 			"properties": {
 				"order": 38,
 				"id": 50,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 52,
 				"name": "H4",
 				"ligatures": ""
@@ -2566,7 +2566,7 @@
 			"properties": {
 				"order": 39,
 				"id": 49,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 53,
 				"name": "H5",
 				"ligatures": ""
@@ -2590,7 +2590,7 @@
 			"properties": {
 				"order": 40,
 				"id": 48,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 54,
 				"name": "H6",
 				"ligatures": ""
@@ -2615,7 +2615,7 @@
 			"properties": {
 				"order": 41,
 				"id": 47,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 67,
 				"name": "TOC",
 				"ligatures": ""
@@ -2639,7 +2639,7 @@
 			"properties": {
 				"order": 42,
 				"id": 32,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 77,
 				"name": "Mapping",
 				"ligatures": ""
@@ -2666,7 +2666,7 @@
 			"properties": {
 				"order": 43,
 				"id": 31,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 83,
 				"name": "SearchFindInPlace",
 				"ligatures": ""
@@ -2689,7 +2689,7 @@
 			"properties": {
 				"order": 44,
 				"id": 30,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 79,
 				"name": "CircleFilled",
 				"ligatures": ""
@@ -2712,7 +2712,7 @@
 			"properties": {
 				"order": 45,
 				"id": 29,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 120,
 				"name": "CloseX",
 				"ligatures": ""
@@ -2738,7 +2738,7 @@
 			"properties": {
 				"order": 2,
 				"id": 28,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 99,
 				"name": "Calendar",
 				"ligatures": ""
@@ -2761,7 +2761,7 @@
 			"properties": {
 				"order": 3,
 				"id": 27,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 98,
 				"name": "ChatBubble",
 				"ligatures": ""
@@ -2784,7 +2784,7 @@
 			"properties": {
 				"order": 4,
 				"id": 26,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 66,
 				"name": "LightningBolt",
 				"ligatures": ""
@@ -2808,7 +2808,7 @@
 			"properties": {
 				"order": 5,
 				"id": 25,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 34,
 				"name": "Cite",
 				"ligatures": ""
@@ -2831,7 +2831,7 @@
 			"properties": {
 				"order": 6,
 				"id": 24,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 118,
 				"name": "Check",
 				"ligatures": ""
@@ -2854,7 +2854,7 @@
 			"properties": {
 				"order": 14,
 				"id": 23,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 68,
 				"name": "DropdownArrow",
 				"ligatures": ""
@@ -2877,7 +2877,7 @@
 			"properties": {
 				"order": 15,
 				"id": 22,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 43,
 				"name": "Plus",
 				"ligatures": ""
@@ -2900,7 +2900,7 @@
 			"properties": {
 				"order": 16,
 				"id": 21,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 97,
 				"name": "Analyze",
 				"ligatures": ""
@@ -2954,7 +2954,7 @@
 			"properties": {
 				"order": 17,
 				"id": 20,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 100,
 				"name": "DocumentDotted",
 				"ligatures": ""
@@ -2985,7 +2985,7 @@
 			"properties": {
 				"order": 18,
 				"id": 19,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 70,
 				"name": "DocumentsFolder",
 				"ligatures": ""
@@ -3009,7 +3009,7 @@
 			"properties": {
 				"order": 19,
 				"id": 18,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 61,
 				"name": "DocumentsStacked",
 				"ligatures": ""
@@ -3033,7 +3033,7 @@
 			"properties": {
 				"order": 20,
 				"id": 17,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 101,
 				"name": "FemaleMale",
 				"ligatures": ""
@@ -3057,7 +3057,7 @@
 			"properties": {
 				"order": 21,
 				"id": 16,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 102,
 				"name": "Folder",
 				"ligatures": ""
@@ -3080,7 +3080,7 @@
 			"properties": {
 				"order": 22,
 				"id": 15,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 103,
 				"name": "Gear",
 				"ligatures": ""
@@ -3104,7 +3104,7 @@
 			"properties": {
 				"order": 23,
 				"id": 14,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 104,
 				"name": "Home",
 				"ligatures": ""
@@ -3128,7 +3128,7 @@
 			"properties": {
 				"order": 24,
 				"id": 13,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 109,
 				"name": "Communication",
 				"ligatures": ""
@@ -3151,7 +3151,7 @@
 			"properties": {
 				"order": 25,
 				"id": 12,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 110,
 				"name": "Research",
 				"ligatures": ""
@@ -3180,7 +3180,7 @@
 			"properties": {
 				"order": 26,
 				"id": 11,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 78,
 				"name": "NotesPencil",
 				"ligatures": ""
@@ -3205,7 +3205,7 @@
 			"properties": {
 				"order": 27,
 				"id": 10,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 112,
 				"name": "Pencil",
 				"ligatures": ""
@@ -3230,7 +3230,7 @@
 			"properties": {
 				"order": 7,
 				"id": 9,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 80,
 				"name": "Photo",
 				"ligatures": ""
@@ -3254,7 +3254,7 @@
 			"properties": {
 				"order": 8,
 				"id": 8,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 114,
 				"name": "Refresh",
 				"ligatures": ""
@@ -3277,7 +3277,7 @@
 			"properties": {
 				"order": 9,
 				"id": 7,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 115,
 				"name": "Search",
 				"ligatures": ""
@@ -3300,7 +3300,7 @@
 			"properties": {
 				"order": 10,
 				"id": 6,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 86,
 				"name": "SuccessCircle",
 				"ligatures": ""
@@ -3323,7 +3323,7 @@
 			"properties": {
 				"order": 11,
 				"id": 5,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 116,
 				"name": "Tag",
 				"ligatures": ""
@@ -3346,7 +3346,7 @@
 			"properties": {
 				"order": 12,
 				"id": 4,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 84,
 				"name": "Trash",
 				"ligatures": ""
@@ -3369,7 +3369,7 @@
 			"properties": {
 				"order": 13,
 				"id": 3,
-				"prevSize": 16,
+				"prevSize": 32,
 				"code": 119,
 				"name": "WarningTriangle",
 				"ligatures": ""
@@ -3380,7 +3380,7 @@
 	],
 	"height": 1024,
 	"metadata": {
-		"name": "icomoon"
+		"name": "edyt-icons"
 	},
 	"preferences": {
 		"showGlyphs": true,
@@ -3388,9 +3388,9 @@
 		"showQuickUse2": true,
 		"showSVGs": true,
 		"fontPref": {
-			"prefix": "icon-",
+			"prefix": "tpIcon",
 			"metadata": {
-				"fontFamily": "icomoon",
+				"fontFamily": "edyt-icons",
 				"majorVersion": 1,
 				"minorVersion": 0
 			},
