@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'edyt-icons';
-	src:url('fonts/edyt-icons.eot?-tzz59d');
-	src:url('fonts/edyt-icons.eot?#iefix-tzz59d') format('embedded-opentype'),
-		url('fonts/edyt-icons.woff?-tzz59d') format('woff'),
-		url('fonts/edyt-icons.ttf?-tzz59d') format('truetype'),
-		url('fonts/edyt-icons.svg?-tzz59d#edyt-icons') format('svg');
+	src:url('fonts/edyt-icons.eot?2sknji');
+	src:url('fonts/edyt-icons.eot?#iefix2sknji') format('embedded-opentype'),
+		url('fonts/edyt-icons.woff?2sknji') format('woff'),
+		url('fonts/edyt-icons.ttf?2sknji') format('truetype'),
+		url('fonts/edyt-icons.svg?2sknji#edyt-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.tpIconFeature:before {
+	content: "\fb01";
+}
+.tpIconCreateObjection:before {
+	content: "\25";
+}
+.tpIconMarkUnequivalent:before {
+	content: "\a7";
+}
 .tpIconRestartNumberingClaim:before {
 	content: "\a2";
 }
