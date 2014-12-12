@@ -1,23 +1,15 @@
 @font-face {
 	font-family: 'edyt-icons';
-<<<<<<< HEAD
-	src:url('fonts/edyt-icons.eot?2sknji');
-	src:url('fonts/edyt-icons.eot?#iefix2sknji') format('embedded-opentype'),
-		url('fonts/edyt-icons.woff?2sknji') format('woff'),
-		url('fonts/edyt-icons.ttf?2sknji') format('truetype'),
-		url('fonts/edyt-icons.svg?2sknji#edyt-icons') format('svg');
-=======
-	src:url('fonts/edyt-icons.eot?-lx4w6l');
-	src:url('fonts/edyt-icons.eot?#iefix-lx4w6l') format('embedded-opentype'),
-		url('fonts/edyt-icons.woff?-lx4w6l') format('woff'),
-		url('fonts/edyt-icons.ttf?-lx4w6l') format('truetype'),
-		url('fonts/edyt-icons.svg?-lx4w6l#edyt-icons') format('svg');
->>>>>>> FETCH_HEAD
+	src:url('fonts/edyt-icons.eot?sddup3');
+	src:url('fonts/edyt-icons.eot?#iefixsddup3') format('embedded-opentype'),
+		url('fonts/edyt-icons.woff?sddup3') format('woff'),
+		url('fonts/edyt-icons.ttf?sddup3') format('truetype'),
+		url('fonts/edyt-icons.svg?sddup3#edyt-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="tpIcon"], [class*=" tpIcon"] {
+.dijitIcon {
 	font-family: 'edyt-icons';
 	speak: none;
 	font-style: normal;
