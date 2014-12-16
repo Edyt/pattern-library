@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="tpIcon"], [class*=" tpIcon"] {
+[class^="tpIcon"], [class*=" tpIcon"], .dijitIcon {
 	font-family: 'edyt-icons';
 	speak: none;
 	font-style: normal;
