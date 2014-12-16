@@ -58,20 +58,24 @@
 			<section class="single-panel first-panel workspace-nav">
 				<div class="toolbar">
 					<form>
-						<input type="text" value="Filter by" />
+						<input type="text" value="and" />
 					</form>
 					
 					<ul>
-						<li class="text-button"><a href="#">Sort By <span class="dijitIcon tpIconDropdownArrow"></span></a></li>
+						<li class="text-button active"><a href="#">Target <span class="dijitIcon tpIconDropdownArrow"></span></a></li>
 						<li><a href="#"><span class="dijitIcon tpIconFolder"></span></a><label>Folder</label></li>
 						<li><a href="#"><span class="dijitIcon tpIconPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
 						<li><a href="#"><span class="dijitIcon tpIconPhoto"></span></a><label>Figure</label></li>
 						<li><a href="#"><span class="dijitIcon tpIconRefresh"></span></a><label>Refresh</label></li>
 					</ul>
+
+					<h5 class="off-label">Sort by:</h5>
 				</div>
 			
 				<div class="panel-content">
 					<div class="browse-items">
+
+						<h4>8 results <em>3 hidden by filter <strong>"and"</strong></em></h4>
 						
 						<div class="workspace-item" tabindex="0">
 							<div class="highlight teal"></div>
@@ -111,7 +115,9 @@
 							</ul>
 						</div>
 						
-						<div class="workspace-item" tabindex="0">
+						<div class="workspace-item blocked" tabindex="0">
+							<p class="status">Task currently blocked: Under Review</p>
+
 							<div class="highlight yellow"></div>
 						
 							<img src="images/patent-figure.gif" alt="Patent Figure" />
@@ -148,9 +154,13 @@
 							</ul>
 						</div>
 					
-						<div class="workspace-item" tabindex="0">
+						<div class="workspace-item loading" tabindex="0">
+							<p class="status">Retrieving updated task</p>
+
 							<div class="highlight teal"></div>
-						
+
+							<img class="loader" src="images/ajax-loader.gif" />
+							
 							<img src="images/patent-figure.gif" alt="Patent Figure" />
 						
 							<h3>Weather-tight Video Projector with Una...</h3>

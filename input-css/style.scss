@@ -1624,6 +1624,12 @@ aside.callout-box.warning {
 	}
 	
 	.first-panel, .second-panel, .toolbar { width: 35% }
+
+	.toolbar .off-label {
+		float: right;
+		margin: 15px 8px 0 0;
+		font-weight: normal
+	}
 	
 	
 
@@ -1659,8 +1665,26 @@ aside.callout-box.warning {
 // style for work manager snippets, tasks, priort art, etc
 .browse-items {
 	background: $lighter-column-shade;
-	padding: 25px;
+	padding: 15px 25px 25px;
 	
+	> h4 {
+		font-size: 20px;
+		margin-bottom: 12px;
+
+		em {
+			font-style: normal;
+			font-size: 16px;
+			font-weight: normal;
+			margin-left: 5px;
+
+			strong {
+				font-weight: normal;
+				font-size: 18px;
+				color: $body-shade;
+			}
+		}
+	}
+
 	.workspace-item {
 		border: 1px solid $column-line-shade;
 		border-radius: $rad-borders;
@@ -1678,6 +1702,16 @@ aside.callout-box.warning {
 			top: 0;
 			height: 100%;
 			display: block;
+		}
+
+		.status {
+		    font-size: 16px;
+			line-height: 20px;
+    		margin: -15px 0 16px -15px;
+    		padding: 8px;
+    		text-align: center;
+    		top: 0;
+    		width: 108%;
 		}
 		
 		img {
@@ -1743,6 +1777,45 @@ aside.callout-box.warning {
 	
 	.workspace-item:active, .workspace-item.active {
 		background: $primary-accent-pastel;
+	}
+
+	.workspace-item.blocked {
+		background: $lighter-column-shade;
+		border: 2px solid $error;
+		cursor: not-allowed;
+
+		.status {
+			background: $error;
+			color: $white-shade;
+		}
+	}
+
+	.workspace-item.loading {
+		p, p strong, h3, h4, li, li a, li.rank a {
+			color: $darker-column-shade;
+		}
+
+		li, li a, li.rank a {
+			color: $column-shade;
+		}
+
+		img {
+			opacity: 0.4;
+		}
+
+		img.loader {
+			width: auto;
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			margin: 0;
+			opacity: 1;
+		}
+
+		p.status {
+			color: $body-shade;
+			background: $tooltip;
+		}
 	}
 }
 
