@@ -192,8 +192,8 @@ $(function() {
 	});
 	
 	// search.html functions
-	$('.tpIconLeftArrow').click(function(){
-		$('.search-parameters').toggleClass('collapsed');
+	$('#collapse-search').click(function(){
+		$('body').toggleClass('collapsed');
 	});
 	
 });

@@ -141,16 +141,15 @@ section {
 	
 	.triple-panel {
 		.single-panel, .toolbar, .actions-toolbar {
-			width: 30%;
+			width: 34%;
 		}
 		
 		
 		// first search panel 
 		.search-parameters, .search-parameters .toolbar { 
-			width: 20%;
+			width: 22%;
 		}
-	}
-	
+	}	
 
 	a.button {
 		border-radius: $rad-borders;
@@ -965,7 +964,7 @@ aside.callout-box.warning {
 	
 	//	styles for search query helper
 	
-	.search-parameters + .panel-content {
+	.search-helper-parameters + .panel-content {
 		height: 580px;
 	}
 	
@@ -979,13 +978,15 @@ aside.callout-box.warning {
 	}
 	
 	.concept-row {
+		position: relative;
 		clear: both;
 		margin-bottom: 12px;
 		
 		span {
 		    display: block;
-			float: right;
-			margin: 4px 0 12px 12px;
+			position: absolute;
+			top: 4px;
+			right: 12px;
 		    height: 20px;
 		    width: 20px;
 			cursor: pointer;
@@ -2214,7 +2215,7 @@ aside.callout-box.warning {
 .search-results {
 	.search-result-snippet {
 		margin-bottom: 25px;
-		clear: both;
+		overflow: auto;
 		border-bottom: 1px solid $column-line-shade;
 		
 		img {
@@ -2271,17 +2272,19 @@ aside.callout-box.warning {
 			
 			.concept-row {
 				clear: both;
+				position: relative;
 				margin-bottom: 12px;
 				
 				span {
 				    display: block;
-					float: right;
-					margin: 4px 0 12px 12px;
+					position: absolute;
+					top: 4px;
+					right: 12px;
 				    height: 20px;
 				    width: 20px;
 					cursor: pointer;
-				}
-				
+				}	
+
 				h4, input[type="checkbox"] {
 					float: left;
 					margin-left: 5px;
@@ -2319,8 +2322,13 @@ aside.callout-box.warning {
 	}
 }
 
-.search-parameters.collapsed {
-	width: 10%;
+.search.collapsed {
+	.single-panel, .toolbar, .actions-toolbar {
+		width: 42%;
+	}
+}
+.search.collapsed .search-parameters {
+	width: 6%;
 	
 	div {
 		display: none;
@@ -2328,17 +2336,33 @@ aside.callout-box.warning {
 	
 	.toolbar:first-child {
 		display: block;
-		width: 10%;
+		width: 6%;
+		height: auto;
 		
+		h1 { float: none }
+
 		ul {
 			display: none;
 		}
-		
-		.tpIconLeftArrow:before {
-			display: inline-block;
-			transform: rotate(180deg);
+
+		.toolbar-main-button {
+			float: none;
+			margin: 6px 0 20px 15px;
+
+			a {
+				display: block;				
+				text-align: center;
+				width: 88%;
+			}
+
+			.tpIconLeftArrow:before {
+				display: inline-block;
+				transform: rotate(180deg);
+			}
 		}
 	}
+
+	
 }
 
 
