@@ -1663,6 +1663,14 @@ aside.callout-box.warning {
 	}
 }
 
+#work-manager.fwm .workspace-preview .toolbar {
+	display: none
+}
+
+#work-manager.fwm .workspace-preview .toolbar.visible {
+	display: block
+}
+
 // style for work manager snippets, tasks, priort art, etc
 .browse-items {
 	background: $lighter-column-shade;
@@ -1707,12 +1715,15 @@ aside.callout-box.warning {
 
 		.status {
 		    font-size: 16px;
-			line-height: 20px;
-    		margin: -15px 0 16px -15px;
-    		padding: 8px;
-    		text-align: center;
-    		top: 0;
-    		width: 108%;
+		    line-height: 20px;
+		    margin-top: 10px;
+		    padding: 11px;
+		    position: absolute;
+		    text-align: left;
+		    top: 0;
+		    width: 94%;
+		    z-index: 200;
+		    border-radius: $rad-borders;
 		}
 		
 		img {
@@ -1785,6 +1796,14 @@ aside.callout-box.warning {
 		border: 2px solid $error;
 		cursor: not-allowed;
 
+		p, p strong, h3, h4, li, li a, li.rank a {
+			color: $darker-column-shade;
+		}
+
+		li, li a, li.rank a {
+			color: $column-shade;
+		}
+
 		.status {
 			background: $error;
 			color: $white-shade;
@@ -1807,10 +1826,11 @@ aside.callout-box.warning {
 		img.loader {
 			width: auto;
 			position: absolute;
-			right: 15px;
-			top: 10px;
+			right: 22px;
+			top: 23px;
 			margin: 0;
 			opacity: 1;
+			z-index: 300;
 		}
 
 		p.status {
