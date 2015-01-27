@@ -277,6 +277,10 @@ ul, ol {
 	padding: 0;
 }
 
+.hidden {
+	display: none;
+}
+
 // forms 
 
 form {
@@ -1518,6 +1522,7 @@ aside.callout-box.warning {
 		
 			li {
 				margin: 0;
+				text-transform: capitalize;
 			
 				a {
 					text-decoration: none;
@@ -1675,6 +1680,7 @@ aside.callout-box.warning {
 .browse-items {
 	background: $lighter-column-shade;
 	padding: 15px 25px 25px;
+	height: 100%;
 	
 	> h4 {
 		font-size: 20px;
