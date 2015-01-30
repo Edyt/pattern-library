@@ -285,6 +285,7 @@ ul, ol {
 
 form {
 	position: relative;
+	margin: 0;
 	
 	p {
 		overflow: auto;
@@ -1627,14 +1628,21 @@ aside.callout-box.warning {
 	
 	.first-panel {
 		margin-left: 290px;
+
+		.panel-content {
+			background: $lighter-column-shade;
+		}
 	}
 	
 	.first-panel, .second-panel, .toolbar { width: 35% }
 
-	.toolbar .off-label {
-		float: right;
-		margin: 15px 8px 0 0;
-		font-weight: normal
+	.toolbar {
+
+		.off-label {
+			float: right;
+			margin: 15px 8px 0 0;
+			font-weight: normal
+		}
 	}
 	
 	
@@ -1668,19 +1676,30 @@ aside.callout-box.warning {
 	}
 }
 
-#work-manager.fwm .workspace-preview .toolbar {
-	display: none
-}
+#work-manager.fwm {
+	.workspace-preview .toolbar {
+		display: none
+	}
 
-#work-manager.fwm .workspace-preview .toolbar.visible {
-	display: block
+	.workspace-preview .toolbar.visible {
+		display: block
+	}
+
+	.workspace-nav .toolbar {
+		ul li a {
+			padding: 8px 4px 9px;
+			height: 37px;
+		}
+
+		ul li.text-button a {
+			padding: 5px 8px;
+		}
+	}
 }
 
 // style for work manager snippets, tasks, priort art, etc
 .browse-items {
-	background: $lighter-column-shade;
 	padding: 15px 25px 25px;
-	height: 100%;
 	
 	> h4 {
 		font-size: 20px;
@@ -1846,7 +1865,7 @@ aside.callout-box.warning {
 	}
 }
 
-.work-manager {
+#work-manager {
 	.workspace-item {
 		h3 {
 			margin-bottom: 0;
