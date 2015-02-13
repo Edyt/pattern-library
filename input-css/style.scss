@@ -1533,16 +1533,22 @@ aside.callout-box.warning {
 					font-size: 16px;
 					display: block;
 					text-align: left;
-					padding: 8px 14px;
+					padding: 7px 14px;
 					position: relative;
 				
 					em {
 						font-style: normal;
 						display: inline-block;
-						background: $success;
-						padding: 0 8px;
+						border: 1px solid #c75302;
+						color: #c75302;
+						padding: 0px 8px 4px;
 						margin-left: 6px;
-						border-radius: $big-rad-borders;
+						height: 27px;
+						font-size: 17px;
+						border-radius: 50%;
+						position: absolute;
+						right: 42px;
+						top: 7px;
 					}
 				
 					strong {
@@ -1564,13 +1570,25 @@ aside.callout-box.warning {
 				}
 			}
 		
-			li.empty-row, li.empty-row:hover, li.empty-row:active {
-				a {
-					background: $white-shade;
-					cursor: default;
-					height: 40px;
+			li.tray-title, li.tray-title:hover, li.tray-title:active {
+				background: $white-shade;
+				cursor: default;
+				font-size: 20px;
+				display: block;
+				text-align: left;
+				padding: 8px 14px 8px 10px;
+				color: $primary-accent;
+				margin-top: 45px;
+				border-bottom: 1px solid $column-shade;
+
+				h1 {
+					color: $primary-accent;
+					margin-top: 0;
 				}
-			
+			}
+
+			li.tray-title:first-child {
+				margin-top: 10px
 			}
 		
 			li.nav-label {
@@ -1610,13 +1628,13 @@ aside.callout-box.warning {
 			li:active {
 			
 				a {
-					background: $lighter-column-shade;
+					background: $primary-accent-pastel;
 				}
 			}
 		
 			li.active {
 				a {
-					font-weight: bold;
+					background: $primary-accent-pastel;
 				
 					em {
 						font-weight: normal
@@ -1648,7 +1666,7 @@ aside.callout-box.warning {
 	
 
 	
-	.workspace-preview {
+	.dossier-preview {
 		padding-top: 207px;
 		
 		.toolbar {
@@ -1677,15 +1695,15 @@ aside.callout-box.warning {
 }
 
 #work-manager.fwm {
-	.workspace-preview .toolbar {
+	.dossier-preview .toolbar {
 		display: none
 	}
 
-	.workspace-preview .toolbar.visible {
+	.dossier-preview .toolbar.visible {
 		display: block
 	}
 
-	.workspace-nav .toolbar {
+	.tasklist .toolbar {
 		ul li a {
 			padding: 8px 4px 9px;
 			height: 37px;
@@ -1699,35 +1717,39 @@ aside.callout-box.warning {
 
 // style for work manager snippets, tasks, priort art, etc
 .browse-items {
-	padding: 15px 25px 25px;
+	padding: 8px;
 	
 	> h4 {
-		font-size: 20px;
-		margin-bottom: 12px;
+		font-size: 15px;
+		margin-bottom: 5px;
 
 		em {
 			font-style: normal;
-			font-size: 16px;
 			font-weight: normal;
 			margin-left: 5px;
 
 			strong {
 				font-weight: normal;
-				font-size: 18px;
 				color: $body-shade;
 			}
 		}
 	}
 
-	.workspace-item {
+	.task {
 		border: 1px solid $column-line-shade;
 		border-radius: $rad-borders;
-		margin-bottom: 15px;
-		padding: 15px 15px 15px 25px;
+		margin-bottom: 8px;
+		padding: 5px;
 		background: $white-shade;
 		cursor: pointer;
 		position: relative;
 		overflow: hidden;
+		box-shadow: 0 1px 0 #d4d4d4;
+
+		div {
+			float: left;
+			margin-right: 5px;
+		}
 		
 		.highlight {
 			width: 10px;
@@ -1739,22 +1761,27 @@ aside.callout-box.warning {
 		}
 
 		.status {
-		    font-size: 16px;
-		    line-height: 20px;
-		    margin-top: 10px;
-		    padding: 11px;
+		    font-size: 13px;
+		    line-height: 13px;
+		    margin: 0;
+		    bottom: 5px;
+		    padding: 5px;
 		    position: absolute;
 		    text-align: left;
-		    top: 0;
-		    width: 94%;
+		    width: 98%;
 		    z-index: 200;
 		    border-radius: $rad-borders;
 		}
 		
 		img {
 			float: left;
-			width: 115px;
-			margin: 0 25px 25px 0;
+			width: 52px;
+			margin: 0;
+		}
+
+		.dijitIcon {
+			color: $icon-shade;
+			margin-right: 5px
 		}
 		
 		ul 	{
@@ -1764,88 +1791,147 @@ aside.callout-box.warning {
 			padding: 0;
 			
 			li {
-			float: left;
-			margin: 0 0 0 5px;
-			height: 30px;
-		
-				a {
-					border-radius: $rad-borders;
-					padding: 2px 7px;
-					color: $body-shade;
-					font-size: 16px;
-				}
+				display: block;
+				margin: 0 0 6px;
+				color: $body-shade;
+				font-size: 13px;
+				line-height: inherit;
 			}
 			
 			li:first-child {
 				margin-left: 0;
 			}
-			
-			li.rating a {
-				border-top-right-radius: 0px;
-				border-bottom-right-radius: 0px;
-				background: $column-line-shade;
+
+			li:last-child {
+				margin-bottom: 0;
 			}
-			
-			li.limit {
-				margin-left: 0;
-				margin-right: 10px;
-				
-				a {
-					border-top-left-radius: 0px;
-					border-bottom-left-radius: 0px;
-					background: $success;
+		}
+
+		li.phase, li.badge, li.codes span {
+			border-radius: 3px;
+			padding: 3px 8px;
+			background-color: #96d2fc;
+			color: #737373;
+			height: 24px;
+		}
+
+		div.phase-rank {
+			li {
+				text-align: center
+			}
+
+			li.rank, li.language {
+				font-weight: bold;
+			}
+
+			li.language {
+				color: $icon-shade;
+				margin-bottom: 7px;
+				padding-top: 1px;
+			}
+		}
+
+		div.title-applicant {
+			width: 48%;
+
+			h3, p {
+				font-size: 15px;
+				line-height: 16px;
+				margin: 0 0 5px
+			}
+
+			h3 {
+				height: 27px;
+				font-weight: bold;
+				line-height: 15px;
+
+			}
+
+			p {
+				color: #737373;
+			}
+		}
+
+
+		div.badge-codes {
+			li.badge {
+				color: #444;
+				padding: 1px 30px 2px 5px;
+				background: #E9F5FE;
+				background: -moz-linear-gradient(left, #E9F5FE 82%, #96D2FC 82%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(82%,#E9F5FE), color-stop(82%,#96D2FC));
+				background: -webkit-linear-gradient(left, #E9F5FE 82%,#96D2FC 82%);
+				border: 1px solid #679ABE;
+				font-size: 15px;
+				position: relative;
+				width: 130px;
+			}
+
+			li.codes {
+				span {
+					padding: 0px 3px 1px;
+					background-color: #E3F4FA;
+					border: 2px dashed #77CBEB;
+					font-size: 12px;
+					height: 20px;
+					color: #666;
+					display: inline-block;
+				}
+
+				span.green {
+					background-color: #DCF5F3;
+					border-color: #56D4C7;
+				}
+
+				span.grey {
+					background-color: #eee;
+					border-color: #ddd;
 				}
 			}
 
-			li.rank {
-				a {
-					font-size: 22px;
-					color: $h4-shade;
-					font-weight: bold;
-					margin-right: 105px;
-				}
+			li.classification {
+				color: #737373;
+			}
+		}
+
+		div.meta {
+			li {
+				margin-bottom: 10px
+			}
+
+			li:last-child {
+				margin-bottom: 0
 			}
 		}
 	}
 	
-	.workspace-item:hover {
+	.task:hover {
 		border-color: $primary-accent;
 	}
 	
-	.workspace-item:active, .workspace-item.active {
+	.task:active, .task.active {
 		background: $primary-accent-pastel;
 	}
 
-	.workspace-item.blocked {
+	.task.blocked {
 		background: $lighter-column-shade;
 		border: 2px solid $error;
 		cursor: not-allowed;
 
-		p, p strong, h3, h4, li, li a, li.rank a {
-			color: $darker-column-shade;
-		}
-
-		li, li a, li.rank a {
-			color: $column-shade;
+		* {
+			opacity: 0.75;
 		}
 
 		.status {
 			background: $error;
 			color: $white-shade;
+			opacity: 1;
 		}
 	}
 
-	.workspace-item.loading {
-		p, p strong, h3, h4, li, li a, li.rank a {
-			color: $darker-column-shade;
-		}
-
-		li, li a, li.rank a {
-			color: $column-shade;
-		}
-
-		img {
-			opacity: 0.4;
+	.task.loading {
+		* {
+			opacity: 0.75;
 		}
 
 		img.loader {
@@ -1858,27 +1944,13 @@ aside.callout-box.warning {
 			z-index: 300;
 		}
 
-		p.status {
+		.status {
 			color: $body-shade;
 			background: $tooltip;
+			opacity: 1;
 		}
 	}
 }
-
-#work-manager {
-	.workspace-item {
-		h3 {
-			margin-bottom: 0;
-			color: $body-shade
-		}
-
-		p strong {
-			display: block;
-			color: $h4-shade;
-		}
-	}
-}
-
 
 .prior-art {
 	width: 70%;
@@ -1901,7 +1973,7 @@ aside.callout-box.warning {
 			left: 2px
 		}
 
-		.workspace-item {
+		.task {
 			padding: 25px;
 
 			img {
