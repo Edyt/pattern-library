@@ -1501,17 +1501,20 @@ aside.callout-box.warning {
 
 
 #work-manager {
-	
+	.primary-nav {
+		width: 3%;
+	}
+
 	.intray-nav {
 		background: $white-shade;
-		margin: 0 0 0 65px;
+		margin: 0 0 0 3%;
 		padding: 0;
 		top: 0;
 		position: fixed;
 		left: 0;
 		height: 100%;
 		border-right: 1px solid $column-line-shade;
-		width: 225px;
+		width: 13%;
 		border-top: 0;
 		border-bottom: 0;
 	
@@ -1645,10 +1648,11 @@ aside.callout-box.warning {
 	}
 	
 	.first-panel {
-		margin-left: 290px;
+		margin-left: 16%;
 
 		.panel-content {
 			background: $lighter-column-shade;
+			margin-top: 60px;
 		}
 	}
 	
@@ -1662,12 +1666,17 @@ aside.callout-box.warning {
 	}
 
 	.content-toolbar {
+		position: fixed;
+		top: 60px;
+		width: 35%;
+
 		form input[type="text"] {
-			margin-right: 8px
+			margin-right: 8px;
+			width: 23%;
 		}
 
 		ul {
-			margin-top: 12px;
+			margin: 12px 5px 0;
 		}
 	}
 
@@ -1680,12 +1689,13 @@ aside.callout-box.warning {
 	
 	
 
-	
 	.dossier-preview {
 		padding-top: 207px;
+		width: calc(49% - 5px);
 		
 		.toolbar {
 			height: 207px;
+			width: calc(49% - 5px);
 			
 			h3 {
 				padding: 10px 10px 10px 18px;
