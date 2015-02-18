@@ -1236,10 +1236,9 @@ aside.callout-box.warning {
 		
 		li.text-button {
 			a {
-				font-size: 18px;
-				padding: 5px 8px;
+				font-size: 14px;
+				padding: 3px 9px;
 				width: auto;
-				font-weight: bold;
 			}
 		}
 	}
@@ -1541,7 +1540,8 @@ aside.callout-box.warning {
 						display: inline-block;
 						border: 1px solid #c75302;
 						color: #c75302;
-						padding: 0px 8px 4px;
+						padding: 4px 8px;
+						line-height: 17px;
 						margin-left: 6px;
 						height: 27px;
 						font-size: 17px;
@@ -1654,13 +1654,28 @@ aside.callout-box.warning {
 	
 	.first-panel, .second-panel, .toolbar { width: 35% }
 
-	.toolbar {
+	.off-label {
+		float: left;
+		font-size: 14px;
+		margin: 15px 0 0 8px;
+		font-weight: normal
+	}
 
-		.off-label {
-			float: right;
-			margin: 15px 8px 0 0;
-			font-weight: normal
+	.content-toolbar {
+		form input[type="text"] {
+			margin-right: 8px
 		}
+
+		ul {
+			margin-top: 12px;
+		}
+	}
+
+	.toolbar ul { margin-right: 8px }
+
+	.toolbar ul:first-child {
+		float: left;
+		margin-left: 8px
 	}
 	
 	
@@ -1854,6 +1869,8 @@ aside.callout-box.warning {
 
 
 		div.badge-codes {
+			width: 130px;
+
 			li.badge {
 				color: #444;
 				padding: 1px 30px 2px 5px;
@@ -1868,8 +1885,11 @@ aside.callout-box.warning {
 			}
 
 			li.codes {
+				margin-bottom: 3px;
+
 				span {
 					padding: 0px 3px 1px;
+					margin-bottom: 2px;
 					background-color: #E3F4FA;
 					border: 2px dashed #77CBEB;
 					font-size: 12px;
@@ -1902,6 +1922,10 @@ aside.callout-box.warning {
 			li:last-child {
 				margin-bottom: 0
 			}
+		}
+
+		div.figure {
+			float: right
 		}
 	}
 	

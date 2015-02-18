@@ -61,22 +61,34 @@
 			
 			<section class="single-panel first-panel tasklist">
 				<div class="toolbar">
-					<form>
-						<input type="text" value="and" />
-					</form>
-					
 					<ul>
-						<li class="text-button active"><a href="#">Target <span class="dijitIcon tpIconDropdownArrow"></span></a></li>
-						<li><a href="#"><span class="dijitIcon tpIconFolder"></span></a><label>Folder</label></li>
-						<li><a href="#"><span class="dijitIcon tpIconPencil"></span></a><label>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label></li>
-						<li><a href="#"><span class="dijitIcon tpIconPhoto"></span></a><label>Figure</label></li>
-						<li><a href="#"><span class="dijitIcon tpIconRefresh"></span></a><label>Refresh</label></li>
+						<li class="text-button"><a href="#">Mark all as Read</a></li>
+						<li class="text-button"><a href="#">Mark as Read</a></li>
 					</ul>
 
-					<h5 class="off-label">Sort by:</h5>
+					<ul>
+						<li class="text-button"><a href="#">Reassign</a></li>
+						<li class="text-button"><a href="#">Send to...</a></li>
+					</ul>
 				</div>
 			
 				<div class="panel-content">
+					<div class="content-toolbar">
+						<h5 class="off-label">Sort by:</h5>
+
+						<ul>
+							<li class="text-button"><a href="#">Priority</a></li>
+							<li class="text-button"><a href="#">Rank</a></li>
+							<li class="text-button"><a href="#">Limit. Date</a></li>
+							<li class="text-button active"><a href="#">Target</a></li>
+							<li class="text-button"><a href="#">Phase</a></li>
+						</ul>
+
+						<form>
+							<input type="text" value="and" />
+						</form>					
+					</div>
+
 					<div class="browse-items">
 
 						<h4>8 results <em>3 hidden by filter <strong>"and"</strong></em></h4>
@@ -202,8 +214,8 @@
 							</div>
 						</div>
 						
-						<div class="task loading" tabindex="0">
-							<p class="status">Task currently loading</p>
+						<div class="task" tabindex="0">
+							<!-- <p class="status">Task currently loading</p> -->
 
 							<div class="phase-rank">
 								<ul>
@@ -219,6 +231,8 @@
 									<li class="codes">
 										<span class="blue">DIVISIONAL</span>
 										<span class="grey">RASE</span>
+										<span class="blue">ABEX</span>
+										<span class="blue">DIVISIONAL</span>
 									</li>
 									<li class="classification">B61f 5/24 A</li>
 								</ul>
