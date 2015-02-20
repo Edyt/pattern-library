@@ -1514,115 +1514,148 @@ aside.callout-box.warning .button {
   font-weight: normal;
 }
 /* line 1650, ../input-css/style.scss */
+#work-manager .intray-nav .intray-options {
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  border-top: 1px solid #e8e8e8;
+}
+/* line 1658, ../input-css/style.scss */
+#work-manager .intray-nav .intray-options ul {
+  clear: both;
+}
+/* line 1661, ../input-css/style.scss */
+#work-manager .intray-nav .intray-options ul li {
+  float: left;
+  width: 50%;
+}
+/* line 1665, ../input-css/style.scss */
+#work-manager .intray-nav .intray-options ul li a {
+  text-align: center;
+}
+/* line 1668, ../input-css/style.scss */
+#work-manager .intray-nav .intray-options ul li a span {
+  display: inline;
+  margin-right: 3px;
+  position: relative;
+  top: 1px;
+}
+/* line 1677, ../input-css/style.scss */
+#work-manager .intray-nav .intray-options ul li:first-child {
+  border-right: 1px solid #e8e8e8;
+}
+/* line 1684, ../input-css/style.scss */
 #work-manager .first-panel {
   margin-left: 16%;
 }
-/* line 1653, ../input-css/style.scss */
+/* line 1687, ../input-css/style.scss */
 #work-manager .first-panel .panel-content {
   background: #f4f4f4;
   margin-top: 60px;
 }
-/* line 1659, ../input-css/style.scss */
+/* line 1693, ../input-css/style.scss */
 #work-manager .first-panel, #work-manager .second-panel, #work-manager .toolbar {
   width: 35%;
 }
-/* line 1661, ../input-css/style.scss */
+/* line 1695, ../input-css/style.scss */
 #work-manager .off-label {
   float: left;
   font-size: 14px;
   margin: 15px 0 0 8px;
   font-weight: normal;
 }
-/* line 1668, ../input-css/style.scss */
+/* line 1702, ../input-css/style.scss */
 #work-manager .content-toolbar {
   position: fixed;
   top: 60px;
   width: 35%;
 }
-/* line 1673, ../input-css/style.scss */
+/* line 1707, ../input-css/style.scss */
 #work-manager .content-toolbar form input[type="text"] {
   margin-right: 8px;
   width: 23%;
 }
-/* line 1678, ../input-css/style.scss */
+/* line 1712, ../input-css/style.scss */
 #work-manager .content-toolbar ul {
   margin: 12px 5px 0;
 }
-/* line 1683, ../input-css/style.scss */
+/* line 1717, ../input-css/style.scss */
 #work-manager .toolbar ul {
   margin-right: 8px;
 }
-/* line 1685, ../input-css/style.scss */
+/* line 1719, ../input-css/style.scss */
 #work-manager .toolbar ul:first-child {
   float: left;
   margin-left: 8px;
 }
-/* line 1692, ../input-css/style.scss */
+/* line 1726, ../input-css/style.scss */
 #work-manager .dossier-preview {
   padding-top: 207px;
   width: calc(49% - 5px);
 }
-/* line 1696, ../input-css/style.scss */
+/* line 1730, ../input-css/style.scss */
 #work-manager .dossier-preview .toolbar {
   height: 207px;
   width: calc(49% - 5px);
 }
-/* line 1700, ../input-css/style.scss */
+/* line 1734, ../input-css/style.scss */
 #work-manager .dossier-preview .toolbar h3 {
   padding: 10px 10px 10px 18px;
   clear: both;
 }
-/* line 1705, ../input-css/style.scss */
+/* line 1739, ../input-css/style.scss */
 #work-manager .dossier-preview .toolbar h4.toolbar-main-button {
   margin: 0;
   position: absolute;
   right: 18px;
   bottom: 15px;
 }
-/* line 1713, ../input-css/style.scss */
+/* line 1747, ../input-css/style.scss */
 #work-manager .dossier-preview .main-content {
   margin: 18px;
 }
 
-/* line 1723, ../input-css/style.scss */
+/* line 1757, ../input-css/style.scss */
 #work-manager.fwm .dossier-preview .toolbar {
   display: none;
 }
-/* line 1727, ../input-css/style.scss */
+/* line 1761, ../input-css/style.scss */
 #work-manager.fwm .dossier-preview .toolbar.visible {
   display: block;
 }
-/* line 1732, ../input-css/style.scss */
+/* line 1766, ../input-css/style.scss */
 #work-manager.fwm .tasklist .toolbar ul li a {
   padding: 8px 4px 9px;
   height: 37px;
 }
-/* line 1737, ../input-css/style.scss */
+/* line 1771, ../input-css/style.scss */
 #work-manager.fwm .tasklist .toolbar ul li.text-button a {
   padding: 5px 8px;
 }
 
-/* line 1744, ../input-css/style.scss */
+/* line 1778, ../input-css/style.scss */
 .browse-items {
   padding: 8px;
 }
-/* line 1747, ../input-css/style.scss */
+/* line 1781, ../input-css/style.scss */
 .browse-items > h4 {
   font-size: 15px;
   margin-bottom: 5px;
 }
-/* line 1751, ../input-css/style.scss */
+/* line 1785, ../input-css/style.scss */
 .browse-items > h4 em {
   font-style: normal;
   font-weight: normal;
   margin-left: 5px;
 }
-/* line 1756, ../input-css/style.scss */
+/* line 1790, ../input-css/style.scss */
 .browse-items > h4 em strong {
   font-weight: normal;
   color: #3a3a3a;
 }
-/* line 1763, ../input-css/style.scss */
+/* line 1797, ../input-css/style.scss */
 .browse-items .task {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
@@ -1634,12 +1667,12 @@ aside.callout-box.warning .button {
   overflow: hidden;
   box-shadow: 0 1px 0 #d4d4d4;
 }
-/* line 1774, ../input-css/style.scss */
+/* line 1808, ../input-css/style.scss */
 .browse-items .task div {
   float: left;
   margin-right: 5px;
 }
-/* line 1779, ../input-css/style.scss */
+/* line 1813, ../input-css/style.scss */
 .browse-items .task .highlight {
   width: 10px;
   position: absolute;
@@ -1648,7 +1681,7 @@ aside.callout-box.warning .button {
   height: 100%;
   display: block;
 }
-/* line 1788, ../input-css/style.scss */
+/* line 1822, ../input-css/style.scss */
 .browse-items .task .status {
   font-size: 13px;
   line-height: 13px;
@@ -1661,25 +1694,25 @@ aside.callout-box.warning .button {
   z-index: 200;
   border-radius: 5px;
 }
-/* line 1801, ../input-css/style.scss */
+/* line 1835, ../input-css/style.scss */
 .browse-items .task img {
   float: left;
   width: 52px;
   margin: 0;
 }
-/* line 1807, ../input-css/style.scss */
+/* line 1841, ../input-css/style.scss */
 .browse-items .task .dijitIcon {
   color: #7b7b7b;
   margin-right: 5px;
 }
-/* line 1812, ../input-css/style.scss */
+/* line 1846, ../input-css/style.scss */
 .browse-items .task ul {
   overflow: auto;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 1818, ../input-css/style.scss */
+/* line 1852, ../input-css/style.scss */
 .browse-items .task ul li {
   display: block;
   margin: 0 0 6px;
@@ -1687,15 +1720,15 @@ aside.callout-box.warning .button {
   font-size: 13px;
   line-height: inherit;
 }
-/* line 1826, ../input-css/style.scss */
+/* line 1860, ../input-css/style.scss */
 .browse-items .task ul li:first-child {
   margin-left: 0;
 }
-/* line 1830, ../input-css/style.scss */
+/* line 1864, ../input-css/style.scss */
 .browse-items .task ul li:last-child {
   margin-bottom: 0;
 }
-/* line 1835, ../input-css/style.scss */
+/* line 1869, ../input-css/style.scss */
 .browse-items .task li.phase, .browse-items .task li.badge, .browse-items .task li.codes span {
   border-radius: 3px;
   padding: 3px 8px;
@@ -1704,45 +1737,45 @@ aside.callout-box.warning .button {
   height: 24px;
   text-transform: uppercase;
 }
-/* line 1845, ../input-css/style.scss */
+/* line 1879, ../input-css/style.scss */
 .browse-items .task div.phase-rank li {
   text-align: center;
 }
-/* line 1849, ../input-css/style.scss */
+/* line 1883, ../input-css/style.scss */
 .browse-items .task div.phase-rank li.rank, .browse-items .task div.phase-rank li.language {
   font-weight: bold;
 }
-/* line 1853, ../input-css/style.scss */
+/* line 1887, ../input-css/style.scss */
 .browse-items .task div.phase-rank li.language {
   color: #7b7b7b;
   margin-bottom: 7px;
   padding-top: 1px;
 }
-/* line 1860, ../input-css/style.scss */
+/* line 1894, ../input-css/style.scss */
 .browse-items .task div.title-applicant {
   width: 48%;
 }
-/* line 1863, ../input-css/style.scss */
+/* line 1897, ../input-css/style.scss */
 .browse-items .task div.title-applicant h3, .browse-items .task div.title-applicant p {
   font-size: 15px;
   line-height: 16px;
   margin: 0 0 5px;
 }
-/* line 1869, ../input-css/style.scss */
+/* line 1903, ../input-css/style.scss */
 .browse-items .task div.title-applicant h3 {
   height: 27px;
   font-weight: bold;
   line-height: 15px;
 }
-/* line 1876, ../input-css/style.scss */
+/* line 1910, ../input-css/style.scss */
 .browse-items .task div.title-applicant p {
   color: #737373;
 }
-/* line 1882, ../input-css/style.scss */
+/* line 1916, ../input-css/style.scss */
 .browse-items .task div.badge-codes {
   width: 130px;
 }
-/* line 1885, ../input-css/style.scss */
+/* line 1919, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.badge {
   color: #444;
   padding: 1px 30px 2px 5px;
@@ -1755,11 +1788,11 @@ aside.callout-box.warning .button {
   position: relative;
   width: 130px;
 }
-/* line 1898, ../input-css/style.scss */
+/* line 1932, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.codes {
   margin-bottom: 3px;
 }
-/* line 1901, ../input-css/style.scss */
+/* line 1935, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.codes span {
   padding: 0px 3px 1px;
   margin-bottom: 2px;
@@ -1770,61 +1803,61 @@ aside.callout-box.warning .button {
   color: #666;
   display: inline-block;
 }
-/* line 1912, ../input-css/style.scss */
+/* line 1946, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.codes span.green {
   background-color: #DCF5F3;
   border-color: #56D4C7;
 }
-/* line 1917, ../input-css/style.scss */
+/* line 1951, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.codes span.grey {
   background-color: #eee;
   border-color: #ddd;
 }
-/* line 1923, ../input-css/style.scss */
+/* line 1957, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.classification {
   color: #737373;
 }
-/* line 1929, ../input-css/style.scss */
+/* line 1963, ../input-css/style.scss */
 .browse-items .task div.meta li {
   margin-bottom: 10px;
 }
-/* line 1933, ../input-css/style.scss */
+/* line 1967, ../input-css/style.scss */
 .browse-items .task div.meta li:last-child {
   margin-bottom: 0;
 }
-/* line 1938, ../input-css/style.scss */
+/* line 1972, ../input-css/style.scss */
 .browse-items .task div.figure {
   float: right;
 }
-/* line 1943, ../input-css/style.scss */
+/* line 1977, ../input-css/style.scss */
 .browse-items .task:hover {
   border-color: #0e9bdd;
 }
-/* line 1947, ../input-css/style.scss */
+/* line 1981, ../input-css/style.scss */
 .browse-items .task:active, .browse-items .task.active {
   background: #daf0fa;
 }
-/* line 1951, ../input-css/style.scss */
+/* line 1985, ../input-css/style.scss */
 .browse-items .task.blocked {
   background: #f4f4f4;
   border: 2px solid #de574d;
   cursor: not-allowed;
 }
-/* line 1956, ../input-css/style.scss */
+/* line 1990, ../input-css/style.scss */
 .browse-items .task.blocked * {
   opacity: 0.75;
 }
-/* line 1960, ../input-css/style.scss */
+/* line 1994, ../input-css/style.scss */
 .browse-items .task.blocked .status {
   background: #de574d;
   color: white;
   opacity: 1;
 }
-/* line 1968, ../input-css/style.scss */
+/* line 2002, ../input-css/style.scss */
 .browse-items .task.loading * {
   opacity: 0.75;
 }
-/* line 1972, ../input-css/style.scss */
+/* line 2006, ../input-css/style.scss */
 .browse-items .task.loading img.loader {
   width: auto;
   position: absolute;
@@ -1834,29 +1867,29 @@ aside.callout-box.warning .button {
   opacity: 1;
   z-index: 300;
 }
-/* line 1982, ../input-css/style.scss */
+/* line 2016, ../input-css/style.scss */
 .browse-items .task.loading .status {
   color: #3a3a3a;
   background: #fff7c0;
   opacity: 1;
 }
 
-/* line 1990, ../input-css/style.scss */
+/* line 2024, ../input-css/style.scss */
 .prior-art {
   width: 70%;
 }
-/* line 1993, ../input-css/style.scss */
+/* line 2027, ../input-css/style.scss */
 .prior-art .toolbar {
   width: 70%;
 }
-/* line 1997, ../input-css/style.scss */
+/* line 2031, ../input-css/style.scss */
 .prior-art .browse-items {
   height: 100%;
   background: white;
   width: 71%;
   float: left;
 }
-/* line 2003, ../input-css/style.scss */
+/* line 2037, ../input-css/style.scss */
 .prior-art .browse-items .dijitIcon {
   font-size: 20px;
   position: relative;
@@ -1864,65 +1897,65 @@ aside.callout-box.warning .button {
   color: #7b7b7b;
   left: 2px;
 }
-/* line 2011, ../input-css/style.scss */
+/* line 2045, ../input-css/style.scss */
 .prior-art .browse-items .task {
   padding: 25px;
 }
-/* line 2014, ../input-css/style.scss */
+/* line 2048, ../input-css/style.scss */
 .prior-art .browse-items .task img {
   margin-bottom: 15px;
   width: 225px;
 }
-/* line 2020, ../input-css/style.scss */
+/* line 2054, ../input-css/style.scss */
 .prior-art .browse-items .task h4 {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 2025, ../input-css/style.scss */
+/* line 2059, ../input-css/style.scss */
 .prior-art .browse-items .task p {
   margin-top: 0;
   margin-bottom: 15px;
   margin-left: 250px;
 }
-/* line 2032, ../input-css/style.scss */
+/* line 2066, ../input-css/style.scss */
 .prior-art .browse-items h2 {
   padding: 0;
   margin: 0 0 12px;
 }
-/* line 2036, ../input-css/style.scss */
+/* line 2070, ../input-css/style.scss */
 .prior-art .browse-items h2 .dijitIcon {
   color: #97d659;
 }
-/* line 2042, ../input-css/style.scss */
+/* line 2076, ../input-css/style.scss */
 .prior-art .highlights-content {
   float: left;
   width: 11%;
 }
-/* line 2046, ../input-css/style.scss */
+/* line 2080, ../input-css/style.scss */
 .prior-art .highlights-content p {
   text-align: center;
 }
-/* line 2051, ../input-css/style.scss */
+/* line 2085, ../input-css/style.scss */
 .prior-art .annotations-content {
   float: left;
   width: 18%;
 }
-/* line 2055, ../input-css/style.scss */
+/* line 2089, ../input-css/style.scss */
 .prior-art .annotations-content .random-icon {
   padding: 0 10px 10px;
 }
-/* line 2058, ../input-css/style.scss */
+/* line 2092, ../input-css/style.scss */
 .prior-art .annotations-content .random-icon p {
   font-size: 16px;
   line-height: 24px;
   margin-top: 0;
 }
-/* line 2063, ../input-css/style.scss */
+/* line 2097, ../input-css/style.scss */
 .prior-art .annotations-content .random-icon p span {
   color: #7b7b7b;
 }
 
-/* line 2074, ../input-css/style.scss */
+/* line 2108, ../input-css/style.scss */
 .actions-toolbar {
   bottom: 0;
   top: auto;
@@ -1930,46 +1963,46 @@ aside.callout-box.warning .button {
   border-bottom: 0;
   padding: 12px 18px;
 }
-/* line 2082, ../input-css/style.scss */
+/* line 2116, ../input-css/style.scss */
 .actions-toolbar form p, .actions-toolbar form label, .actions-toolbar form input, .actions-toolbar form button, .actions-toolbar form .button {
   margin: 0;
 }
-/* line 2086, ../input-css/style.scss */
+/* line 2120, ../input-css/style.scss */
 .actions-toolbar form label, .actions-toolbar form input[type="text"] {
   float: none;
   margin-top: 0;
   margin-right: 6px;
 }
-/* line 2093, ../input-css/style.scss */
+/* line 2127, ../input-css/style.scss */
 .actions-toolbar div.left, .actions-toolbar p, .actions-toolbar ul {
   float: left;
   margin-right: 8px;
 }
-/* line 2098, ../input-css/style.scss */
+/* line 2132, ../input-css/style.scss */
 .actions-toolbar div.left, .actions-toolbar li {
   margin-left: 0;
 }
-/* line 2100, ../input-css/style.scss */
+/* line 2134, ../input-css/style.scss */
 .actions-toolbar div.right {
   float: right;
 }
-/* line 2105, ../input-css/style.scss */
+/* line 2139, ../input-css/style.scss */
 .actions-toolbar ul {
   margin: 0;
   border: 0;
   background: none;
 }
-/* line 2111, ../input-css/style.scss */
+/* line 2145, ../input-css/style.scss */
 .actions-toolbar ul li {
   margin-left: 5px;
 }
-/* line 2114, ../input-css/style.scss */
+/* line 2148, ../input-css/style.scss */
 .actions-toolbar ul li a {
   width: auto;
   font-size: 18px;
   padding: 6px 12px;
 }
-/* line 2122, ../input-css/style.scss */
+/* line 2156, ../input-css/style.scss */
 .actions-toolbar .status {
   position: absolute;
   margin-left: 16%;
@@ -1978,66 +2011,66 @@ aside.callout-box.warning .button {
   bottom: 45px;
   z-index: 150;
 }
-/* line 2130, ../input-css/style.scss */
+/* line 2164, ../input-css/style.scss */
 .actions-toolbar .status h4 {
   font-weight: normal;
   color: white;
 }
 
-/* line 2137, ../input-css/style.scss */
+/* line 2171, ../input-css/style.scss */
 .communication, .annotations {
   padding-bottom: 60px;
 }
-/* line 2142, ../input-css/style.scss */
+/* line 2176, ../input-css/style.scss */
 .communication .toolbar ul.tabs, .annotations .toolbar ul.tabs {
   position: static;
   float: right;
   margin-top: 20px;
 }
-/* line 2149, ../input-css/style.scss */
+/* line 2183, ../input-css/style.scss */
 .communication .panel-content, .annotations .panel-content {
   background: #c2c2c2;
 }
-/* line 2152, ../input-css/style.scss */
+/* line 2186, ../input-css/style.scss */
 .communication .panel-content .content-toolbar, .annotations .panel-content .content-toolbar {
   background: white;
 }
-/* line 2156, ../input-css/style.scss */
+/* line 2190, ../input-css/style.scss */
 .communication .panel-content .draft-content, .annotations .panel-content .draft-content {
   margin: 25px 15px;
   background: white;
   padding: 25px 18px;
   box-shadow: 0 3px 1px #737373;
 }
-/* line 2163, ../input-css/style.scss */
+/* line 2197, ../input-css/style.scss */
 .communication .panel-content .nested, .annotations .panel-content .nested {
   padding: 15px;
   background: #f4f4f4;
 }
-/* line 2167, ../input-css/style.scss */
+/* line 2201, ../input-css/style.scss */
 .communication .panel-content .nested .nested, .annotations .panel-content .nested .nested {
   background: white;
 }
-/* line 2170, ../input-css/style.scss */
+/* line 2204, ../input-css/style.scss */
 .communication .panel-content .nested .nested .nested, .annotations .panel-content .nested .nested .nested {
   border: 1px solid #e0e0e0;
 }
 
-/* line 2178, ../input-css/style.scss */
+/* line 2212, ../input-css/style.scss */
 .annotations, .communication {
   padding-bottom: 60px;
 }
-/* line 2181, ../input-css/style.scss */
+/* line 2215, ../input-css/style.scss */
 .annotations .main-content, .communication .main-content {
   margin: 0;
   background: white;
 }
-/* line 2185, ../input-css/style.scss */
+/* line 2219, ../input-css/style.scss */
 .annotations .main-content h2, .communication .main-content h2 {
   padding: 12px 20px;
   margin: 15px 0 0 0;
 }
-/* line 2191, ../input-css/style.scss */
+/* line 2225, ../input-css/style.scss */
 .annotations .annotations-row, .communication .annotations-row {
   padding: 12px 20px;
   border-bottom: 1px solid #e0e0e0;
@@ -2045,13 +2078,13 @@ aside.callout-box.warning .button {
   position: relative;
   cursor: pointer;
 }
-/* line 2198, ../input-css/style.scss */
+/* line 2232, ../input-css/style.scss */
 .annotations .annotations-row .dijitIcon, .annotations .annotations-row h3, .annotations .annotations-row p, .annotations .annotations-row h4, .communication .annotations-row .dijitIcon, .communication .annotations-row h3, .communication .annotations-row p, .communication .annotations-row h4 {
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 2204, ../input-css/style.scss */
+/* line 2238, ../input-css/style.scss */
 .annotations .annotations-row .dijitIcon, .communication .annotations-row .dijitIcon {
   position: relative;
   top: 6px;
@@ -2059,108 +2092,108 @@ aside.callout-box.warning .button {
   margin-right: 20px;
   color: white;
 }
-/* line 2212, ../input-css/style.scss */
+/* line 2246, ../input-css/style.scss */
 .annotations .annotations-row .tpIconSuccessCircle, .communication .annotations-row .tpIconSuccessCircle {
   font-size: 20px;
   top: 3px;
 }
-/* line 2218, ../input-css/style.scss */
+/* line 2252, ../input-css/style.scss */
 .annotations .annotations-row p, .communication .annotations-row p {
   position: absolute;
   top: 12px;
   left: 190px;
 }
-/* line 2224, ../input-css/style.scss */
+/* line 2258, ../input-css/style.scss */
 .annotations .annotations-row h3, .communication .annotations-row h3 {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 2229, ../input-css/style.scss */
+/* line 2263, ../input-css/style.scss */
 .annotations .annotations-row ul, .communication .annotations-row ul {
   float: right;
   margin: 0;
   list-style: none;
   padding: 0;
 }
-/* line 2235, ../input-css/style.scss */
+/* line 2269, ../input-css/style.scss */
 .annotations .annotations-row ul li, .communication .annotations-row ul li {
   margin: 0 0 0 12px;
   float: left;
 }
-/* line 2239, ../input-css/style.scss */
+/* line 2273, ../input-css/style.scss */
 .annotations .annotations-row ul li a, .communication .annotations-row ul li a {
   border: 0;
   color: #7b7b7b;
 }
-/* line 2243, ../input-css/style.scss */
+/* line 2277, ../input-css/style.scss */
 .annotations .annotations-row ul li a .dijitIcon, .communication .annotations-row ul li a .dijitIcon {
   margin: 0;
   top: 0;
   font-size: 25px;
   color: #e8e8e8;
 }
-/* line 2250, ../input-css/style.scss */
+/* line 2284, ../input-css/style.scss */
 .annotations .annotations-row ul li a .tpIconCompletedTemplate, .communication .annotations-row ul li a .tpIconCompletedTemplate {
   color: #97d659;
 }
-/* line 2256, ../input-css/style.scss */
+/* line 2290, ../input-css/style.scss */
 .annotations .annotations-row ul li:first-child, .communication .annotations-row ul li:first-child {
   margin-left: 0;
 }
-/* line 2261, ../input-css/style.scss */
+/* line 2295, ../input-css/style.scss */
 .annotations .done .dijitIcon, .communication .done .dijitIcon {
   top: 4px;
   color: #c2c2c2;
 }
-/* line 2268, ../input-css/style.scss */
+/* line 2302, ../input-css/style.scss */
 .annotations .annotations-row.unread .dijitIcon.tpIconCircleFilled, .communication .annotations-row.unread .dijitIcon.tpIconCircleFilled {
   color: #0e9bdd;
 }
-/* line 2272, ../input-css/style.scss */
+/* line 2306, ../input-css/style.scss */
 .annotations .annotations-row.unread p, .communication .annotations-row.unread p {
   font-weight: bold;
 }
-/* line 2277, ../input-css/style.scss */
+/* line 2311, ../input-css/style.scss */
 .annotations .annotations-row.header, .communication .annotations-row.header {
   border-top: 1px solid #e0e0e0;
 }
-/* line 2281, ../input-css/style.scss */
+/* line 2315, ../input-css/style.scss */
 .annotations .annotations-row.header, .annotations .annotations-row.done, .communication .annotations-row.header, .communication .annotations-row.done {
   background: #f4f4f4;
 }
-/* line 2285, ../input-css/style.scss */
+/* line 2319, ../input-css/style.scss */
 .annotations .annotations-row:hover, .communication .annotations-row:hover {
   background: #daf0fa;
 }
-/* line 2288, ../input-css/style.scss */
+/* line 2322, ../input-css/style.scss */
 .annotations .annotations-row:hover .dijitIcon, .communication .annotations-row:hover .dijitIcon {
   color: #daf0fa;
 }
-/* line 2292, ../input-css/style.scss */
+/* line 2326, ../input-css/style.scss */
 .annotations .annotations-row:hover .tpIconSuccessCircle, .communication .annotations-row:hover .tpIconSuccessCircle {
   color: #c2c2c2;
 }
-/* line 2297, ../input-css/style.scss */
+/* line 2331, ../input-css/style.scss */
 .annotations .annotations-row:hover ul li a .dijitIcon, .communication .annotations-row:hover ul li a .dijitIcon {
   color: #7b7b7b;
 }
-/* line 2301, ../input-css/style.scss */
+/* line 2335, ../input-css/style.scss */
 .annotations .annotations-row:hover ul li a .tpIconCompletedTemplate, .communication .annotations-row:hover ul li a .tpIconCompletedTemplate {
   color: #82b94b;
 }
 
-/* line 2308, ../input-css/style.scss */
+/* line 2342, ../input-css/style.scss */
 .communication .main-content {
   margin: 18px 18px 0;
   padding: 20px;
 }
-/* line 2312, ../input-css/style.scss */
+/* line 2346, ../input-css/style.scss */
 .communication .main-content h2 {
   margin: 0 0 30px;
   padding: 0;
 }
 
-/* line 2321, ../input-css/style.scss */
+/* line 2355, ../input-css/style.scss */
 .communication.drafts .annotations-row {
   padding: 12px 20px;
   border-bottom: 1px solid #e0e0e0;
@@ -2168,7 +2201,7 @@ aside.callout-box.warning .button {
   position: relative;
   cursor: pointer;
 }
-/* line 2328, ../input-css/style.scss */
+/* line 2362, ../input-css/style.scss */
 .communication.drafts .annotations-row .dijitIcon, .communication.drafts .annotations-row h3, .communication.drafts .annotations-row p, .communication.drafts .annotations-row h4 {
   float: left;
   margin: 0;
@@ -2177,95 +2210,95 @@ aside.callout-box.warning .button {
   font-weight: normal;
   font-size: 18px;
 }
-/* line 2337, ../input-css/style.scss */
+/* line 2371, ../input-css/style.scss */
 .communication.drafts .annotations-row h4 {
   font-weight: bold;
 }
-/* line 2342, ../input-css/style.scss */
+/* line 2376, ../input-css/style.scss */
 .communication.drafts .annotations-row p {
   position: static;
   width: 28%;
 }
-/* line 2349, ../input-css/style.scss */
+/* line 2383, ../input-css/style.scss */
 .communication.drafts .header h4 {
   font-weight: normal;
 }
-/* line 2354, ../input-css/style.scss */
+/* line 2388, ../input-css/style.scss */
 .communication.drafts .main-content {
   background: white;
   margin: 0;
   padding: 0;
 }
 
-/* line 2362, ../input-css/style.scss */
+/* line 2396, ../input-css/style.scss */
 .all-drafts {
   display: none;
 }
 
-/* line 2368, ../input-css/style.scss */
+/* line 2402, ../input-css/style.scss */
 .search-results .search-result-snippet {
   margin-bottom: 25px;
   overflow: auto;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 2373, ../input-css/style.scss */
+/* line 2407, ../input-css/style.scss */
 .search-results .search-result-snippet img {
   float: left;
   margin: 0 15px 15px 0;
   border: 1px solid #e0e0e0;
   width: 20%;
 }
-/* line 2380, ../input-css/style.scss */
+/* line 2414, ../input-css/style.scss */
 .search-results .search-result-snippet p {
   margin-left: 109px;
 }
 
-/* line 2387, ../input-css/style.scss */
+/* line 2421, ../input-css/style.scss */
 .search-parameters .large-search-field {
   width: 100%;
   min-height: 90px;
 }
-/* line 2391, ../input-css/style.scss */
+/* line 2425, ../input-css/style.scss */
 .search-parameters .large-search-field p {
   margin: 0;
   padding: 0;
 }
-/* line 2395, ../input-css/style.scss */
+/* line 2429, ../input-css/style.scss */
 .search-parameters .large-search-field p a {
   color: #3a3a3a;
 }
-/* line 2402, ../input-css/style.scss */
+/* line 2436, ../input-css/style.scss */
 .search-parameters .panel-content {
   height: auto;
   width: 100%;
   overflow: none;
   border-bottom: 5px solid #e9e9e9;
 }
-/* line 2408, ../input-css/style.scss */
+/* line 2442, ../input-css/style.scss */
 .search-parameters .panel-content .main-content {
   margin-bottom: 25px;
 }
-/* line 2413, ../input-css/style.scss */
+/* line 2447, ../input-css/style.scss */
 .search-parameters .concepts {
   height: 100%;
 }
-/* line 2416, ../input-css/style.scss */
+/* line 2450, ../input-css/style.scss */
 .search-parameters .concepts .toolbar {
   position: relative;
   width: 100%;
 }
-/* line 2421, ../input-css/style.scss */
+/* line 2455, ../input-css/style.scss */
 .search-parameters .concepts .panel-content {
   height: 80%;
   border-bottom: 0;
 }
-/* line 2425, ../input-css/style.scss */
+/* line 2459, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row {
   clear: both;
   position: relative;
   margin-bottom: 12px;
 }
-/* line 2430, ../input-css/style.scss */
+/* line 2464, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row span {
   display: block;
   position: absolute;
@@ -2275,32 +2308,32 @@ aside.callout-box.warning .button {
   width: 20px;
   cursor: pointer;
 }
-/* line 2440, ../input-css/style.scss */
+/* line 2474, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row h4, .search-parameters .concepts .panel-content .concept-row input[type="checkbox"] {
   float: left;
   margin-left: 5px;
   margin-top: 9px;
   width: 20px;
 }
-/* line 2447, ../input-css/style.scss */
+/* line 2481, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row h4 {
   margin-left: 10px;
   font-size: 22px;
 }
-/* line 2452, ../input-css/style.scss */
+/* line 2486, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row h4:first-child, .search-parameters .concepts .panel-content .concept-row input[type="checkbox"]:first-child {
   margin-left: 0;
 }
-/* line 2456, ../input-css/style.scss */
+/* line 2490, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row div.description {
   margin-left: 60px;
   padding: 0;
 }
-/* line 2460, ../input-css/style.scss */
+/* line 2494, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row div.description p {
   margin: 0;
 }
-/* line 2466, ../input-css/style.scss */
+/* line 2500, ../input-css/style.scss */
 .search-parameters .concepts .panel-content .concept-row.header {
   overflow: auto;
   margin-bottom: 8px;
@@ -2308,45 +2341,45 @@ aside.callout-box.warning .button {
   border-bottom: 1px solid #e8e8e8;
 }
 
-/* line 2478, ../input-css/style.scss */
+/* line 2512, ../input-css/style.scss */
 .search.collapsed .single-panel, .search.collapsed .toolbar, .search.collapsed .actions-toolbar {
   width: 42%;
 }
 
-/* line 2482, ../input-css/style.scss */
+/* line 2516, ../input-css/style.scss */
 .search.collapsed .search-parameters {
   width: 6%;
 }
-/* line 2485, ../input-css/style.scss */
+/* line 2519, ../input-css/style.scss */
 .search.collapsed .search-parameters div {
   display: none;
 }
-/* line 2489, ../input-css/style.scss */
+/* line 2523, ../input-css/style.scss */
 .search.collapsed .search-parameters .toolbar:first-child {
   display: block;
   width: 6%;
   height: auto;
 }
-/* line 2494, ../input-css/style.scss */
+/* line 2528, ../input-css/style.scss */
 .search.collapsed .search-parameters .toolbar:first-child h1 {
   float: none;
 }
-/* line 2496, ../input-css/style.scss */
+/* line 2530, ../input-css/style.scss */
 .search.collapsed .search-parameters .toolbar:first-child ul {
   display: none;
 }
-/* line 2500, ../input-css/style.scss */
+/* line 2534, ../input-css/style.scss */
 .search.collapsed .search-parameters .toolbar:first-child .toolbar-main-button {
   float: none;
   margin: 6px 0 20px 15px;
 }
-/* line 2504, ../input-css/style.scss */
+/* line 2538, ../input-css/style.scss */
 .search.collapsed .search-parameters .toolbar:first-child .toolbar-main-button a {
   display: block;
   text-align: center;
   width: 88%;
 }
-/* line 2510, ../input-css/style.scss */
+/* line 2544, ../input-css/style.scss */
 .search.collapsed .search-parameters .toolbar:first-child .toolbar-main-button .tpIconLeftArrow:before {
   display: inline-block;
   transform: rotate(180deg);
@@ -2365,7 +2398,7 @@ aside.callout-box.warning .button {
  *   GPL v3 http://opensource.org/licenses/GPL-3.0
  *
  */
-/* line 2538, ../input-css/style.scss */
+/* line 2572, ../input-css/style.scss */
 .context-menu-list {
   margin: 0;
   padding: 0;
@@ -2379,7 +2412,7 @@ aside.callout-box.warning .button {
   background: white;
 }
 
-/* line 2553, ../input-css/style.scss */
+/* line 2587, ../input-css/style.scss */
 .context-menu-item {
   padding: 2px 5px 3px;
   margin: 0 5px;
@@ -2391,18 +2424,18 @@ aside.callout-box.warning .button {
   user-select: none;
 }
 
-/* line 2564, ../input-css/style.scss */
+/* line 2598, ../input-css/style.scss */
 .context-menu-item:last-child {
   border-bottom: 0;
 }
 
-/* line 2569, ../input-css/style.scss */
+/* line 2603, ../input-css/style.scss */
 .context-menu-separator {
   padding-bottom: 0;
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* line 2575, ../input-css/style.scss */
+/* line 2609, ../input-css/style.scss */
 .context-menu-item > label > input,
 .context-menu-item > label > textarea {
   -webkit-user-select: text;
@@ -2411,7 +2444,7 @@ aside.callout-box.warning .button {
   user-select: text;
 }
 
-/* line 2582, ../input-css/style.scss */
+/* line 2616, ../input-css/style.scss */
 .context-menu-item.hover {
   cursor: pointer;
   background-color: #f4f4f4;
@@ -2419,19 +2452,19 @@ aside.callout-box.warning .button {
   margin: 0;
 }
 
-/* line 2589, ../input-css/style.scss */
+/* line 2623, ../input-css/style.scss */
 .context-menu-item.disabled {
   color: #b0b0b0;
 }
 
-/* line 2594, ../input-css/style.scss */
+/* line 2628, ../input-css/style.scss */
 .context-menu-input.hover,
 .context-menu-item.disabled.hover {
   cursor: default;
   background-color: #EEE;
 }
 
-/* line 2599, ../input-css/style.scss */
+/* line 2633, ../input-css/style.scss */
 .context-menu-submenu:after {
   content: "\ae";
   font-family: 'edyt-icons';
@@ -2452,7 +2485,7 @@ aside.callout-box.warning .button {
   z-index: 1;
 }
 
-/* line 2621, ../input-css/style.scss */
+/* line 2655, ../input-css/style.scss */
 .context-menu-item.hover:after {
   right: 8px;
 }
@@ -2463,7 +2496,7 @@ aside.callout-box.warning .button {
     http://css-tricks.com/13224-pseudo-spriting/ to get an idea of how to implement 
     .context-menu-item.icon:before {}
  */
-/* line 2632, ../input-css/style.scss */
+/* line 2666, ../input-css/style.scss */
 .context-menu-item.oom-button span {
   border: none;
   border-radius: 5px;
@@ -2475,73 +2508,73 @@ aside.callout-box.warning .button {
   text-decoration: none;
 }
 
-/* line 2643, ../input-css/style.scss */
+/* line 2677, ../input-css/style.scss */
 .context-menu-item.icon {
   min-height: 18px;
   background-repeat: no-repeat;
   background-position: 4px 2px;
 }
 
-/* line 2644, ../input-css/style.scss */
+/* line 2678, ../input-css/style.scss */
 .context-menu-item.icon-edit {
   background-image: url(images/page_white_edit.png);
 }
 
-/* line 2645, ../input-css/style.scss */
+/* line 2679, ../input-css/style.scss */
 .context-menu-item.icon-cut {
   background-image: url(images/cut.png);
 }
 
-/* line 2646, ../input-css/style.scss */
+/* line 2680, ../input-css/style.scss */
 .context-menu-item.icon-copy {
   background-image: url(images/page_white_copy.png);
 }
 
-/* line 2647, ../input-css/style.scss */
+/* line 2681, ../input-css/style.scss */
 .context-menu-item.icon-paste {
   background-image: url(images/page_white_paste.png);
 }
 
-/* line 2648, ../input-css/style.scss */
+/* line 2682, ../input-css/style.scss */
 .context-menu-item.icon-delete {
   background-image: url(images/page_white_delete.png);
 }
 
-/* line 2649, ../input-css/style.scss */
+/* line 2683, ../input-css/style.scss */
 .context-menu-item.icon-add {
   background-image: url(images/page_white_add.png);
 }
 
-/* line 2650, ../input-css/style.scss */
+/* line 2684, ../input-css/style.scss */
 .context-menu-item.icon-quit {
   background-image: url(images/door.png);
 }
 
 /* vertically align inside labels */
-/* line 2653, ../input-css/style.scss */
+/* line 2687, ../input-css/style.scss */
 .context-menu-input > label > * {
   vertical-align: top;
 }
 
 /* position checkboxes and radios as icons */
-/* line 2657, ../input-css/style.scss */
+/* line 2691, ../input-css/style.scss */
 .context-menu-input > label > input[type="checkbox"],
 .context-menu-input > label > input[type="radio"] {
   margin-left: 20px;
   margin-top: 6px;
 }
 
-/* line 2662, ../input-css/style.scss */
+/* line 2696, ../input-css/style.scss */
 .context-menu-input:first-child > label > input[type="checkbox"] {
   margin-left: 0;
 }
 
-/* line 2663, ../input-css/style.scss */
+/* line 2697, ../input-css/style.scss */
 .context-menu-input > label > span {
   margin-left: 5px;
 }
 
-/* line 2670, ../input-css/style.scss */
+/* line 2704, ../input-css/style.scss */
 .context-menu-input > label,
 .context-menu-input > label > input[type="text"],
 .context-menu-input > label > textarea,
@@ -2555,12 +2588,12 @@ aside.callout-box.warning .button {
   box-sizing: border-box;
 }
 
-/* line 2681, ../input-css/style.scss */
+/* line 2715, ../input-css/style.scss */
 .context-menu-input > label > textarea {
   height: 100px;
 }
 
-/* line 2684, ../input-css/style.scss */
+/* line 2718, ../input-css/style.scss */
 .context-menu-item > .context-menu-list {
   display: none;
   /* re-positioned by js */
@@ -2568,17 +2601,17 @@ aside.callout-box.warning .button {
   top: 5px;
 }
 
-/* line 2691, ../input-css/style.scss */
+/* line 2725, ../input-css/style.scss */
 .context-menu-item.hover > .context-menu-list {
   display: block;
 }
 
-/* line 2695, ../input-css/style.scss */
+/* line 2729, ../input-css/style.scss */
 .context-menu-accesskey {
   text-decoration: underline;
 }
 
-/* line 2702, ../input-css/style.scss */
+/* line 2736, ../input-css/style.scss */
 .oom-highlights, .oom-highlights.context-menu-item.hover {
   background-color: white;
   overflow: auto;
@@ -2588,7 +2621,7 @@ aside.callout-box.warning .button {
   margin: 0 5px;
 }
 
-/* line 2711, ../input-css/style.scss */
+/* line 2745, ../input-css/style.scss */
 .oom-highlights a {
   display: block;
   float: left;
@@ -2599,7 +2632,7 @@ aside.callout-box.warning .button {
   cursor: pointer;
   text-align: center;
 }
-/* line 2721, ../input-css/style.scss */
+/* line 2755, ../input-css/style.scss */
 .oom-highlights a span {
   bottom: 3px;
   font-size: 15px;

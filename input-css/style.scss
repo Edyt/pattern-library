@@ -1645,6 +1645,40 @@ aside.callout-box.warning {
 				}
 			}
 		}
+
+
+		.intray-options {
+			position: fixed;
+			bottom: 0;
+			width: inherit;
+			background: #fff;
+			border-right: 1px solid #e0e0e0;
+			border-top: 1px solid $column-shade;
+
+			ul {
+				clear: both;
+
+				li {
+					float: left;
+					width: 50%;
+
+					a {
+						text-align: center;
+
+						span {
+							display: inline;
+							margin-right: 3px;
+							position: relative;
+							top: 1px;
+						}
+					}
+				}
+
+				li:first-child {
+					border-right: 1px solid $column-shade;
+				}
+			}
+		}
 	}
 	
 	.first-panel {
