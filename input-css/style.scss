@@ -1587,6 +1587,7 @@ aside.callout-box.warning {
 				h1 {
 					color: $primary-accent;
 					margin-top: 0;
+					font-size: 24px;
 				}
 			}
 
@@ -1663,6 +1664,7 @@ aside.callout-box.warning {
 					width: 50%;
 
 					a {
+						padding: 7px 3px;
 						text-align: center;
 
 						span.dijitIcon {
