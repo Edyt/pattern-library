@@ -1665,7 +1665,7 @@ aside.callout-box.warning {
 					a {
 						text-align: center;
 
-						span {
+						span.dijitIcon {
 							display: inline;
 							margin-right: 3px;
 							position: relative;
@@ -1892,7 +1892,7 @@ aside.callout-box.warning {
 		}
 
 		div.title-applicant {
-			width: 48%;
+			width: 39%;
 
 			h3, p {
 				font-size: 15px;
@@ -1914,7 +1914,7 @@ aside.callout-box.warning {
 
 
 		div.badge-codes {
-			width: 130px;
+			width: 26%;
 
 			li.badge {
 				color: #444;
@@ -1926,7 +1926,7 @@ aside.callout-box.warning {
 				border: 1px solid #679ABE;
 				font-size: 15px;
 				position: relative;
-				width: 130px;
+				width: 100%;
 			}
 
 			li.codes {

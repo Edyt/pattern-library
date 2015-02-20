@@ -1536,7 +1536,7 @@ aside.callout-box.warning .button {
   text-align: center;
 }
 /* line 1668, ../input-css/style.scss */
-#work-manager .intray-nav .intray-options ul li a span {
+#work-manager .intray-nav .intray-options ul li a span.dijitIcon {
   display: inline;
   margin-right: 3px;
   position: relative;
@@ -1753,7 +1753,7 @@ aside.callout-box.warning .button {
 }
 /* line 1894, ../input-css/style.scss */
 .browse-items .task div.title-applicant {
-  width: 48%;
+  width: 39%;
 }
 /* line 1897, ../input-css/style.scss */
 .browse-items .task div.title-applicant h3, .browse-items .task div.title-applicant p {
@@ -1773,7 +1773,7 @@ aside.callout-box.warning .button {
 }
 /* line 1916, ../input-css/style.scss */
 .browse-items .task div.badge-codes {
-  width: 130px;
+  width: 26%;
 }
 /* line 1919, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.badge {
@@ -1786,7 +1786,7 @@ aside.callout-box.warning .button {
   border: 1px solid #679ABE;
   font-size: 15px;
   position: relative;
-  width: 130px;
+  width: 100%;
 }
 /* line 1932, ../input-css/style.scss */
 .browse-items .task div.badge-codes li.codes {
