@@ -23,24 +23,8 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.tpIconRotatePhoto .path1:before {
+.tpIconRotatePhoto:before {
 	content: "\5e";
-	color: rgb(0, 0, 0);
-}
-.tpIconRotatePhoto .path2:before {
-	content: "\6a";
-	margin-left: -1em;
-	color: rgb(0, 0, 0);
-}
-.tpIconRotatePhoto .path3:before {
-	content: "\6b";
-	margin-left: -1em;
-	color: rgb(0, 0, 0);
-}
-.tpIconRotatePhoto .path4:before {
-	content: "\71";
-	margin-left: -1em;
-	color: rgb(35, 31, 32);
 }
 
 .tpIconBullsEye:before {
