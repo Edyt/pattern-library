@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>Basic Example with JSX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="annotations__margin">
+    
+    <script src="../shared/thirdparty/es5-shim.min.js"></script>
+    <script src="../shared/thirdparty/es5-sham.min.js"></script>
+    <script src="../shared/thirdparty/console-polyfill.js"></script>
+    <script src="../build/react.js"></script>
+    <script src="../build/JSXTransformer.js"></script>
+    
+    <script type="text/jsx">
+
+        /** @jsx React.DOM*/
+
+        var AnnotationColumn = React.createClass({
+
+	      	componentDidMount: function(){
+	      		this.annotations = this.props.data;
+	      	},
+
+	      	getInitialState: function(){
+	      		return {
+	      			selectedAnnotation: ""
+	      		}
+	      	},
+
+	      	setActiveAnnotation: function(annotationBox){
+	      		this.setState({selectedAnnotation: annotationBox.props.data.id});
+	      	},
+
+	      	setCollapsedAnnotation: function(annotationBox){
+	      		if (this.state.selectedAnnotation === annotationBox.props.data.id){
+	      			this.setState({selectedAnnotation: false});
+	      		}
+	      	},
+
+	      	renderAnnotationBox: function(annotation, index, array){
+	      		var selected = this.state.selectedAnnotation === annotation.id ? true : false;
+
+	      		return <AnnotationBox data={annotation} 
+	      										key={annotation.id}
+	      										selected={selected}
+	      										setActiveAnnotation={this.setActiveAnnotation}
+	      										setCollapsedAnnotation={this.setCollapsedAnnotation} />;
+	      	},
+
+			render: function(){
+				var annotations = this.props.data.map(this.renderAnnotationBox);
+
+				return (
+					<div>
+						{annotations}
+					</div>
+					)
+				}
+		});
+
+        var AnnotationBox = React.createClass({
+          
+          displayName: "AnnotationBox",
+
+          stopBlur: false,
+          
+          getInitialState: function(){
+            return {
+              collapsed: true,
+              active: false,
+              focusedChild: false
+            }
+          },
+
+          setstopBlur: function(){
+            this.stopBlur = true;
+          },
+
+          unsetstopBlur: function(){
+            this.stopBlur = false;
+          },
+          
+          handleBlur: function(event){
+              event.persist();
+              
+              if (this.stopBlur){
+                this.unsetstopBlur();
+                return;
+              }
+
+              this.tab = "-1";
+              this.setCollapsed();
+          },
+              
+          handleFocus: function(){
+            this.tab = "0";
+            this.unsetstopBlur();
+            this.setActive();
+          },
+          
+          setFocus: function(){
+          	var reference = this.props.data.id + "component";
+            this.refs[reference].getDOMNode().focus();
+          },
+
+          handleButtonClick: function(annotationBox, button){
+          	var command = button.getAttribute('data-ref');
+          	this[command](annotationBox);
+          },
+
+          saveAnnotation: function(annotation){
+          	console.log("saveAnnotation", annotation);
+          	// update textbox value annotation
+          },
+
+          setCollapsed: function(){
+          	this.props.setCollapsedAnnotation(this);
+          },
+
+          setActive: function(){
+          	this.props.setActiveAnnotation(this);
+          },
+
+          tab: "-1",
+          
+          render: function () {
+            var r = "DOOOOT",
+
+                collapsed = !this.props.selected ? <CollapsedChild data={this.props.data} /> : null,
+
+                active = this.props.selected ? 
+                          <ActiveChild 
+                          	data={this.props.data}
+                          	b={this.handleBlur} 
+                          	setstopBlur={this.setstopBlur}
+                              handleFocus={this.handleFocus}
+                              handleButtonClick={this.handleButtonClick}
+                              unsetstopBlur={this.unsetstopBlur}
+                              setCollapsed={this.setCollapsed} /> 
+                          : null;
+            
+            return (
+              <div
+                  ref={this.props.data.id + "component"}
+                  onBlur={this.handleBlur}
+                  onFocus={this.handleFocus}
+                  onClick={this.setFocus}
+                  className="annotation"
+                  tabIndex={this.tab}
+                  
+                  data-ref="parentComponent">
+                
+                {collapsed}
+                {active}
+              
+              </div>
+            );
+          }
+        });
+
+      var ActiveChild = React.createClass({
+
+        mouseDownInChildElement: false,
+
+        handleBlur: function(e){
+            
+          console.log("ActiveChild, handleBlur");
+
+	          // If mousedown occurs in child element, set flag to avoid collapsing
+	        if (this.mouseDownInChildElement) { 
+	          this.mouseDownInChildElement = false;
+	          return;
+	        };
+
+            this.props.unsetstopBlur();
+        },
+            
+        handleFocus: function(e){
+          console.log("ActiveChild, handleFocus", e.target);
+          //e.stopPropagation();
+        },
+
+        handleClick: function(e){
+          e.stopPropagation();
+          //this.setFocus();
+          console.log("ActiveChild, handleClick");
+        },
+
+        handleMouseDown: function(e){
+          // Mousedown occurs before all other clicks, so we do our first detection here
+          e.stopPropagation();
+
+          var f = document.querySelector(":focus");
+          // If mousedown occurs in child element, set flag to avoid collapsing
+          if (this.getDOMNode().contains(f)){
+            this.mouseDownInChildElement = true;
+          }
+          
+          this.props.setstopBlur();    
+        },
+
+        handleTextAreaMouseDown: function(e){
+          // Triggers before handleMouseDown if Textbox clicked
+          this.mouseDownInChildElement = true;
+        },
+
+        handleButtonClick: function(event){
+          // Do event
+          event.preventDefault();
+          event.stopPropagation();
+          this.props.handleButtonClick(this, event.target);
+        },
+        
+        render: function () {
+			var sketch = this.props.data.sketch ? <SketchBox /> : null,
+				disableButton = sketch ? "disabled" : null;
+
+          return (
+            <div onBlur={this.handleBlur}
+                onFocus={this.handleFocus}
+                onClick={this.handleClick}
+                onMouseDown={this.handleMouseDown}
+                tabIndex="-1"
+                className="annotation is-active">
+
+                <form>
+                 	<button type="button" className="button annotation__close-button">
+						×
+					</button>
+
+        			<label className="annotation__label" htmlFor="remark3">
+        				Edit Annotation
+        			</label>
+
+					<textarea onMouseDown={this.handleTextAreaMouseDown} 
+							defaultValue={this.props.data.remark}
+							className="annotation__remark-field" 
+							id="remark3"
+							name="remark3"
+							placeholder="">
+					</textarea>
+
+					{sketch}
+
+					<button className="button annotation__add-sketch-button" type="button" disabled={disableButton}>
+						<i className="icon-edit"></i>
+						Add sketch
+					</button>
+
+					<button className="button button--primary" 
+							type="submit"
+							data-ref="saveAnnotation"
+							onClick={this.handleButtonClick}>
+						Save
+					</button>
+				</form>
+            </div>
+          );
+        }
+      });
+
+		var CollapsedChild = React.createClass({
+			handleBlur: function(){
+			    console.log("CollapsedChild, handleBlur");
+			},
+			    
+			handleFocus: function(){
+			   console.log("CollapsedChild, handleFocus");
+			},
+
+			render: function(){
+				var props = this.props,
+					remark,
+					sketch; 
+
+				if (props.data.remark){
+					remark = <blockquote 
+						              className="annotation__remark"
+						              onBlur={this.handleBlur}
+						              onFocus={this.handleFocus}
+						              tabIndex="-1">
+					              		{this.props.data.remark}
+					          </blockquote>;
+				}
+
+				if (props.data.sketch){
+					sketch = <SketchBox />
+				}
+
+				return (
+					<div>
+						{remark}
+						{sketch}
+					</div>
+				)
+			}	
+		});
+
+		var SketchBox = React.createClass({
+
+			render: function(){
+				return (<div className="annotation__sketches">
+					        <figure className="sketch">
+					          <button type="button" className="button sketch__edit">
+					            <i className="icon-edit"></i>
+					            <span className="button__label">Edit</span>
+					          </button>
+					          <button type="button" className="button sketch__delete">
+					            <i className="icon-trash button__icon--right"></i>
+					            <span className="button__label">Delete</span>
+					          </button>
+					          <img width="200" height="125" />
+					        </figure>
+					      </div>)
+		      }
+		});
+
+      var data = [{id: 1001, remark: "", sketch: "true"}, {id: 2342, remark: "This is an example of an inline Comment within an annotation"}, {id: 3452, remark: "I'm a longer thing that has some thoughts that may go on a bit!"}];
+
+      React.renderComponent(<AnnotationColumn data={data}/>, document.body);
+
+    </script>
+  </body>
+</html>
